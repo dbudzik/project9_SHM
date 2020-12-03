@@ -61,11 +61,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://dbudzik.github.io/project9_SHM/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://dbudzik.github.io/project9_SHM/v/22f760160fa4444d2278c0028bba0b523ac1e982/" />
+  <link rel="alternate" type="text/html" href="https://dbudzik.github.io/project9_SHM/v/887fd43fe86bc275f79ed2bea85fc3538089ab92/" />
 
-  <meta name="manubot_html_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/22f760160fa4444d2278c0028bba0b523ac1e982/" />
+  <meta name="manubot_html_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/887fd43fe86bc275f79ed2bea85fc3538089ab92/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/22f760160fa4444d2278c0028bba0b523ac1e982/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/887fd43fe86bc275f79ed2bea85fc3538089ab92/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -97,9 +97,9 @@ title: 'Project 9: Structural Health Monitoring'
 
 <small><em>
 This manuscript
-([permalink](https://dbudzik.github.io/project9_SHM/v/22f760160fa4444d2278c0028bba0b523ac1e982/))
+([permalink](https://dbudzik.github.io/project9_SHM/v/887fd43fe86bc275f79ed2bea85fc3538089ab92/))
 was automatically generated
-from [dbudzik/project9_SHM@22f7601](https://github.com/dbudzik/project9_SHM/tree/22f760160fa4444d2278c0028bba0b523ac1e982)
+from [dbudzik/project9_SHM@887fd43](https://github.com/dbudzik/project9_SHM/tree/887fd43fe86bc275f79ed2bea85fc3538089ab92)
 on December 3, 2020.
 </em></small>
 
@@ -136,6 +136,12 @@ on December 3, 2020.
 ## Abstract {.page_break_before}
 
 
+
+
+## References {.page_break_before}
+
+<!-- Explicitly insert bibliography here -->
+<div id="refs"></div>
 
 
 This manuscript is a template (aka "rootstock") for [Manubot](https://manubot.org/ "Manubot"), a tool for writing scholarly manuscripts.
@@ -432,9 +438,3 @@ useful for *important information* - [manubot.org](https://manubot.org/)
 <i class="fas fa-ban fa-lg"></i> **Light Red Banner**<br>
 useful for *warnings* - [manubot.org](https://manubot.org/)
 ]{.banner .lightred}
-
-
-## References {.page_break_before}
-
-<!-- Explicitly insert bibliography here -->
-<div id="refs"></div>
