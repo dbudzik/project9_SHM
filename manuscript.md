@@ -61,11 +61,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://dbudzik.github.io/project9_SHM/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://dbudzik.github.io/project9_SHM/v/eb432c44127ace5c99bf5f81a216c6cc1df5480e/" />
+  <link rel="alternate" type="text/html" href="https://dbudzik.github.io/project9_SHM/v/196c7305fe19bf9e774705b611c4a4e83b08f3a5/" />
 
-  <meta name="manubot_html_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/eb432c44127ace5c99bf5f81a216c6cc1df5480e/" />
+  <meta name="manubot_html_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/196c7305fe19bf9e774705b611c4a4e83b08f3a5/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/eb432c44127ace5c99bf5f81a216c6cc1df5480e/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/196c7305fe19bf9e774705b611c4a4e83b08f3a5/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -97,9 +97,9 @@ title: 'Project 9: Structural Health Monitoring'
 
 <small><em>
 This manuscript
-([permalink](https://dbudzik.github.io/project9_SHM/v/eb432c44127ace5c99bf5f81a216c6cc1df5480e/))
+([permalink](https://dbudzik.github.io/project9_SHM/v/196c7305fe19bf9e774705b611c4a4e83b08f3a5/))
 was automatically generated
-from [dbudzik/project9_SHM@eb432c4](https://github.com/dbudzik/project9_SHM/tree/eb432c44127ace5c99bf5f81a216c6cc1df5480e)
+from [dbudzik/project9_SHM@196c730](https://github.com/dbudzik/project9_SHM/tree/196c7305fe19bf9e774705b611c4a4e83b08f3a5)
 on December 3, 2020.
 </em></small>
 
@@ -138,29 +138,12 @@ on December 3, 2020.
 
 
 
-## Introduction
-
 Intro goes here
 
 
 ## Exploratory Data Analysis
 
 EDA goes here
-
-
-## Machine Learning Methods
-
-Methods go here
-
-
-## Results
-
-Results go here
-
-
-## Discussion of Results
-
-Discussion goes here
 
 
 ## References {.page_break_before}
