@@ -1,7 +1,9 @@
 ---
 author-meta:
-- John Doe
-- Jane Roe
+- David Budzik
+- Claudia Mederos
+- Bolaji Lawal
+- Abdullah Assaf
 bibliography:
 - content/manual-references.json
 date-meta: '2020-12-03'
@@ -15,13 +17,13 @@ header-includes: '<!--
 
   <meta name="dc.format" content="text/html" />
 
-  <meta name="dc.title" content="Manuscript Title" />
+  <meta name="dc.title" content="Project 9: Structural Health Monitoring" />
 
-  <meta name="citation_title" content="Manuscript Title" />
+  <meta name="citation_title" content="Project 9: Structural Health Monitoring" />
 
-  <meta property="og:title" content="Manuscript Title" />
+  <meta property="og:title" content="Project 9: Structural Health Monitoring" />
 
-  <meta property="twitter:title" content="Manuscript Title" />
+  <meta property="twitter:title" content="Project 9: Structural Health Monitoring" />
 
   <meta name="dc.date" content="2020-12-03" />
 
@@ -39,21 +41,13 @@ header-includes: '<!--
 
   <meta name="citation_technical_report_institution" content="Manubot" />
 
-  <meta name="citation_author" content="John Doe" />
+  <meta name="citation_author" content="David Budzik" />
 
-  <meta name="citation_author_institution" content="Department of Something, University of Whatever" />
+  <meta name="citation_author" content="Claudia Mederos" />
 
-  <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
+  <meta name="citation_author" content="Bolaji Lawal" />
 
-  <meta name="twitter:creator" content="@johndoe" />
-
-  <meta name="citation_author" content="Jane Roe" />
-
-  <meta name="citation_author_institution" content="Department of Something, University of Whatever" />
-
-  <meta name="citation_author_institution" content="Department of Whatever, University of Something" />
-
-  <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
+  <meta name="citation_author" content="Abdullah Assaf" />
 
   <link rel="canonical" href="https://dbudzik.github.io/project9_SHM/" />
 
@@ -67,11 +61,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://dbudzik.github.io/project9_SHM/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://dbudzik.github.io/project9_SHM/v/97b294802ffcd39071b6e5b8ab59f60faf4be118/" />
+  <link rel="alternate" type="text/html" href="https://dbudzik.github.io/project9_SHM/v/22f760160fa4444d2278c0028bba0b523ac1e982/" />
 
-  <meta name="manubot_html_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/97b294802ffcd39071b6e5b8ab59f60faf4be118/" />
+  <meta name="manubot_html_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/22f760160fa4444d2278c0028bba0b523ac1e982/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/97b294802ffcd39071b6e5b8ab59f60faf4be118/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/22f760160fa4444d2278c0028bba0b523ac1e982/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -93,7 +87,7 @@ manubot-clear-requests-cache: false
 manubot-output-bibliography: output/references.json
 manubot-output-citekeys: output/citations.tsv
 manubot-requests-cache-path: ci/cache/requests-cache
-title: Manuscript Title
+title: 'Project 9: Structural Health Monitoring'
 ...
 
 
@@ -103,9 +97,9 @@ title: Manuscript Title
 
 <small><em>
 This manuscript
-([permalink](https://dbudzik.github.io/project9_SHM/v/97b294802ffcd39071b6e5b8ab59f60faf4be118/))
+([permalink](https://dbudzik.github.io/project9_SHM/v/22f760160fa4444d2278c0028bba0b523ac1e982/))
 was automatically generated
-from [dbudzik/project9_SHM@97b2948](https://github.com/dbudzik/project9_SHM/tree/97b294802ffcd39071b6e5b8ab59f60faf4be118)
+from [dbudzik/project9_SHM@22f7601](https://github.com/dbudzik/project9_SHM/tree/22f760160fa4444d2278c0028bba0b523ac1e982)
 on December 3, 2020.
 </em></small>
 
@@ -113,25 +107,28 @@ on December 3, 2020.
 
 
 
-+ **John Doe**<br>
-    ![ORCID icon](images/orcid.svg){.inline_icon}
-    [XXXX-XXXX-XXXX-XXXX](https://orcid.org/XXXX-XXXX-XXXX-XXXX)
++ **David Budzik**<br>
     · ![GitHub icon](images/github.svg){.inline_icon}
-    [johndoe](https://github.com/johndoe)
-    · ![Twitter icon](images/twitter.svg){.inline_icon}
-    [johndoe](https://twitter.com/johndoe)<br>
+    [dbudzik](https://github.com/dbudzik)<br>
   <small>
-     Department of Something, University of Whatever
-     · Funded by Grant XXXXXXXX
   </small>
 
-+ **Jane Roe**<br>
-    ![ORCID icon](images/orcid.svg){.inline_icon}
-    [XXXX-XXXX-XXXX-XXXX](https://orcid.org/XXXX-XXXX-XXXX-XXXX)
++ **Claudia Mederos**<br>
     · ![GitHub icon](images/github.svg){.inline_icon}
-    [janeroe](https://github.com/janeroe)<br>
+    [update_this](https://github.com/update_this)<br>
   <small>
-     Department of Something, University of Whatever; Department of Whatever, University of Something
+  </small>
+
++ **Bolaji Lawal**<br>
+    · ![GitHub icon](images/github.svg){.inline_icon}
+    [update_this](https://github.com/update_this)<br>
+  <small>
+  </small>
+
++ **Abdullah Assaf**<br>
+    · ![GitHub icon](images/github.svg){.inline_icon}
+    [update_this](https://github.com/update_this)<br>
+  <small>
   </small>
 
 
