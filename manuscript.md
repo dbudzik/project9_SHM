@@ -6,7 +6,7 @@ author-meta:
 - Abdullah Assaf
 bibliography:
 - content/manual-references.json
-date-meta: '2020-12-03'
+date-meta: '2020-12-04'
 header-includes: '<!--
 
   Manubot generated metadata rendered from header-includes-template.html.
@@ -25,9 +25,9 @@ header-includes: '<!--
 
   <meta property="twitter:title" content="Project 9: Structural Health Monitoring" />
 
-  <meta name="dc.date" content="2020-12-03" />
+  <meta name="dc.date" content="2020-12-04" />
 
-  <meta name="citation_publication_date" content="2020-12-03" />
+  <meta name="citation_publication_date" content="2020-12-04" />
 
   <meta name="dc.language" content="en-US" />
 
@@ -61,11 +61,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://dbudzik.github.io/project9_SHM/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://dbudzik.github.io/project9_SHM/v/87bf97c25eeab34f3a07c517b7444596e6a0bf22/" />
+  <link rel="alternate" type="text/html" href="https://dbudzik.github.io/project9_SHM/v/e5173ae55350bef66c7211f52db3e4a08cf551e5/" />
 
-  <meta name="manubot_html_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/87bf97c25eeab34f3a07c517b7444596e6a0bf22/" />
+  <meta name="manubot_html_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/e5173ae55350bef66c7211f52db3e4a08cf551e5/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/87bf97c25eeab34f3a07c517b7444596e6a0bf22/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/e5173ae55350bef66c7211f52db3e4a08cf551e5/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -97,10 +97,10 @@ title: 'Project 9: Structural Health Monitoring'
 
 <small><em>
 This manuscript
-([permalink](https://dbudzik.github.io/project9_SHM/v/87bf97c25eeab34f3a07c517b7444596e6a0bf22/))
+([permalink](https://dbudzik.github.io/project9_SHM/v/e5173ae55350bef66c7211f52db3e4a08cf551e5/))
 was automatically generated
-from [dbudzik/project9_SHM@87bf97c](https://github.com/dbudzik/project9_SHM/tree/87bf97c25eeab34f3a07c517b7444596e6a0bf22)
-on December 3, 2020.
+from [dbudzik/project9_SHM@e5173ae](https://github.com/dbudzik/project9_SHM/tree/e5173ae55350bef66c7211f52db3e4a08cf551e5)
+on December 4, 2020.
 </em></small>
 
 ## Authors
@@ -146,26 +146,6 @@ Intro goes here
 ## Exploratory Data Analysis
 
 EDA goes here
-
-
-## Machine Learning Methods
-
-Methods go here
-
-
-## Results
-
-Results go here
-
-
-## Discussion of Results
-
-Discussion goes here
-
-
-## Conclusion
-
-Conclusion goes here
 
 
 ## References {.page_break_before}
