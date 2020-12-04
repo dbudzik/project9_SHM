@@ -61,11 +61,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://dbudzik.github.io/project9_SHM/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://dbudzik.github.io/project9_SHM/v/193c24fc2d9f03c36a50808dead574013e57b483/" />
+  <link rel="alternate" type="text/html" href="https://dbudzik.github.io/project9_SHM/v/aadf4e69082aeefe8997135c694a89299be2a998/" />
 
-  <meta name="manubot_html_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/193c24fc2d9f03c36a50808dead574013e57b483/" />
+  <meta name="manubot_html_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/aadf4e69082aeefe8997135c694a89299be2a998/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/193c24fc2d9f03c36a50808dead574013e57b483/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/aadf4e69082aeefe8997135c694a89299be2a998/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -99,9 +99,9 @@ title: 'Project 9: Structural Health Monitoring'
 
 <small><em>
 This manuscript
-([permalink](https://dbudzik.github.io/project9_SHM/v/193c24fc2d9f03c36a50808dead574013e57b483/))
+([permalink](https://dbudzik.github.io/project9_SHM/v/aadf4e69082aeefe8997135c694a89299be2a998/))
 was automatically generated
-from [dbudzik/project9_SHM@193c24f](https://github.com/dbudzik/project9_SHM/tree/193c24fc2d9f03c36a50808dead574013e57b483)
+from [dbudzik/project9_SHM@aadf4e6](https://github.com/dbudzik/project9_SHM/tree/aadf4e69082aeefe8997135c694a89299be2a998)
 on December 4, 2020.
 </em></small>
 
@@ -149,7 +149,7 @@ Civil infrastructure all around is subjected to the challenges posed by aging, d
 ## Machine Learning Methods
 
 # 4. Methodology
-
+Following a comprehensive exploratory data analysis as outlined in the previous section, which was valuable in looking at different patterns and features of the data obtained from various sensors. The next task then, was to classify this data as either damaged or undamaged. Classification problems are very common in the data science and more specifically machine learning fields. As such, several machine learning algorithms have been proposed and developed over the years for solving such problems. For our project, we have evaluated and tested five of those algorithms namely, Logistic regression, polynomial regression, artificial neural networks, recurrent neural networks and random forests.
 # 4.1 Explanation of the Problem:
 Our Kaggle Project was focused on Binary classification. Binary Classification is the task of classifying the elements of a set into two groups on the basis of a classification rule. Our problem revolved around classifying the structural damage detected in a structure. We had to choose different machine learning algorithms to help classify the data.
 
