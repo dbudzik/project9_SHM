@@ -61,11 +61,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://dbudzik.github.io/project9_SHM/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://dbudzik.github.io/project9_SHM/v/308463eef7c2f4ae81df46105f8a14998924e589/" />
+  <link rel="alternate" type="text/html" href="https://dbudzik.github.io/project9_SHM/v/7c4a76d1334d83172e92ed57afbbb5cae9f651c1/" />
 
-  <meta name="manubot_html_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/308463eef7c2f4ae81df46105f8a14998924e589/" />
+  <meta name="manubot_html_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/7c4a76d1334d83172e92ed57afbbb5cae9f651c1/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/308463eef7c2f4ae81df46105f8a14998924e589/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/7c4a76d1334d83172e92ed57afbbb5cae9f651c1/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -97,9 +97,9 @@ title: 'Project 9: Structural Health Monitoring'
 
 <small><em>
 This manuscript
-([permalink](https://dbudzik.github.io/project9_SHM/v/308463eef7c2f4ae81df46105f8a14998924e589/))
+([permalink](https://dbudzik.github.io/project9_SHM/v/7c4a76d1334d83172e92ed57afbbb5cae9f651c1/))
 was automatically generated
-from [dbudzik/project9_SHM@308463e](https://github.com/dbudzik/project9_SHM/tree/308463eef7c2f4ae81df46105f8a14998924e589)
+from [dbudzik/project9_SHM@7c4a76d](https://github.com/dbudzik/project9_SHM/tree/7c4a76d1334d83172e92ed57afbbb5cae9f651c1)
 on December 4, 2020.
 </em></small>
 
@@ -149,10 +149,8 @@ The reason that there are accelerations values at the first row is because resea
 
 Based on *Experimental Phase II of the Structural Health Monitoring Benchmark Problem* , accelerometers were placed throughout the structure to provide measurements of the structural response. For this Exploratory Data Analysis, three sensors from each floor of the 4-story structure were taken into consideration. Specifically,
 
-Sensor 01 = Sensor located at the west side of the structure. 
-
+Sensor 01 = Sensor located at the west side of the structure.  
 Sensor 02 = Sensor located at the center of the structure.
-
 Sensor 03 = Sensor located at the east side of the structure.
 
 $Units = \frac{m}{s^2}$ 
@@ -182,7 +180,6 @@ In the case of undamaged dataset, the standard deviation values of the fourth fl
 
 
 **Checking head, tail of data**
-
 In the case of the undamaged dataset, all the graphs show normal distribution. However, they are not centered with an exact mean of value 0. Instead,
 
 - Sensors located at the west side of the structure are skewed to the right in the first and fourth floor while the second and third floor are skewed to the left.
@@ -196,11 +193,9 @@ For the case of damage conditio, the normal distribution is not as smooth as sho
 - The fourth floor now shows the most ccentered behavior. However, it is importqant to recall the statistical characteristics such as standard deviation. Now the 4th-floor values are significantly wider.
 
 ## 2.3 Exploring the dataframe that contains the undamaged condition**
-
 Previously, we explored some characteristics of the undamaged dataset. Then, the dataset has been arranged and tidied to finally observe how there was a large amoung of non-available data points, which can be observed in the last row (index number > time_sec)
 
 **Is the change in acceleration always the same?**
-
 For the following inspection, recall that data acquisition was started several seconds after the excitation was turned on to ensure that the system had reached a steady state condition during the shaker testing.
 
 Interestingly, the analysis has shown how the location of the sensor affects directly to the change in acceleration of the sensors. The y-axis has been kept constant throughout all the plots to ease comparison. Therefore, we can observe how though the distribution among sensors in different floor is different, the difference in acceleration values is very correlated to location.
@@ -214,21 +209,17 @@ The table above is with the purpose of locating the directly correlated and inve
 However, there is an inverse correlation in those sensors loccated at the fourth floor. The reason behind this behavior is that we are analyzing an elastic structure that is being excited by an harmonic input from the ground. Therefore, the top floor is swinging, which creates a driving behavior in one of the corners at a time.
 
 **Boxplots**
-
 Some final insight of the undamaged dataset shows how there are a large quantity of outliners in the sensors located at the center of the structure.
 
 ## 2.4 Exploring the dataframe that contains the undamaged condition**
 
 **Is the change in acceleration always the same?**
-
 There are certain conditions that we can observe by comparing the undamaged and damaged conditions. First of all, there is still a correlation in the change in acceleration with the location of the sensors. Also, the delta value has been significantly decreased over the length of the response. The largest change in acceleration is located at the center sensors for this particular condition, which might mean that the structure is not displacing as much once it reaches a damaged condition.
 
 **Correlation values**
-
 In this scenario, the correlation has changed greatly. Now, the 4th-story sensors display similarities with other sensors placed in the same side of the structure. However, the 3rd-story sensors are those that are inversely correlated. 
 
 ## 2.5 Conclussion
-
 The training data obtained has been statistically explored, cleaned, and analyzed for the purpose of identifying parameters for modeling later on.
 
 - Missing data has been removed.
