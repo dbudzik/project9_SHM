@@ -1,6 +1,6 @@
-content/02.introduction.md:5:develope
-content/02.introduction.md:8:accelerometers
-content/02.introduction.md:8:MATLAB
+content/02.introduction.md:6:develope
+content/02.introduction.md:17:accelerometers
+content/02.introduction.md:17:MATLAB
 content/03.EDA.md:3:EDA
 content/99.delete-me(template).md:44:adipiscing
 content/99.delete-me(template).md:44:aliqua
