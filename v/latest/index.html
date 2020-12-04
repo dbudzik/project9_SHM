@@ -111,9 +111,9 @@
   <meta name="citation_fulltext_html_url" content="https://dbudzik.github.io/project9_SHM/" />
   <meta name="citation_pdf_url" content="https://dbudzik.github.io/project9_SHM/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://dbudzik.github.io/project9_SHM/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://dbudzik.github.io/project9_SHM/v/2f959f63e12209f2dc7c424df6c3fb8a61ac9b7f/" />
-  <meta name="manubot_html_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/2f959f63e12209f2dc7c424df6c3fb8a61ac9b7f/" />
-  <meta name="manubot_pdf_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/2f959f63e12209f2dc7c424df6c3fb8a61ac9b7f/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://dbudzik.github.io/project9_SHM/v/308463eef7c2f4ae81df46105f8a14998924e589/" />
+  <meta name="manubot_html_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/308463eef7c2f4ae81df46105f8a14998924e589/" />
+  <meta name="manubot_pdf_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/308463eef7c2f4ae81df46105f8a14998924e589/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -134,9 +134,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://dbudzik.github.io/project9_SHM/v/2f959f63e12209f2dc7c424df6c3fb8a61ac9b7f/">permalink</a>)
+(<a href="https://dbudzik.github.io/project9_SHM/v/308463eef7c2f4ae81df46105f8a14998924e589/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/dbudzik/project9_SHM/tree/2f959f63e12209f2dc7c424df6c3fb8a61ac9b7f">dbudzik/project9_SHM@2f959f6</a>
+from <a href="https://github.com/dbudzik/project9_SHM/tree/308463eef7c2f4ae81df46105f8a14998924e589">dbudzik/project9_SHM@308463e</a>
 on December 4, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -163,8 +163,71 @@ on December 4, 2020.
 </small></p></li>
 </ul>
 <h2 class="page_break_before" id="abstract">Abstract</h2>
-<h2 id="exploratory-data-analysis">Exploratory Data Analysis</h2>
-<p>EDA goes here</p>
+<h1 id="exploratory-data-analysis">2. Exploratory Data Analysis</h1>
+<p>The goal of this EDA is to identify characteristics between damage and undamage conditions in order to perform data preparation and develope a model in the future steps.</p>
+<h2 id="preparing-the-data">2.1 Preparing the data</h2>
+<p>As the dataset shows, we have damage within our data. Therefore, Case 1 is not represented in train data.</p>
+<p>The reason that there are accelerations values at the first row is because researchers started measuring the structure’s response once it reached steady state. More details regarding the dynamic behavior of this structure will be discussed in the following sections.</p>
+<p>Based on <em>Experimental Phase II of the Structural Health Monitoring Benchmark Problem</em> , accelerometers were placed throughout the structure to provide measurements of the structural response. For this Exploratory Data Analysis, three sensors from each floor of the 4-story structure were taken into consideration. Specifically,</p>
+<p>Sensor 01 = Sensor located at the west side of the structure.</p>
+<p>Sensor 02 = Sensor located at the center of the structure.</p>
+<p>Sensor 03 = Sensor located at the east side of the structure.</p>
+<p><span class="math inline">\(Units = \frac{m}{s^2}\)</span></p>
+<ul>
+<li>In the original data from the researchers, time is describe as,
+<span class="math inline">\(Time(seconds) = \frac{1 : Length_{DA04}}{fs_{days}}\)</span></li>
+</ul>
+<p>where fsdasy = 200 (Hz).</p>
+<h3 id="separating-train-data-into-damage-and-undamage-dataset">Separating train data into damage and undamage dataset</h3>
+<p><em>As shown above, the given data set contained a large quantity of NA data values which are all located in the undamaged portion.</em></p>
+<p>Between populating or removing the missing data, the missing results will be dropped. The reason for this decision is because populating the missing values with the mean of the training data will mostly develope a new dataset that does not have all the original parameters.</p>
+<h2 id="statistical-properties">2.2 Statistical Properties</h2>
+<p>We can learn certain details of the response of the structure by observing the data points that have a very drastic charnge in amplitude. In other words, there are common points in time among all sensors where the acceleration measured does a 180 degrees change. This phenomenon occurs as the dynamics response of structure is harmonic and it develops nodes. A simplification of this idea is to understand how the sensors in the 4th story will move back and forward while nodes underneath are ahead or behind that displacement.</p>
+<p>The mean for all the sensors is very close to 0, which may indicate normalized normal distribution. Also, the standard deviation is not equal to 1 for any of the sensors, but a close value to 0 too. These characteristics are present for normal distributions of narrow dispersion.</p>
+<p>In the case of undamaged dataset, the standard deviation values of the fourth floor are the largest among all floors. This indicates a flexibility in the structure as the dynamic response took place. Another very interesting fact that we can learn from the previous tables is how the maximum value of 0.01 takes place at two sensor in the 4 story, and the sensor located at the center for the 1st and 2nd floor. The absence of this value at the 3rd floor may indicate an anomaly. This value stays constant after the structure is considered damaged for the sensors located at the center of the second and fourth floor.</p>
+<p><strong>Checking head, tail of data</strong></p>
+<p>In the case of the undamaged dataset, all the graphs show normal distribution. However, they are not centered with an exact mean of value 0. Instead,</p>
+<ul>
+<li>Sensors located at the west side of the structure are skewed to the right in the first and fourth floor while the second and third floor are skewed to the left.</li>
+<li>Sensors located at the center of the structure behave symmetrically. The first and third floor have bell-shaped distribution with a mean of 0. The second and fourth floor are lightly skewed in opposite directions.</li>
+<li>Sensors located at the east side of the structure are all skewed except the one located at the second floor. The sensor at the 4th floor captured the most out of plane behavior as the ‘4th_story_03’ sensor is significatly skewed to the left.</li>
+</ul>
+<p>For the case of damage conditio, the normal distribution is not as smooth as shown for the undamaged condition. This behavior matches with the physical phenomenon that took place as the acceleration of the sensors will tend to be more extreme if the structure is damaged.</p>
+<ul>
+<li>The first floor endured the most extreme values as the base is not static anymore during excitation. The three sensors are skewed to the right.</li>
+<li>The second and third floor has similar behavior since the center sensor is still normally distributed with mean very close to 0 and sensors on the west and east side are skewed to the left.</li>
+<li>The fourth floor now shows the most ccentered behavior. However, it is importqant to recall the statistical characteristics such as standard deviation. Now the 4th-floor values are significantly wider.</li>
+</ul>
+<h2 id="exploring-the-dataframe-that-contains-the-undamaged-condition">2.3 Exploring the dataframe that contains the undamaged condition**</h2>
+<p>Previously, we explored some characteristics of the undamaged dataset. Then, the dataset has been arranged and tidied to finally observe how there was a large amoung of non-available data points, which can be observed in the last row (index number &gt; time_sec)</p>
+<p><strong>Is the change in acceleration always the same?</strong></p>
+<p>For the following inspection, recall that data acquisition was started several seconds after the excitation was turned on to ensure that the system had reached a steady state condition during the shaker testing.</p>
+<p>Interestingly, the analysis has shown how the location of the sensor affects directly to the change in acceleration of the sensors. The y-axis has been kept constant throughout all the plots to ease comparison. Therefore, we can observe how though the distribution among sensors in different floor is different, the difference in acceleration values is very correlated to location.</p>
+<p>Also note how the missing data produced zero values in the left portion of the data. Those values are not representing a constant acceleration.</p>
+<p><strong>Correlation values</strong></p>
+<p>The table above is with the purpose of locating the directly correlated and inversevely correlated sensors. Just as the difference in acceleration graphs showed, there is significant correlation between those sensors that are located in the same side of the structure.</p>
+<p>However, there is an inverse correlation in those sensors loccated at the fourth floor. The reason behind this behavior is that we are analyzing an elastic structure that is being excited by an harmonic input from the ground. Therefore, the top floor is swinging, which creates a driving behavior in one of the corners at a time.</p>
+<p><strong>Boxplots</strong></p>
+<p>Some final insight of the undamaged dataset shows how there are a large quantity of outliners in the sensors located at the center of the structure.</p>
+<h2 id="exploring-the-dataframe-that-contains-the-undamaged-condition-1">2.4 Exploring the dataframe that contains the undamaged condition**</h2>
+<p><strong>Is the change in acceleration always the same?</strong></p>
+<p>There are certain conditions that we can observe by comparing the undamaged and damaged conditions. First of all, there is still a correlation in the change in acceleration with the location of the sensors. Also, the delta value has been significantly decreased over the length of the response. The largest change in acceleration is located at the center sensors for this particular condition, which might mean that the structure is not displacing as much once it reaches a damaged condition.</p>
+<p><strong>Correlation values</strong></p>
+<p>In this scenario, the correlation has changed greatly. Now, the 4th-story sensors display similarities with other sensors placed in the same side of the structure. However, the 3rd-story sensors are those that are inversely correlated.</p>
+<h2 id="conclussion">2.5 Conclussion</h2>
+<p>The training data obtained has been statistically explored, cleaned, and analyzed for the purpose of identifying parameters for modeling later on.</p>
+<ul>
+<li>Missing data has been removed.</li>
+<li>Datatype and Data Info has been discussed and visually listed.</li>
+<li>The distribution for the undamaged and damaged conditions proved to be normally distributed with skewness at different direction based on the sensors. This analysis portion showed how the skewness was correlated with the behavior that was taking place during excitation as the dynamic response of a steel frame structure is not rigid. Also, once the damaged condition was achieved, the distribution showed a larger standard deviation.</li>
+<li>The individual analysis of each condition proved to be succesful in correlating the behavior of each sensor among stories.
+<ul>
+<li>The change in acceleration depended directly with the location on the sensor within the steel frame structure.</li>
+<li>There was a high correlation between sensors located at different floors that were place on the same side.<br />
+</li>
+</ul></li>
+<li>Due to the high symmetry among all the results and comparisons, it is probable that the training data belonged to Case 6, Case 7 or Case 8. However, the final information indicated how the 3rd story behaved differently, which potentially indicated that the training data has a higher probably of being Case 8.</li>
+</ul>
 <h2 id="machine-learning-methods">Machine Learning Methods</h2>
 <p>Methods go here</p>
 <h2 id="results">Results</h2>
@@ -432,7 +495,7 @@ White background specified to serve as a backdrop for transparent sections of th
 </tbody>
 </table>
 </div>
-<div id="tbl:e74632e9-2310-4b0f-bec1-5b4e7e41e346" class="tablenos">
+<div id="tbl:785b108b-853f-4f6e-896d-bbef0a8de8e7" class="tablenos">
 <table>
 <caption><span>Table 3:</span> A table with merged cells using the <code>attributes</code> plugin.
 </caption>
