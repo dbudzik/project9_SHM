@@ -61,11 +61,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://dbudzik.github.io/project9_SHM/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://dbudzik.github.io/project9_SHM/v/5f4e802b75727f64470921d5269fb57c1d6483a1/" />
+  <link rel="alternate" type="text/html" href="https://dbudzik.github.io/project9_SHM/v/17d4e412c1809c3d78bf103f731a5e94d31457b1/" />
 
-  <meta name="manubot_html_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/5f4e802b75727f64470921d5269fb57c1d6483a1/" />
+  <meta name="manubot_html_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/17d4e412c1809c3d78bf103f731a5e94d31457b1/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/5f4e802b75727f64470921d5269fb57c1d6483a1/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/17d4e412c1809c3d78bf103f731a5e94d31457b1/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -80,6 +80,7 @@ header-includes: '<!--
   <!-- end Manubot generated metadata -->'
 keywords:
 - structural health monitoring
+- civil infrastructure
 - machine learning
 - data science
 - manubot
@@ -98,9 +99,9 @@ title: 'Project 9: Structural Health Monitoring'
 
 <small><em>
 This manuscript
-([permalink](https://dbudzik.github.io/project9_SHM/v/5f4e802b75727f64470921d5269fb57c1d6483a1/))
+([permalink](https://dbudzik.github.io/project9_SHM/v/17d4e412c1809c3d78bf103f731a5e94d31457b1/))
 was automatically generated
-from [dbudzik/project9_SHM@5f4e802](https://github.com/dbudzik/project9_SHM/tree/5f4e802b75727f64470921d5269fb57c1d6483a1)
+from [dbudzik/project9_SHM@17d4e41](https://github.com/dbudzik/project9_SHM/tree/17d4e412c1809c3d78bf103f731a5e94d31457b1)
 on December 4, 2020.
 </em></small>
 
