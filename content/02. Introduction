@@ -18,6 +18,10 @@ The damage was estimated successfully by applying a CNN-based approach only requ
 
 The benchmark structure is a 2-bay by 2-bay, 4 story steel frame structure at the University of British Columbia.
 ![Benchmark Structure](images/Screen%20Shot%202020-12-03%20at%208.59.34%20PM.png){height="13px"}
+![
+**Benchmark Structure.**
+Loaded from the latest version of image on GitHub.
+](https://github.com/dbudzik/project9_SHM/blob/master/content/images/Screen Shot 2020-12-03 at 8.59.34 PM.png "Square image"){#fig:square-image}
 
 
 Cases with known and unknown input and damage scenarios including symmetrical and unsymmetrical loss of stiffness in the bracing system were considered.  The experiment in question is regarding how damage can be simulated by removing bracing or loosening bolts within a four-story steel frame structure. Complete details of the damage cases, input excitation and other pertinent aspects of the study of phase I can be found below. To obtain the data, accelerometers were placed throughout the structure to provide measurements of the structural responses. In particular, three sensors per floor. One located at the center, one at the west side and one at the east side, as the MATLAB files indicate. Then, different cases took place in which members were loosen or removed to analyze the output and correlate the difference in acceleration values with the difference in setup.
