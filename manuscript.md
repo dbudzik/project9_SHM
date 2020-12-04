@@ -61,11 +61,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://dbudzik.github.io/project9_SHM/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://dbudzik.github.io/project9_SHM/v/85ac416756b50f39ba0c789adfedbf70ebd20b92/" />
+  <link rel="alternate" type="text/html" href="https://dbudzik.github.io/project9_SHM/v/cd2bb304a30fdf5f0267d94e13d2cdfa572b930f/" />
 
-  <meta name="manubot_html_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/85ac416756b50f39ba0c789adfedbf70ebd20b92/" />
+  <meta name="manubot_html_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/cd2bb304a30fdf5f0267d94e13d2cdfa572b930f/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/85ac416756b50f39ba0c789adfedbf70ebd20b92/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/cd2bb304a30fdf5f0267d94e13d2cdfa572b930f/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -97,9 +97,9 @@ title: 'Project 9: Structural Health Monitoring'
 
 <small><em>
 This manuscript
-([permalink](https://dbudzik.github.io/project9_SHM/v/85ac416756b50f39ba0c789adfedbf70ebd20b92/))
+([permalink](https://dbudzik.github.io/project9_SHM/v/cd2bb304a30fdf5f0267d94e13d2cdfa572b930f/))
 was automatically generated
-from [dbudzik/project9_SHM@85ac416](https://github.com/dbudzik/project9_SHM/tree/85ac416756b50f39ba0c789adfedbf70ebd20b92)
+from [dbudzik/project9_SHM@cd2bb30](https://github.com/dbudzik/project9_SHM/tree/cd2bb304a30fdf5f0267d94e13d2cdfa572b930f)
 on December 4, 2020.
 </em></small>
 
@@ -140,7 +140,9 @@ on December 4, 2020.
 
 # 1. Introduction
 
-The goal of the experiment was to develope an automated structural health monitoring system capable of providing early warnings against structural damage. 
+Identification of damage from the analysis of vibration signals has received significant attention in the civil, mechanical and aerospace fields. The problem most commonly considered is that where data is recorded at two different times and it is of interest to determine if the structure suffered damage in the time interval between the two observations. The behavior of the system during the observation periods is typically assumed linear and the damage is identified as changes in system parameters. A solution can be obtained in principle by using the measured data to optimize a model of the structure in the two states and inspecting the differences.
+
+The goal of the experiment was to develope an automated structural health monitoring system capable of providing early warnings against structural damage. Due to the importance of this research, there have been multiple papers regarding how to optimize the recollection of the data and quantity needed for training the machine learning algorithm.
 
 ## 1.2 Structure & experiment descriptions:
  The experiment in question is regarding how damage can be simulated by removing bracing or loosening bolts within a four-story steel frame structure. To obtain the data, accelerometers were placed throughout the structure to provide measurements of the structural responses. In particular, three sensors per floor. One located at the center, one at the west side and one at the east side, as the MATLAB files indicate. Then, different cases took place in which members were loosen or removed to analyze the output and correlate the difference in acceleration values with the difference in setup.
