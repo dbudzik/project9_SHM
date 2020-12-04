@@ -61,11 +61,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://dbudzik.github.io/project9_SHM/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://dbudzik.github.io/project9_SHM/v/50b79f6e8d440f08b25f39686951a303c4d00e6d/" />
+  <link rel="alternate" type="text/html" href="https://dbudzik.github.io/project9_SHM/v/c42493100e2a443c73fd08044d21f81255f99fa5/" />
 
-  <meta name="manubot_html_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/50b79f6e8d440f08b25f39686951a303c4d00e6d/" />
+  <meta name="manubot_html_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/c42493100e2a443c73fd08044d21f81255f99fa5/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/50b79f6e8d440f08b25f39686951a303c4d00e6d/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/c42493100e2a443c73fd08044d21f81255f99fa5/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -97,9 +97,9 @@ title: 'Project 9: Structural Health Monitoring'
 
 <small><em>
 This manuscript
-([permalink](https://dbudzik.github.io/project9_SHM/v/50b79f6e8d440f08b25f39686951a303c4d00e6d/))
+([permalink](https://dbudzik.github.io/project9_SHM/v/c42493100e2a443c73fd08044d21f81255f99fa5/))
 was automatically generated
-from [dbudzik/project9_SHM@50b79f6](https://github.com/dbudzik/project9_SHM/tree/50b79f6e8d440f08b25f39686951a303c4d00e6d)
+from [dbudzik/project9_SHM@c424931](https://github.com/dbudzik/project9_SHM/tree/c42493100e2a443c73fd08044d21f81255f99fa5)
 on December 4, 2020.
 </em></small>
 
@@ -115,19 +115,19 @@ on December 4, 2020.
 
 + **Claudia Mederos**<br>
     · ![GitHub icon](images/github.svg){.inline_icon}
-    [update_this](https://github.com/update_this)<br>
+    [cr25](https://github.com/cr25)<br>
   <small>
   </small>
 
 + **Bolaji Lawal**<br>
     · ![GitHub icon](images/github.svg){.inline_icon}
-    [update_this](https://github.com/update_this)<br>
+    [bolajilawal](https://github.com/bolajilawal)<br>
   <small>
   </small>
 
 + **Abdullah Assaf**<br>
     · ![GitHub icon](images/github.svg){.inline_icon}
-    [update_this](https://github.com/update_this)<br>
+    [aboo12](https://github.com/aboo12)<br>
   <small>
   </small>
 
