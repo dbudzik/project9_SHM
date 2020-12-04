@@ -14,6 +14,7 @@ Budzik
 ccentered
 charnge
 cillum
+CNNs
 commodo
 Conclussion
 conditio
@@ -23,6 +24,7 @@ culpa
 cupidatat
 dataframe
 dataset
+datasets
 dbudzik
 deserunt
 develope
@@ -30,10 +32,13 @@ dolore
 Duis
 EDA
 eiusmod
+electrodynamic
 elit
 enim
 esse
 Excepteur
+exci
+excitations
 exercitation
 fsdasy
 fugiat
@@ -49,6 +54,7 @@ Lawal
 loccated
 Lorem
 magna
+MATLAB
 Mederos
 mollit
 nisi
@@ -69,6 +75,7 @@ sint
 skewness
 succesful
 sunt
+tation
 tempor
 ullamco
 undamage
