@@ -61,11 +61,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://dbudzik.github.io/project9_SHM/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://dbudzik.github.io/project9_SHM/v/a86d84ec9eeb72b0f4e8838465f3a3370c642e96/" />
+  <link rel="alternate" type="text/html" href="https://dbudzik.github.io/project9_SHM/v/8192515ea2f2142ce22d20300a455f839839a5ba/" />
 
-  <meta name="manubot_html_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/a86d84ec9eeb72b0f4e8838465f3a3370c642e96/" />
+  <meta name="manubot_html_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/8192515ea2f2142ce22d20300a455f839839a5ba/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/a86d84ec9eeb72b0f4e8838465f3a3370c642e96/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/8192515ea2f2142ce22d20300a455f839839a5ba/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -97,9 +97,9 @@ title: 'Project 9: Structural Health Monitoring'
 
 <small><em>
 This manuscript
-([permalink](https://dbudzik.github.io/project9_SHM/v/a86d84ec9eeb72b0f4e8838465f3a3370c642e96/))
+([permalink](https://dbudzik.github.io/project9_SHM/v/8192515ea2f2142ce22d20300a455f839839a5ba/))
 was automatically generated
-from [dbudzik/project9_SHM@a86d84e](https://github.com/dbudzik/project9_SHM/tree/a86d84ec9eeb72b0f4e8838465f3a3370c642e96)
+from [dbudzik/project9_SHM@8192515](https://github.com/dbudzik/project9_SHM/tree/8192515ea2f2142ce22d20300a455f839839a5ba)
 on December 4, 2020.
 </em></small>
 
@@ -156,6 +156,16 @@ Methods go here
 ## Results
 
 Results go here
+
+
+## Discussion of Results
+
+Discussion goes here
+
+
+## Conclusion
+
+Conclusion goes here
 
 
 ## References {.page_break_before}
