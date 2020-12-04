@@ -61,11 +61,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://dbudzik.github.io/project9_SHM/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://dbudzik.github.io/project9_SHM/v/1ce97313084ce92cb1c6d2a1f035c9ae8735b3d6/" />
+  <link rel="alternate" type="text/html" href="https://dbudzik.github.io/project9_SHM/v/5f4e802b75727f64470921d5269fb57c1d6483a1/" />
 
-  <meta name="manubot_html_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/1ce97313084ce92cb1c6d2a1f035c9ae8735b3d6/" />
+  <meta name="manubot_html_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/5f4e802b75727f64470921d5269fb57c1d6483a1/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/1ce97313084ce92cb1c6d2a1f035c9ae8735b3d6/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/5f4e802b75727f64470921d5269fb57c1d6483a1/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -79,8 +79,9 @@ header-includes: '<!--
 
   <!-- end Manubot generated metadata -->'
 keywords:
-- markdown
-- publishing
+- structural health monitoring
+- machine learning
+- data science
 - manubot
 lang: en-US
 manubot-clear-requests-cache: false
@@ -97,9 +98,9 @@ title: 'Project 9: Structural Health Monitoring'
 
 <small><em>
 This manuscript
-([permalink](https://dbudzik.github.io/project9_SHM/v/1ce97313084ce92cb1c6d2a1f035c9ae8735b3d6/))
+([permalink](https://dbudzik.github.io/project9_SHM/v/5f4e802b75727f64470921d5269fb57c1d6483a1/))
 was automatically generated
-from [dbudzik/project9_SHM@1ce9731](https://github.com/dbudzik/project9_SHM/tree/1ce97313084ce92cb1c6d2a1f035c9ae8735b3d6)
+from [dbudzik/project9_SHM@5f4e802](https://github.com/dbudzik/project9_SHM/tree/5f4e802b75727f64470921d5269fb57c1d6483a1)
 on December 4, 2020.
 </em></small>
 
