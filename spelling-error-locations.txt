@@ -1,17 +1,3 @@
-content/02. Introduction.md:6:develope
-content/02. Introduction.md:11:CNNs
-content/02. Introduction.md:12:CNNs
-content/02. Introduction.md:13:accelerometers
-content/02. Introduction.md:13:CNNs
-content/02. Introduction.md:13:datasets
-content/02. Introduction.md:24:dbudzik
-content/02. Introduction.md:26:accelerometers
-content/02. Introduction.md:26:MATLAB
-content/02. Introduction.md:43:electrodynamic
-content/02. Introduction.md:43:exci
-content/02. Introduction.md:43:excitations
-content/02. Introduction.md:43:excitations
-content/02. Introduction.md:43:tation
 content/99.delete-me(template).md:44:adipiscing
 content/99.delete-me(template).md:44:aliqua
 content/99.delete-me(template).md:44:amet

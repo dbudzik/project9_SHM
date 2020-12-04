@@ -111,9 +111,9 @@
   <meta name="citation_fulltext_html_url" content="https://dbudzik.github.io/project9_SHM/" />
   <meta name="citation_pdf_url" content="https://dbudzik.github.io/project9_SHM/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://dbudzik.github.io/project9_SHM/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://dbudzik.github.io/project9_SHM/v/c42493100e2a443c73fd08044d21f81255f99fa5/" />
-  <meta name="manubot_html_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/c42493100e2a443c73fd08044d21f81255f99fa5/" />
-  <meta name="manubot_pdf_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/c42493100e2a443c73fd08044d21f81255f99fa5/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://dbudzik.github.io/project9_SHM/v/cb51870c7f74f3d3b38d075d0cbce0b0f864eb83/" />
+  <meta name="manubot_html_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/cb51870c7f74f3d3b38d075d0cbce0b0f864eb83/" />
+  <meta name="manubot_pdf_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/cb51870c7f74f3d3b38d075d0cbce0b0f864eb83/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -134,9 +134,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://dbudzik.github.io/project9_SHM/v/c42493100e2a443c73fd08044d21f81255f99fa5/">permalink</a>)
+(<a href="https://dbudzik.github.io/project9_SHM/v/cb51870c7f74f3d3b38d075d0cbce0b0f864eb83/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/dbudzik/project9_SHM/tree/c42493100e2a443c73fd08044d21f81255f99fa5">dbudzik/project9_SHM@c424931</a>
+from <a href="https://github.com/dbudzik/project9_SHM/tree/cb51870c7f74f3d3b38d075d0cbce0b0f864eb83">dbudzik/project9_SHM@cb51870</a>
 on December 4, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -163,39 +163,6 @@ on December 4, 2020.
 </small></p></li>
 </ul>
 <h2 class="page_break_before" id="abstract">Abstract</h2>
-<h1 id="introduction">1. Introduction</h1>
-<h2 id="motivation-behind-the-research-experiment">1.1 Motivation behind the research experiment</h2>
-<p>Identification of damage from the analysis of vibration signals has received significant attention in the civil, mechanical and aerospace fields.
-Structural health monitoring allows the engineer to use sensing of the structural responses in conjunction with appropriate analysis and modeling techniques, to monitor the condition of a structure. The problem most commonly considered is that where data is recorded at two different times and it is of interest to determine if the structure suffered damage in the time interval between the two observations. The behavior of the system during the observation periods is typically assumed linear and the damage is identified as changes in system parameters. A solution can be obtained in principle by using the measured data to optimize a model of the structure in the two states and inspecting the differences.
-The goal of the experiment was to develope an automated structural health monitoring system capable of providing early warnings against structural damage. In order to achieve this, damage was simulated by removing bracing within the structure in nine different ways as shown in the following sections.</p>
-<h2 id="literature-review">1.2 Literature Review</h2>
-<p>Due to the importance of this research, there have been multiple papers regarding how to optimize the recollection of the data and quantity needed for training the machine learning algorithm. Examination of the literature reveals, however, that the assumptions used to establish the various approaches vary widely and it is unclear what is the true capability of the current state of the art in damage detection of civil engineering structures.</p>
-<h3 id="d-cnns-for-structural-damage-detection-verification-on-a-structural-health-monitoring-benchmark-data">1-D CNNs for structural damage detection: Verification on a structural health monitoring benchmark data</h3>
-<p>Nowadays, a large number of measurement scenarios are needed to generate training data before placing the sensors in large civil structures. The paper “1-D CNNs for structural damage detection: Verification on a structural health monitoring benchmark data” provides an enhanced CNN-based algorithm which only requires two training sessions, ensuring accuracy and speed.
-The damage was estimated successfully by applying a CNN-based approach only requiring two measurement datasets. The overall structural health monitoring procedure for this paper took place on a very short amount of time, around 5000x faster than the conventional procedure. The authors indicated that this approach can be utilized on any structures, regardless of the size of the structure. Yet, the data processed was based exclusively on a monitored structure, and one may wonder how the fully damaged scenario data could be obtained on a large civil structure that needs to be monitored. Also, other difficulties become more apparent if we take into consideration how large civil structures do not behave precisely as the replica in which accelerometers were placed. It is almost impossible to repeat the measurement procedure that took place for the Phase II benchmark study on any other structure. And finally, although anomaly detection is obtained using CNNs algorithms, the cause of such anomaly or the location is completely a mystery. It is important to know the state of a structure for public safety, but it is also very important to locate the damage in order to take action.</p>
-<h2 id="structure-experiment-descriptions">1.3 Structure &amp; experiment descriptions:</h2>
-<p><strong>Benchmark Structure</strong></p>
-<p>The benchmark structure is a 2-bay by 2-bay, 4 story steel frame structure at the University of British Columbia.
-<img src="images/Screen%20Shot%202020-12-03%20at%208.59.34%20PM.png" height="13" alt="Benchmark Structure" />
-<img src="https://github.com/dbudzik/project9_SHM/blob/master/content/images/Screen%20Shot%202020-12-03%20at%208.59.34%20PM.png" title="Square image" id="fig:square-image" alt="Benchmark Structure. Loaded from the latest version of image on GitHub." /></p>
-<p>Cases with known and unknown input and damage scenarios including symmetrical and unsymmetrical loss of stiffness in the bracing system were considered. The experiment in question is regarding how damage can be simulated by removing bracing or loosening bolts within a four-story steel frame structure. Complete details of the damage cases, input excitation and other pertinent aspects of the study of phase I can be found below. To obtain the data, accelerometers were placed throughout the structure to provide measurements of the structural responses. In particular, three sensors per floor. One located at the center, one at the west side and one at the east side, as the MATLAB files indicate. Then, different cases took place in which members were loosen or removed to analyze the output and correlate the difference in acceleration values with the difference in setup.</p>
-<p><strong>The different cases</strong>
-* Case 1 - Fully braced configuration.
-* Case 2 - All east side braces removed.
-* Case 3 - Removed braces on all floors in one bay on southeast corner.
-* Case 4 - Removed braces on 1st and 4th floors in one bay on southeast corner.
-* Case 5 - Removed braces on 1st floor in one bay on southeast corner.
-* Case 6 - Removed braces on all floors on east face, and 2nd floor braces on north faces.
-* Case 7 - All braces removed on all faces.
-* Case 8 - Configuration 7 + loosened bolts on all floors at both ends of beam on east face, north side.
-* Case 9 - Configuration 7 + loosened bolts on floors 1 and 2 at both ends of beam on east face, north side.</p>
-<p><img src="content/images/1-s2.0-S0925231217315886-gr4.jpg" height="10" alt="Cases 2-5" />
-<img src="content/images/1-s2.0-S0925231217315886-gr5.jpg" height="10" alt="Cases 6-8" /></p>
-<p><strong>Excitation</strong>
-Ambient vibration was inputted into the structure by two types of forced excitations. The forced exci- tation cases consider both impact hammer tests, and broadband excitations provided by an electrodynamic shaker.
-The choice of these two methods is to simulate the structure’s response during an earthquake.</p>
-<h2 id="motivation-behind-the-project-on-structural-damage-detection">1.4 Motivation behind the project on structural damage detection</h2>
-<p>Numerous structural health monitoring algorithms have been developed and been implemented on experimental and full-scale structure.Because the techniques are applied to different structures under various conditions, the relative merits of each algorithm are not obvious. Thus, the community would benefit from a comparison of several algorithms when applied to the same problems.</p>
 <h2 id="machine-learning-methods">Machine Learning Methods</h2>
 <p>Methods go here</p>
 <h2 id="results">Results</h2>
@@ -463,7 +430,7 @@ White background specified to serve as a backdrop for transparent sections of th
 </tbody>
 </table>
 </div>
-<div id="tbl:6a815ce6-fd7d-421d-a978-45f8260e5dcf" class="tablenos">
+<div id="tbl:246d19d1-4e82-42a6-9f7c-dbf8cf7ce33c" class="tablenos">
 <table>
 <caption><span>Table 3:</span> A table with merged cells using the <code>attributes</code> plugin.
 </caption>
