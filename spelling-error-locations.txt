@@ -1,4 +1,34 @@
-content/03.EDA.md:3:EDA
+content/03. EDA.md:3:develope
+content/03. EDA.md:3:EDA
+content/03. EDA.md:3:undamage
+content/03. EDA.md:6:dataset
+content/03. EDA.md:10:accelerometers
+content/03. EDA.md:23:fsdasy
+content/03. EDA.md:26:dataset
+content/03. EDA.md:26:undamage
+content/03. EDA.md:31:dataset
+content/03. EDA.md:31:develope
+content/03. EDA.md:35:charnge
+content/03. EDA.md:41:dataset
+content/03. EDA.md:46:dataset
+content/03. EDA.md:50:significatly
+content/03. EDA.md:52:conditio
+content/03. EDA.md:56:ccentered
+content/03. EDA.md:56:importqant
+content/03. EDA.md:58:dataframe
+content/03. EDA.md:60:amoung
+content/03. EDA.md:60:dataset
+content/03. EDA.md:60:dataset
+content/03. EDA.md:72:inversevely
+content/03. EDA.md:74:loccated
+content/03. EDA.md:76:Boxplots
+content/03. EDA.md:78:dataset
+content/03. EDA.md:78:outliners
+content/03. EDA.md:80:dataframe
+content/03. EDA.md:90:Conclussion
+content/03. EDA.md:96:skewness
+content/03. EDA.md:96:skewness
+content/03. EDA.md:97:succesful
 content/99.delete-me(template).md:44:adipiscing
 content/99.delete-me(template).md:44:aliqua
 content/99.delete-me(template).md:44:amet
