@@ -1,4 +1,5 @@
 Abdullah
+accelerometers
 adipiscing
 aliqua
 aliquip
@@ -16,6 +17,7 @@ culpa
 cupidatat
 dbudzik
 deserunt
+develope
 dolore
 Duis
 EDA
@@ -35,6 +37,7 @@ laborum
 Lawal
 Lorem
 magna
+MATLAB
 Mederos
 mollit
 nisi
