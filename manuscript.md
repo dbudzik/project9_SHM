@@ -61,11 +61,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://dbudzik.github.io/project9_SHM/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://dbudzik.github.io/project9_SHM/v/17d4e412c1809c3d78bf103f731a5e94d31457b1/" />
+  <link rel="alternate" type="text/html" href="https://dbudzik.github.io/project9_SHM/v/193c24fc2d9f03c36a50808dead574013e57b483/" />
 
-  <meta name="manubot_html_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/17d4e412c1809c3d78bf103f731a5e94d31457b1/" />
+  <meta name="manubot_html_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/193c24fc2d9f03c36a50808dead574013e57b483/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/17d4e412c1809c3d78bf103f731a5e94d31457b1/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/193c24fc2d9f03c36a50808dead574013e57b483/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -99,9 +99,9 @@ title: 'Project 9: Structural Health Monitoring'
 
 <small><em>
 This manuscript
-([permalink](https://dbudzik.github.io/project9_SHM/v/17d4e412c1809c3d78bf103f731a5e94d31457b1/))
+([permalink](https://dbudzik.github.io/project9_SHM/v/193c24fc2d9f03c36a50808dead574013e57b483/))
 was automatically generated
-from [dbudzik/project9_SHM@17d4e41](https://github.com/dbudzik/project9_SHM/tree/17d4e412c1809c3d78bf103f731a5e94d31457b1)
+from [dbudzik/project9_SHM@193c24f](https://github.com/dbudzik/project9_SHM/tree/193c24fc2d9f03c36a50808dead574013e57b483)
 on December 4, 2020.
 </em></small>
 
@@ -136,7 +136,7 @@ on December 4, 2020.
 
 
 ## Abstract {.page_break_before}
-
+Civil infrastructure all around is subjected to the challenges posed by aging, deterioration and extreme events. In recent years, structural health monitoring has grown in importance as failure and collapse of infrastructure result in harmful effects on a nation's economy and development. Recent advances as seen the use of sensors to obtain the dynamic characteristics of structures. This has led to the potential of collecting dynamic data at more frequent intervals thus leading to continous monitoring. In this report, we use exploratory data analysis techniques to see if such dynamic data collected from structures can be used to infer the condition of a structure. We have also tried different machine learning algorithms to predict the condition of a structure based on given acceleration signals. For this study, the ASCE benchmark problem experimental phase II structure was used.
 
 
 
