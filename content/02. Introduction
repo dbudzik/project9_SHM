@@ -31,5 +31,9 @@ Cases with known and unknown input and damage scenarios including symmetrical an
 * Case 8 - Configuration 7 + loosened bolts on all floors at both ends of beam on east face, north side.
 * Case 9 - Configuration 7 + loosened bolts on floors 1 and 2 at both ends of beam on east face, north side.
 
-## 1. Motivation behind the project on structural damage detection
+**Excitation**
+Ambient vibration was inputted into the structure by two types of forced excitations. The forced exci- tation cases consider both impact hammer tests, and broadband excitations provided by an electrodynamic shaker. 
+The choice of these two methods is to simulate the structure's response during an earthquake.
+
+## 1.4 Motivation behind the project on structural damage detection
 Numerous structural health monitoring algorithms have been developed and been implemented on experimental and full-scale structure.Because the techniques are applied to different structures under various conditions, the relative merits of each algorithm are not obvious. Thus, the community would benefit from a comparison of several algorithms when applied to the same problems.
