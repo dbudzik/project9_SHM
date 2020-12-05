@@ -11,7 +11,7 @@ Budzik
 continous
 coomparison
 datapoints
-Dataset
+dataset
 dbudzik
 hyperparameter
 hyperparameters
