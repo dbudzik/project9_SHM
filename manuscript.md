@@ -61,11 +61,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://dbudzik.github.io/project9_SHM/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://dbudzik.github.io/project9_SHM/v/44cac8914a9d0b3f47672e8a1a869d75ba2b9d31/" />
+  <link rel="alternate" type="text/html" href="https://dbudzik.github.io/project9_SHM/v/b69a2478847d1ddead057227a702daae2ec096d5/" />
 
-  <meta name="manubot_html_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/44cac8914a9d0b3f47672e8a1a869d75ba2b9d31/" />
+  <meta name="manubot_html_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/b69a2478847d1ddead057227a702daae2ec096d5/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/44cac8914a9d0b3f47672e8a1a869d75ba2b9d31/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/b69a2478847d1ddead057227a702daae2ec096d5/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -99,9 +99,9 @@ title: 'Project 9: Structural Health Monitoring'
 
 <small><em>
 This manuscript
-([permalink](https://dbudzik.github.io/project9_SHM/v/44cac8914a9d0b3f47672e8a1a869d75ba2b9d31/))
+([permalink](https://dbudzik.github.io/project9_SHM/v/b69a2478847d1ddead057227a702daae2ec096d5/))
 was automatically generated
-from [dbudzik/project9_SHM@44cac89](https://github.com/dbudzik/project9_SHM/tree/44cac8914a9d0b3f47672e8a1a869d75ba2b9d31)
+from [dbudzik/project9_SHM@b69a247](https://github.com/dbudzik/project9_SHM/tree/b69a2478847d1ddead057227a702daae2ec096d5)
 on December 5, 2020.
 </em></small>
 
@@ -163,6 +163,14 @@ First we had to split the train dataset into 2, one set for training and the oth
 Logistic regression is a technique commonly used for predicting binary classes and is adopted from the field of statistics. It describes and estimates the relationship between one dependent variable and the independent variables. Logistic regression is a special case of linear regression that produces a constant output which is categorical in nature. Thus it is based on the linear regression equation:
 
 <img src="https://render.githubusercontent.com/render/math?math=y = \beta%2Bw_{1}x_{1}%2Bw_{2}x_{2}%2Bw_{3}x_{3}...">
+
+<img src="images/logistic_sigmoid.png" alt="Test" width="600"/>
+4
+</p>
+5
+<p>
+6
+<em>Figure 1: test_image_caption</em>
 
 The first Method utilized was Logistic Regression. It was the simplest model for binary classification. The method outputs a probability between 0 and 1, exclusivly. It then defines a decision threshold to map to binary category. The logistic regression yielded great results on the first run with an accuracy of ~96%, low precision ~24%, and recall plummeting to ~20%.
 
