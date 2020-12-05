@@ -9,6 +9,7 @@ Bolaji
 bolajilawal
 Budzik
 continous
+coomparison
 dataset
 dbudzik
 hyperparameter
