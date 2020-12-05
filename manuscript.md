@@ -61,11 +61,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://dbudzik.github.io/project9_SHM/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://dbudzik.github.io/project9_SHM/v/1de2497f66542bd271df6b934c25ba19b29d1fa2/" />
+  <link rel="alternate" type="text/html" href="https://dbudzik.github.io/project9_SHM/v/f9252b6edcb73c9c1f14d81c572b737c82450444/" />
 
-  <meta name="manubot_html_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/1de2497f66542bd271df6b934c25ba19b29d1fa2/" />
+  <meta name="manubot_html_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/f9252b6edcb73c9c1f14d81c572b737c82450444/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/1de2497f66542bd271df6b934c25ba19b29d1fa2/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/f9252b6edcb73c9c1f14d81c572b737c82450444/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -99,9 +99,9 @@ title: 'Project 9: Structural Health Monitoring'
 
 <small><em>
 This manuscript
-([permalink](https://dbudzik.github.io/project9_SHM/v/1de2497f66542bd271df6b934c25ba19b29d1fa2/))
+([permalink](https://dbudzik.github.io/project9_SHM/v/f9252b6edcb73c9c1f14d81c572b737c82450444/))
 was automatically generated
-from [dbudzik/project9_SHM@1de2497](https://github.com/dbudzik/project9_SHM/tree/1de2497f66542bd271df6b934c25ba19b29d1fa2)
+from [dbudzik/project9_SHM@f9252b6](https://github.com/dbudzik/project9_SHM/tree/f9252b6edcb73c9c1f14d81c572b737c82450444)
 on December 5, 2020.
 </em></small>
 
@@ -197,7 +197,7 @@ For example, a simple linear regression can be extended by constructing polynomi
  Sometimes the relationship between the dependent and independent variables maybe non-linear. As in this case, we do not expect a linear relationship between the features and the target variable, it made sense to try a non-linear algorithm. The simplest and most common non-linear method to use is the polynomial regression as described earlier. Intuitively, we would expect a regression model with higher orders to perform better than a simple one. However, we didn't find significant improvements between 2nd degree and higher order polynomials. Therefore, for this project we chose to use 2nd degree polynomial regression models to help save computation time.
  
  
- <img src="images/polynomial_regression.png" alt="Test" width="600"/>
+ <img src="images/polynomial_regession.png" alt="Test" width="600"/>
 </p>
 <p>
 <em>Figure 4.2: overview_of_polynomial_regression_model</em>
