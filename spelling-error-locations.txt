@@ -16,3 +16,4 @@ content/04.ml_methods.md:29:Artifical
 content/04.ml_methods.md:29:nueral
 content/04.ml_methods.md:29:slighly
 content/04.ml_methods.md:29:yeilded
+content/05.results.md:6:dbudzik
