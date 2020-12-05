@@ -61,11 +61,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://dbudzik.github.io/project9_SHM/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://dbudzik.github.io/project9_SHM/v/f9252b6edcb73c9c1f14d81c572b737c82450444/" />
+  <link rel="alternate" type="text/html" href="https://dbudzik.github.io/project9_SHM/v/4a976c91c0c36accaad9f619d8c0a00ac4922bdb/" />
 
-  <meta name="manubot_html_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/f9252b6edcb73c9c1f14d81c572b737c82450444/" />
+  <meta name="manubot_html_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/4a976c91c0c36accaad9f619d8c0a00ac4922bdb/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/f9252b6edcb73c9c1f14d81c572b737c82450444/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/4a976c91c0c36accaad9f619d8c0a00ac4922bdb/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -99,9 +99,9 @@ title: 'Project 9: Structural Health Monitoring'
 
 <small><em>
 This manuscript
-([permalink](https://dbudzik.github.io/project9_SHM/v/f9252b6edcb73c9c1f14d81c572b737c82450444/))
+([permalink](https://dbudzik.github.io/project9_SHM/v/4a976c91c0c36accaad9f619d8c0a00ac4922bdb/))
 was automatically generated
-from [dbudzik/project9_SHM@f9252b6](https://github.com/dbudzik/project9_SHM/tree/f9252b6edcb73c9c1f14d81c572b737c82450444)
+from [dbudzik/project9_SHM@4a976c9](https://github.com/dbudzik/project9_SHM/tree/4a976c91c0c36accaad9f619d8c0a00ac4922bdb)
 on December 5, 2020.
 </em></small>
 
@@ -200,7 +200,7 @@ For example, a simple linear regression can be extended by constructing polynomi
  <img src="images/polynomial_regession.png" alt="Test" width="600"/>
 </p>
 <p>
-<em>Figure 4.2: overview_of_polynomial_regression_model</em>
+<em>Figure 4.3: overview_of_polynomial_regression_model</em>
  
 ## 4.7 Method 4: Artificial Neural Networks:
 The second method utilized was Artificial Neural Networks. Artificial Neural Networks are more complex than logistic regression. This method adds a bunch of hidden non-linear layers to the logistic regression model. Our group used this method to check if it offered an improvement on the previous model. The artificial neural networks yeiled average results with great accuracy ~96%, Improved precision ~45%, Improved recall ~60%, although the metrics were not good overall.
