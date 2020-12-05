@@ -61,11 +61,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://dbudzik.github.io/project9_SHM/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://dbudzik.github.io/project9_SHM/v/89310d455898f496638a47b081ed141dffea6a5f/" />
+  <link rel="alternate" type="text/html" href="https://dbudzik.github.io/project9_SHM/v/38c0085449ff513962dd0b4cf4a7c9e552a6efe6/" />
 
-  <meta name="manubot_html_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/89310d455898f496638a47b081ed141dffea6a5f/" />
+  <meta name="manubot_html_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/38c0085449ff513962dd0b4cf4a7c9e552a6efe6/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/89310d455898f496638a47b081ed141dffea6a5f/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/38c0085449ff513962dd0b4cf4a7c9e552a6efe6/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -99,9 +99,9 @@ title: 'Project 9: Structural Health Monitoring'
 
 <small><em>
 This manuscript
-([permalink](https://dbudzik.github.io/project9_SHM/v/89310d455898f496638a47b081ed141dffea6a5f/))
+([permalink](https://dbudzik.github.io/project9_SHM/v/38c0085449ff513962dd0b4cf4a7c9e552a6efe6/))
 was automatically generated
-from [dbudzik/project9_SHM@89310d4](https://github.com/dbudzik/project9_SHM/tree/89310d455898f496638a47b081ed141dffea6a5f)
+from [dbudzik/project9_SHM@38c0085](https://github.com/dbudzik/project9_SHM/tree/38c0085449ff513962dd0b4cf4a7c9e552a6efe6)
 on December 5, 2020.
 </em></small>
 
@@ -179,7 +179,7 @@ In take two we ran logistic regression and artifical nueral networks again to se
 
 ## Results
 
-![Test image](images/David_results.png) Figure 1: Test Image
+![Test Image](images/David_results.png){#fig:test height="2in"}
 
 
 ## Discussion of Results
