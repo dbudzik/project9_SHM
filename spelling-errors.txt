@@ -10,13 +10,13 @@ Budzik
 continous
 dataset
 dbudzik
-exclusivly
 hyperparameter
 hyperparameters
 Kaggle
 Lawal
 Mederos
 nueral
+ouptut
 regularizations
 sigmoid
 slighly

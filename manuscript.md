@@ -61,11 +61,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://dbudzik.github.io/project9_SHM/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://dbudzik.github.io/project9_SHM/v/848c3a0a743c026468424dceccfe0e49467d82da/" />
+  <link rel="alternate" type="text/html" href="https://dbudzik.github.io/project9_SHM/v/76b644dcc91ea8e076ce9a6de3f76dd444c140f6/" />
 
-  <meta name="manubot_html_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/848c3a0a743c026468424dceccfe0e49467d82da/" />
+  <meta name="manubot_html_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/76b644dcc91ea8e076ce9a6de3f76dd444c140f6/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/848c3a0a743c026468424dceccfe0e49467d82da/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/76b644dcc91ea8e076ce9a6de3f76dd444c140f6/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -99,9 +99,9 @@ title: 'Project 9: Structural Health Monitoring'
 
 <small><em>
 This manuscript
-([permalink](https://dbudzik.github.io/project9_SHM/v/848c3a0a743c026468424dceccfe0e49467d82da/))
+([permalink](https://dbudzik.github.io/project9_SHM/v/76b644dcc91ea8e076ce9a6de3f76dd444c140f6/))
 was automatically generated
-from [dbudzik/project9_SHM@848c3a0](https://github.com/dbudzik/project9_SHM/tree/848c3a0a743c026468424dceccfe0e49467d82da)
+from [dbudzik/project9_SHM@76b644d](https://github.com/dbudzik/project9_SHM/tree/76b644dcc91ea8e076ce9a6de3f76dd444c140f6)
 on December 5, 2020.
 </em></small>
 
@@ -164,9 +164,13 @@ Logistic regression is a technique commonly used for predicting binary classes a
 
 <img src="https://render.githubusercontent.com/render/math?math=y = \beta%2Bw_{1}x_{1}%2Bw_{2}x_{2}%2Bw_{3}x_{3}...">
 
+<img src="images/logistic_sigmoid.png" alt="Test" width="600"/>
+</p>
+<p>
+<em>Figure 4.1: logistic_regression (sigmoid_activation_function)</em>
 
-
-The first Method utilized was Logistic Regression. It was the simplest model for binary classification. The method outputs a probability between 0 and 1, exclusivly. It then defines a decision threshold to map to binary category. The logistic regression yielded great results on the first run with an accuracy of ~96%, low precision ~24%, and recall plummeting to ~20%.
+## 4.4.1 Justification for logistic regression:
+Logistic regression is one of the most simple machine learning algorithms that can be used for binary classification problems. It is easy to implement and can be used as a baseline for any binary classification problem. As such, we decided to use it as a baseline to which all the other models will be compared with. It can also be built upon for developing more complex machine learning algorithms for deep learning. It computes a probability ouptut and in order to map this output to a binary category we needed to define a classification threshold (also known as the decision threshold). To ensure the output probability is always between 0 and 1 we used a sigmoid activation function in the output layer. Different combinations of hyperparameters were tested for this algorithm, however to save computation time an epoch value of 20 was used with a learning rate of 0.001. A classification threshold of 0.2 was also found to work best for the given dataset.
 
 # 4.5 Method 2: Artificial Neural Networks:
 The second method utilized was Artificial Neural Networks. Artificial Neural Networks are more complex than logistic regression. This method adds a bunch of hidden non-linear layers to the logistic regression model. Our group used this method to check if it offered an improvement on the previous model. The artificial neural networks yeiled average results with great accuracy ~96%, Improved precision ~45%, Improved recall ~60%, although the metrics were not good overall.
