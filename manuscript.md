@@ -61,11 +61,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://dbudzik.github.io/project9_SHM/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://dbudzik.github.io/project9_SHM/v/9cab4216d411aa4051910eb4ab81382b437410ec/" />
+  <link rel="alternate" type="text/html" href="https://dbudzik.github.io/project9_SHM/v/a06fc439781a1b50cacbddbfcb19ba918967ee51/" />
 
-  <meta name="manubot_html_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/9cab4216d411aa4051910eb4ab81382b437410ec/" />
+  <meta name="manubot_html_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/a06fc439781a1b50cacbddbfcb19ba918967ee51/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/9cab4216d411aa4051910eb4ab81382b437410ec/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/a06fc439781a1b50cacbddbfcb19ba918967ee51/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -99,9 +99,9 @@ title: 'Project 9: Structural Health Monitoring'
 
 <small><em>
 This manuscript
-([permalink](https://dbudzik.github.io/project9_SHM/v/9cab4216d411aa4051910eb4ab81382b437410ec/))
+([permalink](https://dbudzik.github.io/project9_SHM/v/a06fc439781a1b50cacbddbfcb19ba918967ee51/))
 was automatically generated
-from [dbudzik/project9_SHM@9cab421](https://github.com/dbudzik/project9_SHM/tree/9cab4216d411aa4051910eb4ab81382b437410ec)
+from [dbudzik/project9_SHM@a06fc43](https://github.com/dbudzik/project9_SHM/tree/a06fc439781a1b50cacbddbfcb19ba918967ee51)
 on December 5, 2020.
 </em></small>
 
@@ -232,7 +232,7 @@ We noticed that the problem was the precision and recall are very low even thoug
 In take two we ran logistic regression and artifical nueral networks again to see if it yeilded better results with addiiton of new copies of damaged data. Logistic Regression returned good accuracy ~83%, much better precision ~60%, and Fantastic recall ~99%. Artifical Neural Network returned slighly better data with a fantastic accuracy ~98%, fantastic precision ~91%, and fantastic recall ~99%.
 
 
-## Results
+## 5. Results
 
 ### 5.1 Metrics
 
