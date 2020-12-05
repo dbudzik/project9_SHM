@@ -14,9 +14,11 @@ Boxplots
 Budzik
 ccentered
 charnge
+CNNs
 Conclussion
 conditio
 continous
+Convolutional
 coomparison
 dataframe
 datapoints
@@ -37,6 +39,7 @@ Kaggle
 Lawal
 loccated
 LSTM
+MATLAB
 Mederos
 multicorrelation
 netwok
