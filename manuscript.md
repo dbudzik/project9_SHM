@@ -61,11 +61,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://dbudzik.github.io/project9_SHM/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://dbudzik.github.io/project9_SHM/v/40278f6697ac0d1b22e07742570d12bd884163bf/" />
+  <link rel="alternate" type="text/html" href="https://dbudzik.github.io/project9_SHM/v/9644fe4aa931e934dbc38a336e66d1ac31ce6493/" />
 
-  <meta name="manubot_html_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/40278f6697ac0d1b22e07742570d12bd884163bf/" />
+  <meta name="manubot_html_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/9644fe4aa931e934dbc38a336e66d1ac31ce6493/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/40278f6697ac0d1b22e07742570d12bd884163bf/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/9644fe4aa931e934dbc38a336e66d1ac31ce6493/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -99,9 +99,9 @@ title: 'Project 9: Structural Health Monitoring'
 
 <small><em>
 This manuscript
-([permalink](https://dbudzik.github.io/project9_SHM/v/40278f6697ac0d1b22e07742570d12bd884163bf/))
+([permalink](https://dbudzik.github.io/project9_SHM/v/9644fe4aa931e934dbc38a336e66d1ac31ce6493/))
 was automatically generated
-from [dbudzik/project9_SHM@40278f6](https://github.com/dbudzik/project9_SHM/tree/40278f6697ac0d1b22e07742570d12bd884163bf)
+from [dbudzik/project9_SHM@9644fe4](https://github.com/dbudzik/project9_SHM/tree/9644fe4aa931e934dbc38a336e66d1ac31ce6493)
 on December 5, 2020.
 </em></small>
 
@@ -182,7 +182,7 @@ In take two we ran logistic regression and artifical nueral networks again to se
 ![
 **A tall image with a specified height.**
 Loaded from a specific (hashed) version of the image on GitHub.
-](https://github.com/dbudzik/project9_SHM/tree/master/content/images/1-s2.0-S0925231217315886-gr4.jpg "Tall image"){#fig:tall-image height=3in}
+](https://github.com/dbudzik/project9_SHM/blob/master/content/images/David_results.png "Tall image"){#fig:tall-image height=3in}
 
 
 ## Discussion of Results
