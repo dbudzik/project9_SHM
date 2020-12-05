@@ -49,9 +49,9 @@
   <meta name="citation_fulltext_html_url" content="https://dbudzik.github.io/project9_SHM/" />
   <meta name="citation_pdf_url" content="https://dbudzik.github.io/project9_SHM/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://dbudzik.github.io/project9_SHM/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://dbudzik.github.io/project9_SHM/v/ab5df576c75b1f1280d427f6ddecf7883c9ad306/" />
-  <meta name="manubot_html_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/ab5df576c75b1f1280d427f6ddecf7883c9ad306/" />
-  <meta name="manubot_pdf_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/ab5df576c75b1f1280d427f6ddecf7883c9ad306/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://dbudzik.github.io/project9_SHM/v/870d9bb98212d7c9fe0719bf2abb2bf4e50ede9b/" />
+  <meta name="manubot_html_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/870d9bb98212d7c9fe0719bf2abb2bf4e50ede9b/" />
+  <meta name="manubot_pdf_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/870d9bb98212d7c9fe0719bf2abb2bf4e50ede9b/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -65,9 +65,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://dbudzik.github.io/project9_SHM/v/ab5df576c75b1f1280d427f6ddecf7883c9ad306/">permalink</a>)
+(<a href="https://dbudzik.github.io/project9_SHM/v/870d9bb98212d7c9fe0719bf2abb2bf4e50ede9b/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/dbudzik/project9_SHM/tree/ab5df576c75b1f1280d427f6ddecf7883c9ad306">dbudzik/project9_SHM@ab5df57</a>
+from <a href="https://github.com/dbudzik/project9_SHM/tree/870d9bb98212d7c9fe0719bf2abb2bf4e50ede9b">dbudzik/project9_SHM@870d9bb</a>
 on December 5, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -134,7 +134,13 @@ Sometimes the relationship between the dependent and independent variables maybe
 <h2 id="method-3-artificial-neural-networks">4.6 Method 3: Artificial Neural Networks:</h2>
 <p>The second method utilized was Artificial Neural Networks. Artificial Neural Networks are more complex than logistic regression. This method adds a bunch of hidden non-linear layers to the logistic regression model. Our group used this method to check if it offered an improvement on the previous model. The artificial neural networks yeiled average results with great accuracy ~96%, Improved precision ~45%, Improved recall ~60%, although the metrics were not good overall.</p>
 <h2 id="method-4-recurrent-neural-networks">4.7 Method 4: Recurrent Neural Networks:</h2>
-<p>Recurrent neural networks (RNNs) are a very powerful tool, however they suffer from the vanishing gradient problem. In order to avoid this issue, we have used a better variation of RNNs called Long Short Term Networks (LSTM) for this project. This basically consists of cells that are responsible for “remembering” values over a time interval. This differs from the simple neural netwok in that not only does it learn from the features, but it also takes care of sequence values over time. As a result of this, RNNs are very popular for sequential data such as time series because they perform much deeper understanding of sequence when compared with other algorithms. They are also applicable to any data that can be rearranged to resemble sequential data. In terms of visualization, one can think of RNN models as shown below:</p>
+<p>Recurrent neural networks (RNNs) are a very powerful tool, however they suffer from the vanishing gradient problem. In order to avoid this issue, we have used a better variation of RNNs called Long Short Term Networks (LSTM) for this project. This basically consists of cells that are responsible for “remembering” values over a time interval. This differs from the traditional neural netwok in that not only does it learn from the features, but it also takes care of sequence values over time. That is, for traditional neural networks it is assumed that all inputs and outputs are independent of each other. However, for RNNs the output depends on the previous computation. As a result of this, RNNs are very popular for sequential data such as time series because they perform much deeper understanding of sequence when compared with other algorithms. They are also applicable to any data that can be rearranged to resemble sequential data. In terms of visualization, one can think of RNN models as shown below:</p>
+<img src="images/rnn_visualization.png" alt="Test" width="600"/>
+</p>
+<p>
+<p><em>Figure 4.4: visualization_of_recurrent_neural_network_models</em></p>
+<h3 id="justification-for-recurrent-neural-network">4.7.1 Justification for recurrent neural network:</h3>
+<p>Since, the index for our dataset actually represents time, then perhaps we can consider it as a time series data. As such, we decided to see how RNNs will perform in comparison with the other models. As was mentioned earlier, we used LSTM for this project. This type of model requires a 3-dimensional input, therefore we had to transform the shape of the dataset we had to make use of this model. In order to save computation time, a LSTM of 40 units was found to give the best performance and therefore used for testing the model. Additionally, a sigmoid activation function was applied in the outer layer. The hyperparameters were the same as with other models to ensure a fair coomparison between the different algorithms used.</p>
 <h2 id="method-5-random-forest-regression">4.8 Method 5: Random Forest Regression:</h2>
 <p>The third method utilized was Random Forest Regression. Random Forest Regression performs both regression and classification tasks with the use of multiple decision trees and bagging. It is easy to use and often returns good results even without hyperparameter tuning. Our group used this method to check if it offered an improvement on the previous model. The Random Forest Regression provided the worst results with extremely inaccurate accuracy rate, while also not working well for the type of data we had.</p>
 <h2 id="issue">4.9 Issue:</h2>
