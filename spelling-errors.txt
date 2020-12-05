@@ -10,6 +10,7 @@ bolajilawal
 Budzik
 continous
 coomparison
+datapoints
 dataset
 dbudzik
 hyperparameter
@@ -24,6 +25,7 @@ nueral
 ouptut
 paraboloid
 regularizations
+RMSE
 RNN
 RNNs
 sigmoid
