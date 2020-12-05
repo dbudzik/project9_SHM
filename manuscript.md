@@ -6,7 +6,7 @@ author-meta:
 - Abdullah Assaf
 bibliography:
 - content/manual-references.json
-date-meta: '2020-12-04'
+date-meta: '2020-12-05'
 header-includes: '<!--
 
   Manubot generated metadata rendered from header-includes-template.html.
@@ -25,9 +25,9 @@ header-includes: '<!--
 
   <meta property="twitter:title" content="Project 9: Structural Health Monitoring" />
 
-  <meta name="dc.date" content="2020-12-04" />
+  <meta name="dc.date" content="2020-12-05" />
 
-  <meta name="citation_publication_date" content="2020-12-04" />
+  <meta name="citation_publication_date" content="2020-12-05" />
 
   <meta name="dc.language" content="en-US" />
 
@@ -61,11 +61,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://dbudzik.github.io/project9_SHM/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://dbudzik.github.io/project9_SHM/v/8aace31b4218dd888380204b16d3efc372e835d8/" />
+  <link rel="alternate" type="text/html" href="https://dbudzik.github.io/project9_SHM/v/318381f954ed5ab20ced76162ad553c9e4165e87/" />
 
-  <meta name="manubot_html_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/8aace31b4218dd888380204b16d3efc372e835d8/" />
+  <meta name="manubot_html_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/318381f954ed5ab20ced76162ad553c9e4165e87/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/8aace31b4218dd888380204b16d3efc372e835d8/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/318381f954ed5ab20ced76162ad553c9e4165e87/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -99,10 +99,10 @@ title: 'Project 9: Structural Health Monitoring'
 
 <small><em>
 This manuscript
-([permalink](https://dbudzik.github.io/project9_SHM/v/8aace31b4218dd888380204b16d3efc372e835d8/))
+([permalink](https://dbudzik.github.io/project9_SHM/v/318381f954ed5ab20ced76162ad553c9e4165e87/))
 was automatically generated
-from [dbudzik/project9_SHM@8aace31](https://github.com/dbudzik/project9_SHM/tree/8aace31b4218dd888380204b16d3efc372e835d8)
-on December 4, 2020.
+from [dbudzik/project9_SHM@318381f](https://github.com/dbudzik/project9_SHM/tree/318381f954ed5ab20ced76162ad553c9e4165e87)
+on December 5, 2020.
 </em></small>
 
 ## Authors
@@ -179,7 +179,10 @@ In take two we ran logistic regression and artifical nueral networks again to se
 
 ## Results
 
-Results go here
+![
+**A tall image with a specified height.**
+Loaded from a specific (hashed) version of the image on GitHub.
+](https://github.com/manubot/resources/raw/15493970f8882fce22bef829619d3fb37a613ba5/test/tall.png "Tall image"){#fig:tall-image height=3in}
 
 
 ## Discussion of Results
