@@ -1,9 +1,10 @@
 Abdullah
 aboo
 addiiton
-artifical
+Artifical
 ASCE
 Assaf
+betwewn
 Bolaji
 bolajilawal
 Budzik
@@ -15,6 +16,7 @@ hyperparameters
 Kaggle
 Lawal
 Mederos
+multicorrelation
 nueral
 ouptut
 paraboloid
