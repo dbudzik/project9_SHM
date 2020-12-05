@@ -1,5 +1,45 @@
 content/01.abstract.md:2:ASCE
 content/01.abstract.md:2:continous
+content/02. Introduction.md:7:develope
+content/02. Introduction.md:16:accelerometers
+content/02. Introduction.md:16:datasets
+content/02. Introduction.md:33:accelerometers
+content/02. Introduction.md:59:electrodynamic
+content/02. Introduction.md:59:exci
+content/02. Introduction.md:59:excitations
+content/02. Introduction.md:59:excitations
+content/02. Introduction.md:59:tation
+content/03. EDA.md:3:develope
+content/03. EDA.md:3:EDA
+content/03. EDA.md:3:undamage
+content/03. EDA.md:6:dataset
+content/03. EDA.md:10:accelerometers
+content/03. EDA.md:23:fsdasy
+content/03. EDA.md:26:dataset
+content/03. EDA.md:26:undamage
+content/03. EDA.md:31:dataset
+content/03. EDA.md:31:develope
+content/03. EDA.md:35:charnge
+content/03. EDA.md:41:dataset
+content/03. EDA.md:46:dataset
+content/03. EDA.md:50:significatly
+content/03. EDA.md:52:conditio
+content/03. EDA.md:56:ccentered
+content/03. EDA.md:56:importqant
+content/03. EDA.md:58:dataframe
+content/03. EDA.md:60:amoung
+content/03. EDA.md:60:dataset
+content/03. EDA.md:60:dataset
+content/03. EDA.md:72:inversevely
+content/03. EDA.md:74:loccated
+content/03. EDA.md:76:Boxplots
+content/03. EDA.md:78:dataset
+content/03. EDA.md:78:outliners
+content/03. EDA.md:80:dataframe
+content/03. EDA.md:90:Conclussion
+content/03. EDA.md:96:skewness
+content/03. EDA.md:96:skewness
+content/03. EDA.md:97:succesful
 content/04.ml_methods.md:6:Kaggle
 content/04.ml_methods.md:9:hyperparameters
 content/04.ml_methods.md:9:sigmoid
@@ -77,3 +117,10 @@ content/05.results.md:113:dataset
 content/05.results.md:113:RMSE
 content/05.results.md:118:Dataset
 content/05.results.md:124:Dataset
+content/06_discussion.md:5:ANNs
+content/06_discussion.md:7:datapoints
+content/06_discussion.md:7:datapoints
+content/06_discussion.md:7:dataset
+content/06_discussion.md:7:dataset
+content/06_discussion.md:7:datasets
+content/06_discussion.md:7:overfitting

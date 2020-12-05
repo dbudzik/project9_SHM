@@ -61,11 +61,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://dbudzik.github.io/project9_SHM/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://dbudzik.github.io/project9_SHM/v/66b95bdf813eb138dc60f0b879957bbfd4cd11b4/" />
+  <link rel="alternate" type="text/html" href="https://dbudzik.github.io/project9_SHM/v/85eeef19494da55dda005dfaa1a8c909d1d99277/" />
 
-  <meta name="manubot_html_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/66b95bdf813eb138dc60f0b879957bbfd4cd11b4/" />
+  <meta name="manubot_html_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/85eeef19494da55dda005dfaa1a8c909d1d99277/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/66b95bdf813eb138dc60f0b879957bbfd4cd11b4/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/85eeef19494da55dda005dfaa1a8c909d1d99277/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -99,9 +99,9 @@ title: 'Project 9: Structural Health Monitoring'
 
 <small><em>
 This manuscript
-([permalink](https://dbudzik.github.io/project9_SHM/v/66b95bdf813eb138dc60f0b879957bbfd4cd11b4/))
+([permalink](https://dbudzik.github.io/project9_SHM/v/85eeef19494da55dda005dfaa1a8c909d1d99277/))
 was automatically generated
-from [dbudzik/project9_SHM@66b95bd](https://github.com/dbudzik/project9_SHM/tree/66b95bdf813eb138dc60f0b879957bbfd4cd11b4)
+from [dbudzik/project9_SHM@85eeef1](https://github.com/dbudzik/project9_SHM/tree/85eeef19494da55dda005dfaa1a8c909d1d99277)
 on December 5, 2020.
 </em></small>
 
@@ -165,9 +165,12 @@ Civil infrastructure all around is subjected to the challenges posed by aging, d
 	
 
 	The benchmark structure is a 2-bay by 2-bay, 4 story steel frame structure at the University of British Columbia.
-{}
-	![Benchmark Structure](https://user-images.githubusercontent.com/70341379/101190186-a67b9300-361d-11eb-9e32-c02c4f9f7f1d.jpg)
-	
+
+<img src="images/Screen%20Shot%202020-12-03%20at%208.59.34%20PM.png" width="300"/>
+</p>
+<p>
+<em>Figure 1.1: Benchmark Structure</em>
+<p>
 
 	Cases with known and unknown input and damage scenarios including symmetrical and unsymmetrical loss of stiffness in the bracing system were considered.  The experiment in question is regarding how damage can be simulated by removing bracing or loosening bolts within a four-story steel frame structure. Complete details of the damage cases, input excitation and other pertinent aspects of the study of phase I can be found below. To obtain the data, accelerometers were placed throughout the structure to provide measurements of the structural responses. In particular, three sensors per floor. One located at the center, one at the west side and one at the east side, as the MATLAB files indicate. Then, different cases took place in which members were loosen or removed to analyze the output and correlate the difference in acceleration values with the difference in setup.
 	 
@@ -182,12 +185,18 @@ Civil infrastructure all around is subjected to the challenges posed by aging, d
 	* Case 8 - Configuration 7 + loosened bolts on all floors at both ends of beam on east face, north side.
 	* Case 9 - Configuration 7 + loosened bolts on floors 1 and 2 at both ends of beam on east face, north side.
 	
-{}
-	![Cases 2-5](https://user-images.githubusercontent.com/70341379/101189829-2c4b0e80-361d-11eb-96e2-8e98132a2b00.jpg)
-{}
-	![Cases 6-8](https://user-images.githubusercontent.com/70341379/101189649-f148db00-361c-11eb-81b5-def4fe407798.jpg)
-	
 
+<img src="images/1-s2.0-S0925231217315886-gr4.jpg" width="300"/>
+</p>
+<p>
+<em>Figure 1.2: Cases 2-5 </em>
+<p>
+	
+<img src="images/1-s2.0-S0925231217315886-gr5.jpg" width="300"/>
+</p>
+<p>
+<em>Figure 1.3: Cases 6-8</em>
+<p>
 	**Force Input**
 	Ambient vibration was inputted into the structure by two types of forced excitations. The forced exci- tation cases consider both impact hammer tests, and broadband excitations provided by an electrodynamic shaker. 
 	The choice of these two methods is to simulate the structure's response during an earthquake.
@@ -196,6 +205,107 @@ Civil infrastructure all around is subjected to the challenges posed by aging, d
 	### 1.4 Motivation behind the project on structural damage detection
 	Numerous structural health monitoring algorithms have been developed and been implemented on experimental and full-scale structure.Because the techniques are applied to different structures under various conditions, the relative merits of each algorithm are not obvious. Thus, the community would benefit from a comparison of several algorithms when applied to the same problems.
 
+
+# 2. Exploratory Data Analysis
+
+The goal of this EDA is to identify characteristics between damage and undamage conditions in order to perform data preparation and develope a model in the future steps.
+
+## 2.1 Preparing the data
+As the dataset shows, we have damage within our data. Therefore, Case 1 is not represented in train data.
+
+The reason that there are accelerations values at the first row is because researchers started measuring the structure's response once it reached steady state. More details regarding the dynamic behavior of this structure will be discussed in the following sections.
+
+Based on *Experimental Phase II of the Structural Health Monitoring Benchmark Problem* , accelerometers were placed throughout the structure to provide measurements of the structural response. For this Exploratory Data Analysis, three sensors from each floor of the 4-story structure were taken into consideration. Specifically,
+
+Sensor 01 = Sensor located at the west side of the structure. 
+
+Sensor 02 = Sensor located at the center of the structure.
+
+Sensor 03 = Sensor located at the east side of the structure.
+
+$Units = \frac{m}{s^2}$ 
+
+- In the original data from the researchers, time is describe as,
+$Time(seconds) = \frac{1 : Length_{DA04}}{fs_{days}}$ 
+
+where fsdasy = 200 (Hz).
+
+
+### Separating train data into damage and undamage dataset
+
+
+*As shown above, the given data set contained a large quantity of NA data values which are all located in the undamaged portion.*
+
+Between populating or removing the missing data, the missing results will be dropped. The reason for this decision is because populating the missing values with the mean of the training data will mostly develope a new dataset that does not have all the original parameters. 
+
+## 2.2 Statistical Properties
+
+We can learn certain details of the response of the structure by observing the data points that have a very drastic charnge in amplitude. In other words, there are common points in time among all sensors where the acceleration measured does a 180 degrees change. This phenomenon occurs as the dynamics response of structure is harmonic and it develops nodes. A simplification of this idea is to understand how the sensors in the 4th story will move back and forward while nodes underneath are ahead or behind that displacement.
+
+
+
+The mean for all the sensors is very close to 0, which may indicate normalized normal distribution. Also, the standard deviation is not equal to 1 for any of the sensors, but a close value to 0 too. These characteristics are present for normal distributions of narrow dispersion.
+
+In the case of undamaged dataset, the standard deviation values of the fourth floor are the largest among all floors. This indicates a flexibility in the structure as the dynamic response took place. Another very interesting fact that we can learn from the previous tables is how the maximum value of 0.01 takes place at two sensor in the 4 story, and the sensor located at the center for the 1st and 2nd floor. The absence of this value at the 3rd floor may indicate an anomaly. This value stays constant after the structure is considered damaged for the sensors located at the center of the second and fourth floor.
+
+
+**Checking head, tail of data**
+
+In the case of the undamaged dataset, all the graphs show normal distribution. However, they are not centered with an exact mean of value 0. Instead,
+
+- Sensors located at the west side of the structure are skewed to the right in the first and fourth floor while the second and third floor are skewed to the left.
+- Sensors located at the center of the structure behave symmetrically. The first and third floor have bell-shaped distribution with a mean of 0. The second and fourth floor are lightly skewed in opposite directions.
+- Sensors located at the east side of the structure are all skewed except the one located at the second floor. The sensor at the 4th floor captured the most out of plane behavior as the '4th_story_03' sensor is significatly skewed to the left.
+
+For the case of damage conditio, the normal distribution is not as smooth as shown for the undamaged condition. This behavior matches with the physical phenomenon that took place as the acceleration of the sensors will tend to be more extreme if the structure is damaged. 
+
+- The first floor endured the most extreme values as the base is not static anymore during excitation. The three sensors are skewed to the right.
+- The second and third floor has similar behavior since the center sensor is still normally distributed with mean very close to 0 and sensors on the west and east side are skewed to the left.
+- The fourth floor now shows the most ccentered behavior. However, it is importqant to recall the statistical characteristics such as standard deviation. Now the 4th-floor values are significantly wider.
+
+## 2.3 Exploring the dataframe that contains the undamaged condition**
+
+Previously, we explored some characteristics of the undamaged dataset. Then, the dataset has been arranged and tidied to finally observe how there was a large amoung of non-available data points, which can be observed in the last row (index number > time_sec)
+
+**Is the change in acceleration always the same?**
+
+For the following inspection, recall that data acquisition was started several seconds after the excitation was turned on to ensure that the system had reached a steady state condition during the shaker testing.
+
+Interestingly, the analysis has shown how the location of the sensor affects directly to the change in acceleration of the sensors. The y-axis has been kept constant throughout all the plots to ease comparison. Therefore, we can observe how though the distribution among sensors in different floor is different, the difference in acceleration values is very correlated to location.
+
+Also note how the missing data produced zero values in the left portion of the data. Those values are not representing a constant acceleration.
+
+**Correlation values**
+
+The table above is with the purpose of locating the directly correlated and inversevely correlated sensors. Just as the difference in acceleration graphs showed, there is significant correlation between those sensors that are located in the same side of the structure. 
+
+However, there is an inverse correlation in those sensors loccated at the fourth floor. The reason behind this behavior is that we are analyzing an elastic structure that is being excited by an harmonic input from the ground. Therefore, the top floor is swinging, which creates a driving behavior in one of the corners at a time.
+
+**Boxplots**
+
+Some final insight of the undamaged dataset shows how there are a large quantity of outliners in the sensors located at the center of the structure.
+
+## 2.4 Exploring the dataframe that contains the undamaged condition**
+
+**Is the change in acceleration always the same?**
+
+There are certain conditions that we can observe by comparing the undamaged and damaged conditions. First of all, there is still a correlation in the change in acceleration with the location of the sensors. Also, the delta value has been significantly decreased over the length of the response. The largest change in acceleration is located at the center sensors for this particular condition, which might mean that the structure is not displacing as much once it reaches a damaged condition.
+
+**Correlation values**
+
+In this scenario, the correlation has changed greatly. Now, the 4th-story sensors display similarities with other sensors placed in the same side of the structure. However, the 3rd-story sensors are those that are inversely correlated. 
+
+## 2.5 Conclussion
+
+The training data obtained has been statistically explored, cleaned, and analyzed for the purpose of identifying parameters for modeling later on.
+
+- Missing data has been removed.
+- Datatype and Data Info has been discussed and visually listed.
+- The distribution for the undamaged and damaged conditions proved to be normally distributed with skewness at different direction based on the sensors. This analysis portion showed how the skewness was correlated with the behavior that was taking place during excitation as the dynamic response of a steel frame structure is not rigid. Also, once the damaged condition was achieved, the distribution showed a larger standard deviation.
+- The individual analysis of each condition proved to be succesful in correlating the behavior of each sensor among stories. 
+    - The change in acceleration depended directly with the location on the sensor within the steel frame structure. 
+    - There was a high correlation between sensors located at different floors that were place on the same side.    
+- Due to the high symmetry among all the results and comparisons, it is probable that the training data belonged to Case 6, Case 7 or Case 8. However, the final information indicated how the 3rd story behaved differently, which potentially indicated that the training data has a higher probably of being Case 8.
 
 
 
@@ -422,9 +532,18 @@ The random forest regression model can be most closely compared to the polynomia
 
 
 
-## Discussion of Results
+## 6. Discussion
 
-Discussion goes here
+### 6.1 Key Takeaways
+
+The first takeaway from the results of this project is that artificial neural networks are the best option for binary classification problems like this project. This is not surprising, given the popularity of ANNs. They are one of the most widely applied and useful machine learning algorithms and are able to take on most, if not all, machine learning problems and give a great result.
+
+The second takeaway is that datasets such as ours that have very sparse data may result in poor learning of the model. In our case, the dataset had barely any damaged datapoints in comparison to undamaged, so the model was not able to learn how to identify between the two. Our solution to this was to add copies of the damaged data that we did have in order to allow the model to see them more. This is dangerous, however, because this does run the possibility of overfitting to those specific datapoints. Therefore, there is a limit to how many copies should be included in the dataset to avoid these issues.
+
+### 6.2 Applications
+
+The results of this project show that machine learning has a place in structural health monitoring. A team with more machine learning experience and more data can create a model that can determine structural damage in real time and thus may be able to prevent or predict a structural collapse and save lives. The idea can be taken even further and can be adapted and expanded to allow for detection of damage in specific regions or even specific structural members in the structure, as well as predicting useful structural life. This can save large amounts of money that are spent on structural inspections, repairs, and rebuilding after catastrophic failures.
+
 
 
 ## Conclusion
