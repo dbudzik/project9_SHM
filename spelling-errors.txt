@@ -15,12 +15,16 @@ hyperparameter
 hyperparameters
 Kaggle
 Lawal
+LSTM
 Mederos
 multicorrelation
+netwok
 nueral
 ouptut
 paraboloid
 regularizations
+RNN
+RNNs
 sigmoid
 slighly
 softmax

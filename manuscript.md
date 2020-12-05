@@ -61,11 +61,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://dbudzik.github.io/project9_SHM/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://dbudzik.github.io/project9_SHM/v/4a976c91c0c36accaad9f619d8c0a00ac4922bdb/" />
+  <link rel="alternate" type="text/html" href="https://dbudzik.github.io/project9_SHM/v/74a1ec28fe9cb713a9ad3d6062fff7bdb92c33d2/" />
 
-  <meta name="manubot_html_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/4a976c91c0c36accaad9f619d8c0a00ac4922bdb/" />
+  <meta name="manubot_html_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/74a1ec28fe9cb713a9ad3d6062fff7bdb92c33d2/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/4a976c91c0c36accaad9f619d8c0a00ac4922bdb/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/74a1ec28fe9cb713a9ad3d6062fff7bdb92c33d2/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -99,9 +99,9 @@ title: 'Project 9: Structural Health Monitoring'
 
 <small><em>
 This manuscript
-([permalink](https://dbudzik.github.io/project9_SHM/v/4a976c91c0c36accaad9f619d8c0a00ac4922bdb/))
+([permalink](https://dbudzik.github.io/project9_SHM/v/74a1ec28fe9cb713a9ad3d6062fff7bdb92c33d2/))
 was automatically generated
-from [dbudzik/project9_SHM@4a976c9](https://github.com/dbudzik/project9_SHM/tree/4a976c91c0c36accaad9f619d8c0a00ac4922bdb)
+from [dbudzik/project9_SHM@74a1ec2](https://github.com/dbudzik/project9_SHM/tree/74a1ec28fe9cb713a9ad3d6062fff7bdb92c33d2)
 on December 5, 2020.
 </em></small>
 
@@ -202,8 +202,13 @@ For example, a simple linear regression can be extended by constructing polynomi
 <p>
 <em>Figure 4.3: overview_of_polynomial_regression_model</em>
  
-## 4.7 Method 4: Artificial Neural Networks:
+## 4.6 Method 3: Artificial Neural Networks:
 The second method utilized was Artificial Neural Networks. Artificial Neural Networks are more complex than logistic regression. This method adds a bunch of hidden non-linear layers to the logistic regression model. Our group used this method to check if it offered an improvement on the previous model. The artificial neural networks yeiled average results with great accuracy ~96%, Improved precision ~45%, Improved recall ~60%, although the metrics were not good overall.
+
+## 4.7 Method 4: Recurrent Neural Networks:
+Recurrent neural networks (RNNs) are a very powerful tool, however they suffer from the vanishing gradient problem. In order to avoid this issue, we have used a better variation of RNNs called Long Short Term Networks (LSTM) for this project. This basically consists of cells that are responsible for "remembering" values over a time interval. This differs from the simple neural netwok in that not only does it learn from the features, but it also takes care of sequence values over time. As a result of this, RNNs are very popular for sequential data such as time series because they perform much deeper understanding of sequence when compared with other algorithms. They are also applicable to any data that can be rearranged to resemble sequential data. In terms of visualization, one can think of RNN models as shown below:
+
+
 
 ## 4.8 Method 5: Random Forest Regression:
 The third method utilized was Random Forest Regression. Random Forest Regression performs both regression and classification tasks with the use of multiple decision trees and bagging. It is easy to use and often returns good results even without hyperparameter tuning. Our group used this method to check if it offered an improvement on the previous model. The Random Forest Regression provided the worst results with extremely inaccurate accuracy rate, while also not working well for the type of data we had.
