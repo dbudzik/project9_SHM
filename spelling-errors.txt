@@ -17,6 +17,7 @@ Lawal
 Mederos
 nueral
 ouptut
+paraboloid
 regularizations
 sigmoid
 slighly

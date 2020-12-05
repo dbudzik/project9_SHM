@@ -61,11 +61,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://dbudzik.github.io/project9_SHM/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://dbudzik.github.io/project9_SHM/v/96b75ac7e7edab896562b730643edaf90381e746/" />
+  <link rel="alternate" type="text/html" href="https://dbudzik.github.io/project9_SHM/v/bb763df0b18ce71e3743b45786e83a28c0e94110/" />
 
-  <meta name="manubot_html_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/96b75ac7e7edab896562b730643edaf90381e746/" />
+  <meta name="manubot_html_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/bb763df0b18ce71e3743b45786e83a28c0e94110/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/96b75ac7e7edab896562b730643edaf90381e746/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/bb763df0b18ce71e3743b45786e83a28c0e94110/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -99,9 +99,9 @@ title: 'Project 9: Structural Health Monitoring'
 
 <small><em>
 This manuscript
-([permalink](https://dbudzik.github.io/project9_SHM/v/96b75ac7e7edab896562b730643edaf90381e746/))
+([permalink](https://dbudzik.github.io/project9_SHM/v/bb763df0b18ce71e3743b45786e83a28c0e94110/))
 was automatically generated
-from [dbudzik/project9_SHM@96b75ac](https://github.com/dbudzik/project9_SHM/tree/96b75ac7e7edab896562b730643edaf90381e746)
+from [dbudzik/project9_SHM@bb763df](https://github.com/dbudzik/project9_SHM/tree/bb763df0b18ce71e3743b45786e83a28c0e94110)
 on December 5, 2020.
 </em></small>
 
@@ -180,7 +180,11 @@ Logistic regression is one of the most simple machine learning algorithms that c
 <em>Figure 4.2: overview_of_logistic_regression_model</em>
   
   ## 4.5 Method 2: Polynomial regression:
-  
+  One common pattern within machine learning is to use linear models trained on nonlinear functions of the data. This approach maintains the generally fast performance of linear methods, while allowing them to fit a much wider range of data.
+
+For example, a simple linear regression can be extended by constructing polynomial features from the coefficients. In the standard linear regression case, the model is based on the expression previously shown above. If we want to fit a paraboloid to the data instead of a plane, we can combine the features in second-order polynomials, so that the model looks like this:
+
+<img src="https://render.githubusercontent.com/render/math?math=y = w_{0}%2Bw_{1}x_{1}%2Bw_{2}x_{2}%2Bw_{3}x_{1}x_{2}%2Bw_{4}{x_{1}}^2...">
   
 ## 4.7 Method 4: Artificial Neural Networks:
 The second method utilized was Artificial Neural Networks. Artificial Neural Networks are more complex than logistic regression. This method adds a bunch of hidden non-linear layers to the logistic regression model. Our group used this method to check if it offered an improvement on the previous model. The artificial neural networks yeiled average results with great accuracy ~96%, Improved precision ~45%, Improved recall ~60%, although the metrics were not good overall.
