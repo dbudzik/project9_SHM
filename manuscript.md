@@ -61,11 +61,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://dbudzik.github.io/project9_SHM/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://dbudzik.github.io/project9_SHM/v/76b644dcc91ea8e076ce9a6de3f76dd444c140f6/" />
+  <link rel="alternate" type="text/html" href="https://dbudzik.github.io/project9_SHM/v/cb1bd54fa14802f513330b931c0278092de55131/" />
 
-  <meta name="manubot_html_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/76b644dcc91ea8e076ce9a6de3f76dd444c140f6/" />
+  <meta name="manubot_html_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/cb1bd54fa14802f513330b931c0278092de55131/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/76b644dcc91ea8e076ce9a6de3f76dd444c140f6/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/cb1bd54fa14802f513330b931c0278092de55131/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -99,9 +99,9 @@ title: 'Project 9: Structural Health Monitoring'
 
 <small><em>
 This manuscript
-([permalink](https://dbudzik.github.io/project9_SHM/v/76b644dcc91ea8e076ce9a6de3f76dd444c140f6/))
+([permalink](https://dbudzik.github.io/project9_SHM/v/cb1bd54fa14802f513330b931c0278092de55131/))
 was automatically generated
-from [dbudzik/project9_SHM@76b644d](https://github.com/dbudzik/project9_SHM/tree/76b644dcc91ea8e076ce9a6de3f76dd444c140f6)
+from [dbudzik/project9_SHM@cb1bd54](https://github.com/dbudzik/project9_SHM/tree/cb1bd54fa14802f513330b931c0278092de55131)
 on December 5, 2020.
 </em></small>
 
@@ -148,18 +148,18 @@ Civil infrastructure all around is subjected to the challenges posed by aging, d
 
 ## Machine Learning Methods
 
-# 4. Methodology
+## 4. Methodology
 Following a comprehensive exploratory data analysis as outlined in the previous section, which was valuable in looking at different patterns and features of the data obtained from various sensors. The next task then, was to classify this data as either damaged or undamaged. Classification problems are very common in the data mining and machine learning applications. As such, several machine learning algorithms have been proposed and developed over the years for solving such problems. For our project, we have evaluated and tested five of those algorithms namely, Logistic regression, polynomial regression, artificial neural networks, recurrent neural networks and random forests.
-# 4.1 Explanation of the Problem:
+## 4.1 Explanation of the Problem:
 Our Kaggle Project was focused on Binary classification. Binary Classification is the task of classifying the elements of a set into two groups on the basis of a classification rule. Our problem revolved around classifying the structural damage detected in a structure. We had to choose different machine learning algorithms to help classify the data.
 
-# 4.2 Steps For each algorithm:
+## 4.2 Steps For each algorithm:
 First we had to create a model, softmax or sigmoid used in output layer, so that we could train the model and tune hyperparameters, such as accuracy, precision etc. Finally, we had to test the performance of model against the sample data. This allowed us to compare results from different models and see what model was the most accurate at classifying the data.
 
-# 4.3 Data Preparation:
+## 4.3 Data Preparation:
 First we had to split the train dataset into 2, one set for training and the other for validation. Then we had to shuffle the train dataset before using it. We then used regularizations to apply penalties on layer parameters or layer activity during optimization. Dropouts were used to incorporate non-linearity. The data was normalized by subtracting the mean and dividing by standard deviation.
 
-# 4.4 Method 1: Logistic Regression:
+## 4.4 Method 1: Logistic Regression:
 Logistic regression is a technique commonly used for predicting binary classes and is adopted from the field of statistics. It describes and estimates the relationship between one dependent variable and the independent variables. Logistic regression is a special case of linear regression that produces a constant output which is categorical in nature. Thus it is based on the linear regression equation:
 
 <img src="https://render.githubusercontent.com/render/math?math=y = \beta%2Bw_{1}x_{1}%2Bw_{2}x_{2}%2Bw_{3}x_{3}...">
@@ -169,19 +169,19 @@ Logistic regression is a technique commonly used for predicting binary classes a
 <p>
 <em>Figure 4.1: logistic_regression (sigmoid_activation_function)</em>
 
-## 4.4.1 Justification for logistic regression:
+### 4.4.1 Justification for logistic regression:
 Logistic regression is one of the most simple machine learning algorithms that can be used for binary classification problems. It is easy to implement and can be used as a baseline for any binary classification problem. As such, we decided to use it as a baseline to which all the other models will be compared with. It can also be built upon for developing more complex machine learning algorithms for deep learning. It computes a probability ouptut and in order to map this output to a binary category we needed to define a classification threshold (also known as the decision threshold). To ensure the output probability is always between 0 and 1 we used a sigmoid activation function in the output layer. Different combinations of hyperparameters were tested for this algorithm, however to save computation time an epoch value of 20 was used with a learning rate of 0.001. A classification threshold of 0.2 was also found to work best for the given dataset.
 
-# 4.5 Method 2: Artificial Neural Networks:
+## 4.5 Method 2: Artificial Neural Networks:
 The second method utilized was Artificial Neural Networks. Artificial Neural Networks are more complex than logistic regression. This method adds a bunch of hidden non-linear layers to the logistic regression model. Our group used this method to check if it offered an improvement on the previous model. The artificial neural networks yeiled average results with great accuracy ~96%, Improved precision ~45%, Improved recall ~60%, although the metrics were not good overall.
 
-# 4.6 Method 3: Random Forest Regression:
+## 4.6 Method 3: Random Forest Regression:
 The third method utilized was Random Forest Regression. Random Forest Regression performs both regression and classification tasks with the use of multiple decision trees and bagging. It is easy to use and often returns good results even without hyperparameter tuning. Our group used this method to check if it offered an improvement on the previous model. The Random Forest Regression provided the worst results with extremely inaccurate accuracy rate, while also not working well for the type of data we had.
 
-# 4.7 Issue:
+## 4.7 Issue:
 We noticed that the problem was the precision and recall are very low even though accuracy is high. This was caused by the damaged data being too sparse, only 3.5% of our data represents the damaged condition. The solution was too add copies of the damaged data into the training set.
 
-# 4.8 Take Two:
+## 4.8 Take Two:
 In take two we ran logistic regression and artifical nueral networks again to see if it yeilded better results with addiiton of new copies of damaged data. Logistic Regression returned good accuracy ~83%, much better precision ~60%, and Fantastic recall ~99%. Artifical Neural Network returned slighly better data with a fantastic accuracy ~98%, fantastic precision ~91%, and fantastic recall ~99%.
 
 
