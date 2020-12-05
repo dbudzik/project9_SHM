@@ -61,11 +61,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://dbudzik.github.io/project9_SHM/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://dbudzik.github.io/project9_SHM/v/0fa16c78f129b4910832910a20d2a6d416989ff9/" />
+  <link rel="alternate" type="text/html" href="https://dbudzik.github.io/project9_SHM/v/3d513cfd944095a76aadee38be1ca1c7de66715f/" />
 
-  <meta name="manubot_html_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/0fa16c78f129b4910832910a20d2a6d416989ff9/" />
+  <meta name="manubot_html_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/3d513cfd944095a76aadee38be1ca1c7de66715f/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/0fa16c78f129b4910832910a20d2a6d416989ff9/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/3d513cfd944095a76aadee38be1ca1c7de66715f/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -99,9 +99,9 @@ title: 'Project 9: Structural Health Monitoring'
 
 <small><em>
 This manuscript
-([permalink](https://dbudzik.github.io/project9_SHM/v/0fa16c78f129b4910832910a20d2a6d416989ff9/))
+([permalink](https://dbudzik.github.io/project9_SHM/v/3d513cfd944095a76aadee38be1ca1c7de66715f/))
 was automatically generated
-from [dbudzik/project9_SHM@0fa16c7](https://github.com/dbudzik/project9_SHM/tree/0fa16c78f129b4910832910a20d2a6d416989ff9)
+from [dbudzik/project9_SHM@3d513cf](https://github.com/dbudzik/project9_SHM/tree/3d513cfd944095a76aadee38be1ca1c7de66715f)
 on December 5, 2020.
 </em></small>
 
@@ -217,10 +217,7 @@ Recurrent neural networks (RNNs) are a very powerful tool, however they suffer f
 ### 4.7.1 Justification for recurrent neural network:
 Since, the index for our dataset actually represents time, then perhaps we can consider it as a time series data. As such, we decided to see how RNNs will perform in comparison with the other models. As was mentioned earlier, we used LSTM for this project. This type of model requires a 3-dimensional input, therefore we had to transform the shape of the dataset we had to make use of this model. In order to save computation time, a LSTM of 40 units was found to give the best performance and therefore used for testing the model. Additionally, a sigmoid activation function was applied in the outer layer. The hyperparameters were the same as with other models to ensure a fair coomparison between the different algorithms used.
 
-<img src="images/rnn_model.png" alt="Test" width="600"/>
-</p>
-<p>
-<em>Figure 4.5: overview_of_recurrent_neural_network_model</em>
+
 
 ## 4.8 Method 5: Random Forest Regression:
 The third method utilized was Random Forest Regression. Random Forest Regression performs both regression and classification tasks with the use of multiple decision trees and bagging. It is easy to use and often returns good results even without hyperparameter tuning. Our group used this method to check if it offered an improvement on the previous model. The Random Forest Regression provided the worst results with extremely inaccurate accuracy rate, while also not working well for the type of data we had.

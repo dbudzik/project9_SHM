@@ -1,7 +1,7 @@
 Abdullah
 aboo
 addiiton
-artifical
+Artifical
 ASCE
 Assaf
 betwewn
@@ -11,7 +11,7 @@ Budzik
 continous
 coomparison
 datapoints
-dataset
+Dataset
 dbudzik
 hyperparameter
 hyperparameters
