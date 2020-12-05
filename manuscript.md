@@ -61,11 +61,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://dbudzik.github.io/project9_SHM/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://dbudzik.github.io/project9_SHM/v/b69a2478847d1ddead057227a702daae2ec096d5/" />
+  <link rel="alternate" type="text/html" href="https://dbudzik.github.io/project9_SHM/v/fe7b478f33eb1475992797b04e132ba57b2021d9/" />
 
-  <meta name="manubot_html_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/b69a2478847d1ddead057227a702daae2ec096d5/" />
+  <meta name="manubot_html_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/fe7b478f33eb1475992797b04e132ba57b2021d9/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/b69a2478847d1ddead057227a702daae2ec096d5/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/fe7b478f33eb1475992797b04e132ba57b2021d9/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -99,9 +99,9 @@ title: 'Project 9: Structural Health Monitoring'
 
 <small><em>
 This manuscript
-([permalink](https://dbudzik.github.io/project9_SHM/v/b69a2478847d1ddead057227a702daae2ec096d5/))
+([permalink](https://dbudzik.github.io/project9_SHM/v/fe7b478f33eb1475992797b04e132ba57b2021d9/))
 was automatically generated
-from [dbudzik/project9_SHM@b69a247](https://github.com/dbudzik/project9_SHM/tree/b69a2478847d1ddead057227a702daae2ec096d5)
+from [dbudzik/project9_SHM@fe7b478](https://github.com/dbudzik/project9_SHM/tree/fe7b478f33eb1475992797b04e132ba57b2021d9)
 on December 5, 2020.
 </em></small>
 
@@ -164,13 +164,7 @@ Logistic regression is a technique commonly used for predicting binary classes a
 
 <img src="https://render.githubusercontent.com/render/math?math=y = \beta%2Bw_{1}x_{1}%2Bw_{2}x_{2}%2Bw_{3}x_{3}...">
 
-<img src="images/logistic_sigmoid.png" alt="Test" width="600"/>
-4
-</p>
-5
-<p>
-6
-<em>Figure 1: test_image_caption</em>
+
 
 The first Method utilized was Logistic Regression. It was the simplest model for binary classification. The method outputs a probability between 0 and 1, exclusivly. It then defines a decision threshold to map to binary category. The logistic regression yielded great results on the first run with an accuracy of ~96%, low precision ~24%, and recall plummeting to ~20%.
 
