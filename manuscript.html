@@ -49,9 +49,9 @@
   <meta name="citation_fulltext_html_url" content="https://dbudzik.github.io/project9_SHM/" />
   <meta name="citation_pdf_url" content="https://dbudzik.github.io/project9_SHM/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://dbudzik.github.io/project9_SHM/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://dbudzik.github.io/project9_SHM/v/8df690c766d3a37423edf497457c622423800946/" />
-  <meta name="manubot_html_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/8df690c766d3a37423edf497457c622423800946/" />
-  <meta name="manubot_pdf_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/8df690c766d3a37423edf497457c622423800946/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://dbudzik.github.io/project9_SHM/v/ccabfb6f5c5d767dc8c830c79421298032079626/" />
+  <meta name="manubot_html_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/ccabfb6f5c5d767dc8c830c79421298032079626/" />
+  <meta name="manubot_pdf_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/ccabfb6f5c5d767dc8c830c79421298032079626/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -65,9 +65,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://dbudzik.github.io/project9_SHM/v/8df690c766d3a37423edf497457c622423800946/">permalink</a>)
+(<a href="https://dbudzik.github.io/project9_SHM/v/ccabfb6f5c5d767dc8c830c79421298032079626/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/dbudzik/project9_SHM/tree/8df690c766d3a37423edf497457c622423800946">dbudzik/project9_SHM@8df690c</a>
+from <a href="https://github.com/dbudzik/project9_SHM/tree/ccabfb6f5c5d767dc8c830c79421298032079626">dbudzik/project9_SHM@ccabfb6</a>
 on December 5, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -105,8 +105,8 @@ Our Kaggle Project was focused on Binary classification. Binary Classification i
 <h1 id="data-preparation">4.3 Data Preparation:</h1>
 <p>First we had to split the train dataset into 2, one set for training and the other for validation. Then we had to shuffle the train dataset before using it. We then used regularizations to apply penalties on layer parameters or layer activity during optimization. Dropouts were used to incorporate non-linearity. The data was normalized by subtracting the mean and dividing by standard deviation.</p>
 <h1 id="method-1-logistic-regression">4.4 Method 1: Logistic Regression:</h1>
-<p>Logistic regression is a technique commonly used for predicting binary classes and is adopted from the field of statistics. It describes and estimates the relationship between one dependent variable and the independent variables. Logistic regression is a special case of linear regression that produces a constant output which is categorical in nature. Thus it is based on the linear regression equation:
-<img src="https://render.githubusercontent.com/render/math?math=e^{i \pi} = -1"></p>
+<p>Logistic regression is a technique commonly used for predicting binary classes and is adopted from the field of statistics. It describes and estimates the relationship between one dependent variable and the independent variables. Logistic regression is a special case of linear regression that produces a constant output which is categorical in nature. Thus it is based on the linear regression equation:</p>
+<p><img src="https://render.githubusercontent.com/render/math?math=y = \beta%2Bw_{1}x_{1}2Bw_{2}x_{2}2Bw_{3}x_{3}..."></p>
 <p>The first Method utilized was Logistic Regression. It was the simplest model for binary classification. The method outputs a probability between 0 and 1, exclusivly. It then defines a decision threshold to map to binary category. The logistic regression yielded great results on the first run with an accuracy of ~96%, low precision ~24%, and recall plummeting to ~20%.</p>
 <h1 id="method-2-artificial-neural-networks">4.5 Method 2: Artificial Neural Networks:</h1>
 <p>The second method utilized was Artificial Neural Networks. Artificial Neural Networks are more complex than logistic regression. This method adds a bunch of hidden non-linear layers to the logistic regression model. Our group used this method to check if it offered an improvement on the previous model. The artificial neural networks yeiled average results with great accuracy ~96%, Improved precision ~45%, Improved recall ~60%, although the metrics were not good overall.</p>
