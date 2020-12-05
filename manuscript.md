@@ -61,11 +61,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://dbudzik.github.io/project9_SHM/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://dbudzik.github.io/project9_SHM/v/92fec94f80c68e4011c575247cc269aa87f063c7/" />
+  <link rel="alternate" type="text/html" href="https://dbudzik.github.io/project9_SHM/v/1de2497f66542bd271df6b934c25ba19b29d1fa2/" />
 
-  <meta name="manubot_html_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/92fec94f80c68e4011c575247cc269aa87f063c7/" />
+  <meta name="manubot_html_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/1de2497f66542bd271df6b934c25ba19b29d1fa2/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/92fec94f80c68e4011c575247cc269aa87f063c7/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/1de2497f66542bd271df6b934c25ba19b29d1fa2/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -99,9 +99,9 @@ title: 'Project 9: Structural Health Monitoring'
 
 <small><em>
 This manuscript
-([permalink](https://dbudzik.github.io/project9_SHM/v/92fec94f80c68e4011c575247cc269aa87f063c7/))
+([permalink](https://dbudzik.github.io/project9_SHM/v/1de2497f66542bd271df6b934c25ba19b29d1fa2/))
 was automatically generated
-from [dbudzik/project9_SHM@92fec94](https://github.com/dbudzik/project9_SHM/tree/92fec94f80c68e4011c575247cc269aa87f063c7)
+from [dbudzik/project9_SHM@1de2497](https://github.com/dbudzik/project9_SHM/tree/1de2497f66542bd271df6b934c25ba19b29d1fa2)
 on December 5, 2020.
 </em></small>
 
@@ -196,6 +196,11 @@ For example, a simple linear regression can be extended by constructing polynomi
  ### 4.5.1 Justification for Polynomial Regression:
  Sometimes the relationship between the dependent and independent variables maybe non-linear. As in this case, we do not expect a linear relationship between the features and the target variable, it made sense to try a non-linear algorithm. The simplest and most common non-linear method to use is the polynomial regression as described earlier. Intuitively, we would expect a regression model with higher orders to perform better than a simple one. However, we didn't find significant improvements between 2nd degree and higher order polynomials. Therefore, for this project we chose to use 2nd degree polynomial regression models to help save computation time.
  
+ 
+ <img src="images/polynomial_regression.png" alt="Test" width="600"/>
+</p>
+<p>
+<em>Figure 4.2: overview_of_polynomial_regression_model</em>
  
 ## 4.7 Method 4: Artificial Neural Networks:
 The second method utilized was Artificial Neural Networks. Artificial Neural Networks are more complex than logistic regression. This method adds a bunch of hidden non-linear layers to the logistic regression model. Our group used this method to check if it offered an improvement on the previous model. The artificial neural networks yeiled average results with great accuracy ~96%, Improved precision ~45%, Improved recall ~60%, although the metrics were not good overall.

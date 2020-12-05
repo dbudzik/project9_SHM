@@ -49,9 +49,9 @@
   <meta name="citation_fulltext_html_url" content="https://dbudzik.github.io/project9_SHM/" />
   <meta name="citation_pdf_url" content="https://dbudzik.github.io/project9_SHM/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://dbudzik.github.io/project9_SHM/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://dbudzik.github.io/project9_SHM/v/92fec94f80c68e4011c575247cc269aa87f063c7/" />
-  <meta name="manubot_html_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/92fec94f80c68e4011c575247cc269aa87f063c7/" />
-  <meta name="manubot_pdf_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/92fec94f80c68e4011c575247cc269aa87f063c7/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://dbudzik.github.io/project9_SHM/v/1de2497f66542bd271df6b934c25ba19b29d1fa2/" />
+  <meta name="manubot_html_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/1de2497f66542bd271df6b934c25ba19b29d1fa2/" />
+  <meta name="manubot_pdf_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/1de2497f66542bd271df6b934c25ba19b29d1fa2/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -65,9 +65,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://dbudzik.github.io/project9_SHM/v/92fec94f80c68e4011c575247cc269aa87f063c7/">permalink</a>)
+(<a href="https://dbudzik.github.io/project9_SHM/v/1de2497f66542bd271df6b934c25ba19b29d1fa2/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/dbudzik/project9_SHM/tree/92fec94f80c68e4011c575247cc269aa87f063c7">dbudzik/project9_SHM@92fec94</a>
+from <a href="https://github.com/dbudzik/project9_SHM/tree/1de2497f66542bd271df6b934c25ba19b29d1fa2">dbudzik/project9_SHM@1de2497</a>
 on December 5, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -127,6 +127,10 @@ One common pattern within machine learning is to use linear models trained on no
 <p><img src="https://render.githubusercontent.com/render/math?math=y = w_{0}%2Bw_{1}z_{1}%2Bw_{2}z_{2}%2Bw_{3}z_{3}%2Bw_{4}z_{4}%2Bw_{5}z_{5}"></p>
 <p>### 4.5.1 Justification for Polynomial Regression:
 Sometimes the relationship between the dependent and independent variables maybe non-linear. As in this case, we do not expect a linear relationship between the features and the target variable, it made sense to try a non-linear algorithm. The simplest and most common non-linear method to use is the polynomial regression as described earlier. Intuitively, we would expect a regression model with higher orders to perform better than a simple one. However, we didn’t find significant improvements between 2nd degree and higher order polynomials. Therefore, for this project we chose to use 2nd degree polynomial regression models to help save computation time.</p>
+<img src="images/polynomial_regression.png" alt="Test" width="600"/>
+</p>
+<p>
+<p><em>Figure 4.2: overview_of_polynomial_regression_model</em></p>
 <h2 id="method-4-artificial-neural-networks">4.7 Method 4: Artificial Neural Networks:</h2>
 <p>The second method utilized was Artificial Neural Networks. Artificial Neural Networks are more complex than logistic regression. This method adds a bunch of hidden non-linear layers to the logistic regression model. Our group used this method to check if it offered an improvement on the previous model. The artificial neural networks yeiled average results with great accuracy ~96%, Improved precision ~45%, Improved recall ~60%, although the metrics were not good overall.</p>
 <h2 id="method-5-random-forest-regression">4.8 Method 5: Random Forest Regression:</h2>
