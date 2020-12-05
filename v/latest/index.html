@@ -49,9 +49,9 @@
   <meta name="citation_fulltext_html_url" content="https://dbudzik.github.io/project9_SHM/" />
   <meta name="citation_pdf_url" content="https://dbudzik.github.io/project9_SHM/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://dbudzik.github.io/project9_SHM/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://dbudzik.github.io/project9_SHM/v/848c3a0a743c026468424dceccfe0e49467d82da/" />
-  <meta name="manubot_html_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/848c3a0a743c026468424dceccfe0e49467d82da/" />
-  <meta name="manubot_pdf_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/848c3a0a743c026468424dceccfe0e49467d82da/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://dbudzik.github.io/project9_SHM/v/76b644dcc91ea8e076ce9a6de3f76dd444c140f6/" />
+  <meta name="manubot_html_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/76b644dcc91ea8e076ce9a6de3f76dd444c140f6/" />
+  <meta name="manubot_pdf_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/76b644dcc91ea8e076ce9a6de3f76dd444c140f6/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -65,9 +65,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://dbudzik.github.io/project9_SHM/v/848c3a0a743c026468424dceccfe0e49467d82da/">permalink</a>)
+(<a href="https://dbudzik.github.io/project9_SHM/v/76b644dcc91ea8e076ce9a6de3f76dd444c140f6/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/dbudzik/project9_SHM/tree/848c3a0a743c026468424dceccfe0e49467d82da">dbudzik/project9_SHM@848c3a0</a>
+from <a href="https://github.com/dbudzik/project9_SHM/tree/76b644dcc91ea8e076ce9a6de3f76dd444c140f6">dbudzik/project9_SHM@76b644d</a>
 on December 5, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -107,7 +107,12 @@ Our Kaggle Project was focused on Binary classification. Binary Classification i
 <h1 id="method-1-logistic-regression">4.4 Method 1: Logistic Regression:</h1>
 <p>Logistic regression is a technique commonly used for predicting binary classes and is adopted from the field of statistics. It describes and estimates the relationship between one dependent variable and the independent variables. Logistic regression is a special case of linear regression that produces a constant output which is categorical in nature. Thus it is based on the linear regression equation:</p>
 <p><img src="https://render.githubusercontent.com/render/math?math=y = \beta%2Bw_{1}x_{1}%2Bw_{2}x_{2}%2Bw_{3}x_{3}..."></p>
-<p>The first Method utilized was Logistic Regression. It was the simplest model for binary classification. The method outputs a probability between 0 and 1, exclusivly. It then defines a decision threshold to map to binary category. The logistic regression yielded great results on the first run with an accuracy of ~96%, low precision ~24%, and recall plummeting to ~20%.</p>
+<img src="images/logistic_sigmoid.png" alt="Test" width="600"/>
+</p>
+<p>
+<p><em>Figure 4.1: logistic_regression (sigmoid_activation_function)</em></p>
+<h2 id="justification-for-logistic-regression">4.4.1 Justification for logistic regression:</h2>
+<p>Logistic regression is one of the most simple machine learning algorithms that can be used for binary classification problems. It is easy to implement and can be used as a baseline for any binary classification problem. As such, we decided to use it as a baseline to which all the other models will be compared with. It can also be built upon for developing more complex machine learning algorithms for deep learning. It computes a probability ouptut and in order to map this output to a binary category we needed to define a classification threshold (also known as the decision threshold). To ensure the output probability is always between 0 and 1 we used a sigmoid activation function in the output layer. Different combinations of hyperparameters were tested for this algorithm, however to save computation time an epoch value of 20 was used with a learning rate of 0.001. A classification threshold of 0.2 was also found to work best for the given dataset.</p>
 <h1 id="method-2-artificial-neural-networks">4.5 Method 2: Artificial Neural Networks:</h1>
 <p>The second method utilized was Artificial Neural Networks. Artificial Neural Networks are more complex than logistic regression. This method adds a bunch of hidden non-linear layers to the logistic regression model. Our group used this method to check if it offered an improvement on the previous model. The artificial neural networks yeiled average results with great accuracy ~96%, Improved precision ~45%, Improved recall ~60%, although the metrics were not good overall.</p>
 <h1 id="method-3-random-forest-regression">4.6 Method 3: Random Forest Regression:</h1>
