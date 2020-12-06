@@ -1,7 +1,7 @@
 # Output directory containing the formatted manuscript
 
 The [`gh-pages`](https://github.com/dbudzik/project9_SHM/tree/gh-pages) branch hosts the contents of this directory at <https://dbudzik.github.io/project9_SHM/>.
-The permalink for this webpage version is <https://dbudzik.github.io/project9_SHM/v/ce18fd398120a1ecd5a343edaf53a5609fe23cc7/>.
+The permalink for this webpage version is <https://dbudzik.github.io/project9_SHM/v/c50006427f953f94e5a6d71bd5a2508c058be0f3/>.
 To redirect to the permalink for the latest manuscript version at anytime, use the link <https://dbudzik.github.io/project9_SHM/v/freeze/>.
 
 ## Files
@@ -35,4 +35,4 @@ Verifying timestamps with the `ots verify` command requires running a local bitc
 ## Source
 
 The manuscripts in this directory were built from
-[`ce18fd398120a1ecd5a343edaf53a5609fe23cc7`](https://github.com/dbudzik/project9_SHM/commit/ce18fd398120a1ecd5a343edaf53a5609fe23cc7).
+[`c50006427f953f94e5a6d71bd5a2508c058be0f3`](https://github.com/dbudzik/project9_SHM/commit/c50006427f953f94e5a6d71bd5a2508c058be0f3).
