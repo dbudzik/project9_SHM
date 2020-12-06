@@ -106,10 +106,10 @@ content/05.results.md:129:dataset
 content/05.results.md:129:RMSE
 content/05.results.md:134:Dataset
 content/05.results.md:140:Dataset
-content/06_discussion.md:5:ANNs
-content/06_discussion.md:7:datapoints
-content/06_discussion.md:7:datapoints
-content/06_discussion.md:7:dataset
-content/06_discussion.md:7:dataset
-content/06_discussion.md:7:datasets
-content/06_discussion.md:7:overfitting
+content/06_conclusion.md:5:ANNs
+content/06_conclusion.md:7:datapoints
+content/06_conclusion.md:7:datapoints
+content/06_conclusion.md:7:dataset
+content/06_conclusion.md:7:dataset
+content/06_conclusion.md:7:datasets
+content/06_conclusion.md:7:overfitting

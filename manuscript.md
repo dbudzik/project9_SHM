@@ -61,11 +61,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://dbudzik.github.io/project9_SHM/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://dbudzik.github.io/project9_SHM/v/f29e90cedfb37d7a69f1922fbdd9091a47f5680f/" />
+  <link rel="alternate" type="text/html" href="https://dbudzik.github.io/project9_SHM/v/fb0a6a3f2902c5de3232bd17fbb4506b001f0978/" />
 
-  <meta name="manubot_html_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/f29e90cedfb37d7a69f1922fbdd9091a47f5680f/" />
+  <meta name="manubot_html_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/fb0a6a3f2902c5de3232bd17fbb4506b001f0978/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/f29e90cedfb37d7a69f1922fbdd9091a47f5680f/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/fb0a6a3f2902c5de3232bd17fbb4506b001f0978/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -99,9 +99,9 @@ title: 'Project 9: Structural Health Monitoring'
 
 <small><em>
 This manuscript
-([permalink](https://dbudzik.github.io/project9_SHM/v/f29e90cedfb37d7a69f1922fbdd9091a47f5680f/))
+([permalink](https://dbudzik.github.io/project9_SHM/v/fb0a6a3f2902c5de3232bd17fbb4506b001f0978/))
 was automatically generated
-from [dbudzik/project9_SHM@f29e90c](https://github.com/dbudzik/project9_SHM/tree/f29e90cedfb37d7a69f1922fbdd9091a47f5680f)
+from [dbudzik/project9_SHM@fb0a6a3](https://github.com/dbudzik/project9_SHM/tree/fb0a6a3f2902c5de3232bd17fbb4506b001f0978)
 on December 6, 2020.
 </em></small>
 
@@ -160,7 +160,7 @@ The damage was estimated successfully by applying a CNN-based approach only requ
 #### Sequential Multiple Structural Damage Detection and Localization: A Distributed Approach
 The article focuses on a distributed approach to structural damage detection and localization that looks to address three main drawbacks in the structural damage detection process. The three drawbacks are damage being reported with short delay, damage locations have to identified simultaneously, and computational complexity is untraceable in large-scale wiles sensor networks. To address these problems the article attempts to introduce a new damage identification approach that focuses on time-series of damage sensitive features extracted from multiple sensors’ measurements and the optimal change point detection theory.
 
-#### : Structural Health Monitoring of Cantilever Beam, A Case Study – Using Bayesian Neural Network and Deep Learning
+#### Structural Health Monitoring of Cantilever Beam, A Case Study – Using Bayesian Neural Network and Deep Learning
 This case study took a look at the use of machine learning models to predict damage to a cantilever beam. The beam in this study was modeled in a finite element analysis software and was subjected to dynamic loading in the software. The raw frequency response data from this analysis was the input for the machine learning algorithms. The study compared the accuracy of three algorithms: Bayesian Neural Network, Convolutional Neural Network, and Long Short Term Memory, to see which provides the best approximation for structural damage. The approach they took created the models based on the raw data, which is an advantage over traditional methods where data must be cleaned and prepped. This makes it more suitable for real-time monitoring, which is an important possible implementation. 
 
 ### 2.3 Structure & experiment descriptions:
@@ -687,11 +687,6 @@ The results of this project show that machine learning has a place in structural
 ### 6.3 Concluding Statement
 
 This project has shown that with relatively simple data important structural behaviors can be recognized. With this project as a proof of concept, future models can be made to simplify and vastly improve the efficiency of structural health monitoring. 
-
-
-## Conclusion
-
-Conclusion goes here
 
 
 ## References {.page_break_before}
