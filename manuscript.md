@@ -6,7 +6,7 @@ author-meta:
 - Abdullah Assaf
 bibliography:
 - content/manual-references.json
-date-meta: '2020-12-05'
+date-meta: '2020-12-06'
 header-includes: '<!--
 
   Manubot generated metadata rendered from header-includes-template.html.
@@ -25,9 +25,9 @@ header-includes: '<!--
 
   <meta property="twitter:title" content="Project 9: Structural Health Monitoring" />
 
-  <meta name="dc.date" content="2020-12-05" />
+  <meta name="dc.date" content="2020-12-06" />
 
-  <meta name="citation_publication_date" content="2020-12-05" />
+  <meta name="citation_publication_date" content="2020-12-06" />
 
   <meta name="dc.language" content="en-US" />
 
@@ -61,11 +61,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://dbudzik.github.io/project9_SHM/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://dbudzik.github.io/project9_SHM/v/5ef58cbe7af705fbbe56bb3dc9b53d32f4f0724b/" />
+  <link rel="alternate" type="text/html" href="https://dbudzik.github.io/project9_SHM/v/042b9fc95193de0fbda3df9b3ab5ff6bcbfbc765/" />
 
-  <meta name="manubot_html_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/5ef58cbe7af705fbbe56bb3dc9b53d32f4f0724b/" />
+  <meta name="manubot_html_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/042b9fc95193de0fbda3df9b3ab5ff6bcbfbc765/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/5ef58cbe7af705fbbe56bb3dc9b53d32f4f0724b/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/042b9fc95193de0fbda3df9b3ab5ff6bcbfbc765/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -99,10 +99,10 @@ title: 'Project 9: Structural Health Monitoring'
 
 <small><em>
 This manuscript
-([permalink](https://dbudzik.github.io/project9_SHM/v/5ef58cbe7af705fbbe56bb3dc9b53d32f4f0724b/))
+([permalink](https://dbudzik.github.io/project9_SHM/v/042b9fc95193de0fbda3df9b3ab5ff6bcbfbc765/))
 was automatically generated
-from [dbudzik/project9_SHM@5ef58cb](https://github.com/dbudzik/project9_SHM/tree/5ef58cbe7af705fbbe56bb3dc9b53d32f4f0724b)
-on December 5, 2020.
+from [dbudzik/project9_SHM@042b9fc](https://github.com/dbudzik/project9_SHM/tree/042b9fc95193de0fbda3df9b3ab5ff6bcbfbc765)
+on December 6, 2020.
 </em></small>
 
 ## Authors
