@@ -22,7 +22,7 @@ Correltion
 damag
 dataframe
 datapoints
-dataset
+Dataset
 datasets
 dbudzik
 develope
