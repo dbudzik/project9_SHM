@@ -49,9 +49,9 @@
   <meta name="citation_fulltext_html_url" content="https://dbudzik.github.io/project9_SHM/" />
   <meta name="citation_pdf_url" content="https://dbudzik.github.io/project9_SHM/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://dbudzik.github.io/project9_SHM/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://dbudzik.github.io/project9_SHM/v/6a88b1aa733d6830df3137ec4278178d23761919/" />
-  <meta name="manubot_html_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/6a88b1aa733d6830df3137ec4278178d23761919/" />
-  <meta name="manubot_pdf_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/6a88b1aa733d6830df3137ec4278178d23761919/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://dbudzik.github.io/project9_SHM/v/f29e90cedfb37d7a69f1922fbdd9091a47f5680f/" />
+  <meta name="manubot_html_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/f29e90cedfb37d7a69f1922fbdd9091a47f5680f/" />
+  <meta name="manubot_pdf_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/f29e90cedfb37d7a69f1922fbdd9091a47f5680f/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -65,9 +65,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://dbudzik.github.io/project9_SHM/v/6a88b1aa733d6830df3137ec4278178d23761919/">permalink</a>)
+(<a href="https://dbudzik.github.io/project9_SHM/v/f29e90cedfb37d7a69f1922fbdd9091a47f5680f/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/dbudzik/project9_SHM/tree/6a88b1aa733d6830df3137ec4278178d23761919">dbudzik/project9_SHM@6a88b1a</a>
+from <a href="https://github.com/dbudzik/project9_SHM/tree/f29e90cedfb37d7a69f1922fbdd9091a47f5680f">dbudzik/project9_SHM@f29e90c</a>
 on December 6, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -144,7 +144,7 @@ The damage was estimated successfully by applying a CNN-based approach only requ
 <p>Ambient vibration was inputted into the structure by two types of forced excitations. The forced excitation cases consider both impact hammer tests, and broadband excitations provided by an electrodynamic shaker. The choice of these two methods is to simulate the structure’s response during an earthquake.</p>
 <h3 id="motivation-behind-the-project-on-structural-damage-detection">2.4 Motivation behind the project on structural damage detection</h3>
 <p>Numerous structural health monitoring algorithms have been developed and been implemented on experimental and full-scale structure. Because the techniques are applied to different structures under various conditions, the relative merits of each algorithm are not obvious. Thus, the community would benefit from a comparison of several algorithms when applied to the same problems.</p>
-<h1 id="exploratory-data-analysis">3. Exploratory Data Analysis</h1>
+<h2 id="exploratory-data-analysis">3. Exploratory Data Analysis</h2>
 <p>The goal of this EDA is to identify characteristics between damage and undamaged conditions in order to perform data preparation and develop a model in the future steps.</p>
 <h2 id="preparing-the-data">3.1 Preparing the data</h2>
 <img src="images/condition.JPG" width="300"/>
@@ -167,8 +167,8 @@ The damage was estimated successfully by applying a CNN-based approach only requ
 <p>
 <p><em>As shown above, the given data set contained a large quantity of NA data values which are all located in the undamaged portion.</em></p>
 <p>Between populating or removing the missing data, the missing results will be dropped. The reason for this decision is because populating the missing values with the mean of the training data will mostly develop a new dataset that does not have all the original parameters.</p>
-<p><strong>Aesthetic modification for easier comprehension of the training data</strong></p>
-<p>The provided training dataframe had columns names such as DA04, which corresponds to the sensor located in the first floor west side. Instead of keeping these columns names, the datasets were named as shown below.</p>
+<p><strong>Aesthetic modification for easier comprehension of the training data</strong>
+The provided training dataframe had columns names such as DA04, which corresponds to the sensor located in the first floor west side. Instead of keeping these columns names, the datasets were named as shown below.</p>
 <img src="images/columnsnames.JPG" width="300"/>
 </p>
 <p>
@@ -220,8 +220,8 @@ The damage was estimated successfully by applying a CNN-based approach only requ
 </ul>
 <h2 id="exploring-the-dataframe-that-contains-the-undamaged-condition">3.3 Exploring the dataframe that contains the undamaged condition</h2>
 <p>Previously, we explored some characteristics of the undamaged dataset. Then, the dataset has been arranged and tidied to finally observe how there was a large among of non-available data points, which can be observed in the last row (index number &gt; time_sec)</p>
-<p><strong>Is the change in acceleration always the same?</strong></p>
-<p>For the following inspection, recall that data acquisition was started several seconds after the excitation was turned on to ensure that the system had reached a steady state condition during the shaker testing.</p>
+<p><strong>Is the change in acceleration always the same?</strong>
+For the following inspection, recall that data acquisition was started several seconds after the excitation was turned on to ensure that the system had reached a steady state condition during the shaker testing.</p>
 <img src="images/undacc13.JPG" width="300"/>
 </p>
 <p>
@@ -444,13 +444,15 @@ Sometimes the relationship between the dependent and independent variables maybe
 <p>
 <em>Figure 5.14: Results of Random Forest Regression Model After Dataset Augmentation</em>
 <p>
-<h2 id="discussion">6. Discussion</h2>
+<h2 id="conclusion-1">6. Conclusion</h2>
 <h3 id="key-takeaways">6.1 Key Takeaways</h3>
 <p>The first takeaway from the results of this project is that artificial neural networks are the best option for binary classification problems like this project. This is not surprising, given the popularity of ANNs. They are one of the most widely applied and useful machine learning algorithms and are able to take on most, if not all, machine learning problems and give a great result.</p>
 <p>The second takeaway is that datasets such as ours that have very sparse data may result in poor learning of the model. In our case, the dataset had barely any damaged datapoints in comparison to undamaged, so the model was not able to learn how to identify between the two. Our solution to this was to add copies of the damaged data that we did have in order to allow the model to see them more. This is dangerous, however, because this does run the possibility of overfitting to those specific datapoints. Therefore, there is a limit to how many copies should be included in the dataset to avoid these issues.</p>
 <h3 id="applications">6.2 Applications</h3>
 <p>The results of this project show that machine learning has a place in structural health monitoring. A team with more machine learning experience and more data can create a model that can determine structural damage in real time and thus may be able to prevent or predict a structural collapse and save lives. The idea can be taken even further and can be adapted and expanded to allow for detection of damage in specific regions or even specific structural members in the structure, as well as predicting useful structural life. This can save large amounts of money that are spent on structural inspections, repairs, and rebuilding after catastrophic failures.</p>
-<h2 id="conclusion-1">Conclusion</h2>
+<h3 id="concluding-statement">6.3 Concluding Statement</h3>
+<p>This project has shown that with relatively simple data important structural behaviors can be recognized. With this project as a proof of concept, future models can be made to simplify and vastly improve the efficiency of structural health monitoring.</p>
+<h2 id="conclusion-2">Conclusion</h2>
 <p>Conclusion goes here</p>
 <h2 class="page_break_before" id="references">References</h2>
 <!-- Explicitly insert bibliography here -->

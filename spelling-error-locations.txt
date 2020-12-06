@@ -15,18 +15,18 @@ content/03. EDA.md:13:dataset
 content/03. EDA.md:24:dataset
 content/03. EDA.md:24:undamage
 content/03. EDA.md:34:dataset
-content/03. EDA.md:38:dataframe
-content/03. EDA.md:38:datasets
-content/03. EDA.md:48:accelerometers
-content/03. EDA.md:77:dataset
-content/03. EDA.md:88:dataset
-content/03. EDA.md:105:dataframe
-content/03. EDA.md:107:dataset
-content/03. EDA.md:107:dataset
-content/03. EDA.md:142:dataframe
-content/03. EDA.md:177:skewness
-content/03. EDA.md:177:skewness
-content/03. EDA.md:178:succesful
+content/03. EDA.md:37:dataframe
+content/03. EDA.md:37:datasets
+content/03. EDA.md:47:accelerometers
+content/03. EDA.md:78:dataset
+content/03. EDA.md:91:dataset
+content/03. EDA.md:111:dataframe
+content/03. EDA.md:113:dataset
+content/03. EDA.md:113:dataset
+content/03. EDA.md:153:dataframe
+content/03. EDA.md:193:skewness
+content/03. EDA.md:193:skewness
+content/03. EDA.md:194:succesful
 content/04.ml_methods.md:6:Kaggle
 content/04.ml_methods.md:9:hyperparameters
 content/04.ml_methods.md:9:sigmoid

@@ -61,11 +61,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://dbudzik.github.io/project9_SHM/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://dbudzik.github.io/project9_SHM/v/6a88b1aa733d6830df3137ec4278178d23761919/" />
+  <link rel="alternate" type="text/html" href="https://dbudzik.github.io/project9_SHM/v/f29e90cedfb37d7a69f1922fbdd9091a47f5680f/" />
 
-  <meta name="manubot_html_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/6a88b1aa733d6830df3137ec4278178d23761919/" />
+  <meta name="manubot_html_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/f29e90cedfb37d7a69f1922fbdd9091a47f5680f/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/6a88b1aa733d6830df3137ec4278178d23761919/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/f29e90cedfb37d7a69f1922fbdd9091a47f5680f/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -99,9 +99,9 @@ title: 'Project 9: Structural Health Monitoring'
 
 <small><em>
 This manuscript
-([permalink](https://dbudzik.github.io/project9_SHM/v/6a88b1aa733d6830df3137ec4278178d23761919/))
+([permalink](https://dbudzik.github.io/project9_SHM/v/f29e90cedfb37d7a69f1922fbdd9091a47f5680f/))
 was automatically generated
-from [dbudzik/project9_SHM@6a88b1a](https://github.com/dbudzik/project9_SHM/tree/6a88b1aa733d6830df3137ec4278178d23761919)
+from [dbudzik/project9_SHM@f29e90c](https://github.com/dbudzik/project9_SHM/tree/f29e90cedfb37d7a69f1922fbdd9091a47f5680f)
 on December 6, 2020.
 </em></small>
 
@@ -213,7 +213,7 @@ Ambient vibration was inputted into the structure by two types of forced excitat
 Numerous structural health monitoring algorithms have been developed and been implemented on experimental and full-scale structure. Because the techniques are applied to different structures under various conditions, the relative merits of each algorithm are not obvious. Thus, the community would benefit from a comparison of several algorithms when applied to the same problems.
 
 
-# 3. Exploratory Data Analysis
+## 3. Exploratory Data Analysis
 
 The goal of this EDA is to identify characteristics between damage and undamaged conditions in order to perform data preparation and develop a model in the future steps.
 
@@ -249,7 +249,6 @@ The reason that there are accelerations values at the first row is because resea
 Between populating or removing the missing data, the missing results will be dropped. The reason for this decision is because populating the missing values with the mean of the training data will mostly develop a new dataset that does not have all the original parameters. 
 
 **Aesthetic modification for easier comprehension of the training data**
-
 The provided training dataframe had columns names such as DA04, which corresponds to the sensor located in the first floor west side. Instead of keeping these columns names, the datasets were named as shown below.
 
 <img src="images/columnsnames.JPG" width="300"/>
@@ -281,11 +280,13 @@ Therefore, the final step on the tidying portion of the exploratory data analysi
 
 We can learn certain details of the response of the structure by observing the data points that have a very drastic change in amplitude. In other words, there are common points in time among all sensors where the acceleration measured does a 180 degree change. This phenomenon occurs as the dynamics response of structure is harmonic and it develops nodes. A simplification of this idea is to understand how the sensors in the 4th story will move back and forward while the nodes underneath are ahead or behind that displacement.
 
+
 <img src="images/overalldata.JPG" width="300"/>
 </p>
 <p>
 <em>Figure 3.5: Visualization of the overall data.</em>
 <p>
+
 
 The mean for all the sensors is very close to 0, which may indicate normalized normal distribution. Also, the standard deviation is not equal to 1 for any of the sensors, but a close value to 0 too. These characteristics are present for normal distributions of narrow dispersion.
 
@@ -294,11 +295,13 @@ In the case of undamaged dataset, the standard deviation values of the fourth fl
 
 **Checking head, tail of data**
 
+
 <img src="images/undamagedstats.JPG" width="300"/>
 </p>
 <p>
 <em>Figure 3.6: Histogram of undamaged acceleration values at each sensor</em>
 <p>
+
 
 In the case of the undamaged dataset, all the graphs show normal distribution. However, they are not centered with an exact mean of value 0. Instead,
 
@@ -306,11 +309,14 @@ In the case of the undamaged dataset, all the graphs show normal distribution. H
 - Sensors located at the center of the structure behave symmetrically. The first and third floor have bell-shaped distribution with a mean of 0. The second and fourth floor are lightly skewed in opposite directions.
 - Sensors located at the east side of the structure are all skewed except the one located at the second floor. The sensor at the 4th floor captured the most out of plane behavior as the '4th_story_03' sensor is significantly skewed to the left.
 
+
 <img src="images/damagedstats.JPG" width="300"/>
 </p>
 <p>
 <em>Figure 3.7: Histogram of damaged acceleration values at each sensor.</em>
 <p>
+    
+    
 For the case of damage condition, the normal distribution is not as smooth as shown for the undamaged condition. This behavior matches with the physical phenomenon that took place as the acceleration of the sensors will tend to be more extreme if the structure is damaged. 
 
 - The first floor endured the most extreme values as the base is not static anymore during excitation. The three sensors are skewed to the right.
@@ -322,8 +328,8 @@ For the case of damage condition, the normal distribution is not as smooth as sh
 Previously, we explored some characteristics of the undamaged dataset. Then, the dataset has been arranged and tidied to finally observe how there was a large among of non-available data points, which can be observed in the last row (index number > time_sec)
 
 **Is the change in acceleration always the same?**
-
 For the following inspection, recall that data acquisition was started several seconds after the excitation was turned on to ensure that the system had reached a steady state condition during the shaker testing.
+
 
 <img src="images/undacc13.JPG" width="300"/>
 </p>
@@ -331,11 +337,14 @@ For the following inspection, recall that data acquisition was started several s
 <em>Figure 3.8: Changes in acceleration during the undamaged condition for the first and second floor.</em>
 <p>
 
+
+
 <img src="images/undacc34.JPG" width="300"/>
 </p>
 <p>
 <em>Figure 3.9: Changes in acceleration during the undamaged condition for the third and fourth.</em>
 <p>
+
 
 Interestingly, the analysis has shown how the location of the sensor affects directly to the change in acceleration of the sensors. The y-axis has been kept constant throughout all the plots to ease comparison. Therefore, we can observe how though the distribution among sensors in different floor is different, the difference in acceleration values is very correlated to location.
 
@@ -343,11 +352,13 @@ Also note how the missing data produced zero values in the left portion of the d
 
 **Correlation values**
 
+
 <img src="images/uncorr.JPG" width="300"/>
 </p>
 <p>
 <em>Figure 3.10: Correlation values among all sensors in the undamaged condition.</em>
 <p>
+    
 
 The table above is with the purpose of locating the directly correlated and inversely correlated sensors. Just as the difference in acceleration graphs showed, there is significant correlation between those sensors that are located in the same side of the structure. 
 
@@ -358,11 +369,13 @@ However, there is an inverse correlation in those sensors located at the fourth 
 
 **Is the change in acceleration always the same?**
 
+
 <img src="images/dacc12.JPG" width="300"/>
 </p>
 <p>
 <em>Figure 3.11: Change in acceleration between sensors in the damaged condition for the 1st and 2nd floor.</em>
 <p>
+
 
 <img src="images/dacc34.JPG" width="300"/>
 </p>
@@ -371,15 +384,18 @@ However, there is an inverse correlation in those sensors located at the fourth 
 <p>
 
 
+
 There are certain conditions that we can observe by comparing the undamaged and damaged conditions. First of all, there is still a correlation in the change in acceleration with the location of the sensors. Also, the delta value has been significantly decreased over the length of the response. The largest change in acceleration is located at the center sensors for this particular condition, which might mean that the structure is not displacing as much once it reaches a damaged condition.
 
 **Correlation values**
+
 
 <img src="images/dcorr.JPG" width="300"/>
 </p>
 <p>
 <em>Figure 3.13: Correlation value among all sensors for the damaged condition.</em>
 <p>
+
 
 In this scenario, the correlation has changed greatly. Now, the 4th-story sensors display similarities with other sensors placed in the same side of the structure. However, the 3rd-story sensors are those that are inversely correlated. 
 
@@ -656,7 +672,7 @@ The random forest regression model can be most closely compared to the polynomia
 
 
 
-## 6. Discussion
+## 6. Conclusion
 
 ### 6.1 Key Takeaways
 
@@ -666,8 +682,11 @@ The second takeaway is that datasets such as ours that have very sparse data may
 
 ### 6.2 Applications
 
-The results of this project show that machine learning has a place in structural health monitoring. A team with more machine learning experience and more data can create a model that can determine structural damage in real time and thus may be able to prevent or predict a structural collapse and save lives. The idea can be taken even further and can be adapted and expanded to allow for detection of damage in specific regions or even specific structural members in the structure, as well as predicting useful structural life. This can save large amounts of money that are spent on structural inspections, repairs, and rebuilding after catastrophic failures.
+The results of this project show that machine learning has a place in structural health monitoring. A team with more machine learning experience and more data can create a model that can determine structural damage in real time and thus may be able to prevent or predict a structural collapse and save lives. The idea can be taken even further and can be adapted and expanded to allow for detection of damage in specific regions or even specific structural members in the structure, as well as predicting useful structural life. This can save large amounts of money that are spent on structural inspections, repairs, and rebuilding after catastrophic failures. 
 
+### 6.3 Concluding Statement
+
+This project has shown that with relatively simple data important structural behaviors can be recognized. With this project as a proof of concept, future models can be made to simplify and vastly improve the efficiency of structural health monitoring. 
 
 
 ## Conclusion
