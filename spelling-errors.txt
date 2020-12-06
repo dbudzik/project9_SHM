@@ -22,7 +22,7 @@ Convolutional
 coomparison
 dataframe
 datapoints
-dataset
+Dataset
 datasets
 dbudzik
 develope
