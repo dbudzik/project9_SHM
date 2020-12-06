@@ -61,11 +61,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://dbudzik.github.io/project9_SHM/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://dbudzik.github.io/project9_SHM/v/fe00f4a63330ecd677bbde4b02a86c647363e7ef/" />
+  <link rel="alternate" type="text/html" href="https://dbudzik.github.io/project9_SHM/v/6519527c3e2519832faa2ac8ae4d6c52f5bbaf7f/" />
 
-  <meta name="manubot_html_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/fe00f4a63330ecd677bbde4b02a86c647363e7ef/" />
+  <meta name="manubot_html_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/6519527c3e2519832faa2ac8ae4d6c52f5bbaf7f/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/fe00f4a63330ecd677bbde4b02a86c647363e7ef/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/6519527c3e2519832faa2ac8ae4d6c52f5bbaf7f/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -99,9 +99,9 @@ title: 'Project 9: Structural Health Monitoring'
 
 <small><em>
 This manuscript
-([permalink](https://dbudzik.github.io/project9_SHM/v/fe00f4a63330ecd677bbde4b02a86c647363e7ef/))
+([permalink](https://dbudzik.github.io/project9_SHM/v/6519527c3e2519832faa2ac8ae4d6c52f5bbaf7f/))
 was automatically generated
-from [dbudzik/project9_SHM@fe00f4a](https://github.com/dbudzik/project9_SHM/tree/fe00f4a63330ecd677bbde4b02a86c647363e7ef)
+from [dbudzik/project9_SHM@6519527](https://github.com/dbudzik/project9_SHM/tree/6519527c3e2519832faa2ac8ae4d6c52f5bbaf7f)
 on December 6, 2020.
 </em></small>
 
@@ -471,7 +471,7 @@ Since, the index for our dataset actually represents time, then perhaps we can c
 <em>Figure 4.5: overview_of_recurrent_neural_network_model</em>
 
 ## 4.8 Method 5: Random Forest Regression:
-The third method utilized was Random Forest Regression. Random Forest Regression performs both regression and classification tasks with the use of multiple decision trees and bagging. It is easy to use and often returns good results even without hyperparameter tuning. Our group used this method to check if it offered an improvement on the previous model. The Random Forest Regression provided the worst results with extremely inaccurate accuracy rate, while also not working well for the type of data we had.
+The third method utilized was Random Forest Regression. Random Forest Regression performs both regression and classification tasks with the use of multiple decision trees and bagging. It is easy to use and often returns good results even without hyperparameter tuning. Our group used this method to check if it offered an improvement on the previous model. The Random Forest Regression provided the worst results with extremely inaccurate accuracy rate, while also not working well for the type of data we had. The model is shown below in figure 4.5. 
 
 <img src="images/Screen Shot 2020-12-05 at 6.36.01 PM.png" alt="Test" width="600"/>
 </p>
@@ -482,7 +482,7 @@ The third method utilized was Random Forest Regression. Random Forest Regression
 We noticed that the problem was the precision and recall are very low even though accuracy is high. This was caused by the damaged data being too sparse, only 3.5% of our data represents the damaged condition. The solution was too add copies of the damaged data into the training set.
 
 ## 4.10 Take Two:
-In take two we ran logistic regression and artifical nueral networks again to see if it yeilded better results with addiiton of new copies of damaged data. Logistic Regression returned good accuracy ~83%, much better precision ~60%, and Fantastic recall ~99%. Artifical Neural Network returned slighly better data with a fantastic accuracy ~98%, fantastic precision ~91%, and fantastic recall ~99%.
+In take two we ran logistic regression and artifical nueral networks again to see if it yeilded better results with addiiton of new copies of damaged data. Logistic Regression returned good accuracy ~83%, much better precision ~60%, and Fantastic recall ~99%. Artifical Neural Network returned slighly better data with a fantastic accuracy ~98%, fantastic precision ~91%, and fantastic recall ~99%. the results are shown in figure 4.6 and 4.7. 
 
 <img src="images/Screen Shot 2020-12-05 at 6.58.35 PM.png" alt="Test" width="600"/>
 </p>

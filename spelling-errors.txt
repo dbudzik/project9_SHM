@@ -4,7 +4,7 @@ accelerometers
 addiiton
 amoung
 ANNs
-Artifical
+artifical
 ASCE
 Assaf
 betwewn
