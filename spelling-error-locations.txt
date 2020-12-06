@@ -1,6 +1,4 @@
 content/01.abstract.md:2:ASCE
-content/01.abstract.md:2:continous
-content/02. Introduction.md:7:develope
 content/02. Introduction.md:14:CNNs
 content/02. Introduction.md:15:CNNs
 content/02. Introduction.md:16:accelerometers
@@ -10,45 +8,25 @@ content/02. Introduction.md:23:Convolutional
 content/02. Introduction.md:39:accelerometers
 content/02. Introduction.md:39:MATLAB
 content/02. Introduction.md:68:electrodynamic
-content/02. Introduction.md:68:exci
 content/02. Introduction.md:68:excitations
 content/02. Introduction.md:68:excitations
-content/02. Introduction.md:68:tation
 content/03. EDA.md:3:EDA
-content/03. EDA.md:3:undamage
-content/03. EDA.md:10:damag
-content/03. EDA.md:10:undamage
 content/03. EDA.md:13:dataset
 content/03. EDA.md:24:dataset
 content/03. EDA.md:24:undamage
-content/03. EDA.md:33:dataset
-content/03. EDA.md:33:develope
-content/03. EDA.md:35:modifitication
+content/03. EDA.md:34:dataset
 content/03. EDA.md:37:dataframe
 content/03. EDA.md:37:datasets
-content/03. EDA.md:37:flor
-content/03. EDA.md:37:trainign
-content/03. EDA.md:46:accelerometers
-content/03. EDA.md:59:fsdasy
-content/03. EDA.md:61:tyding
-content/03. EDA.md:65:charnge
-content/03. EDA.md:75:dataset
-content/03. EDA.md:86:dataset
-content/03. EDA.md:90:significatly
-content/03. EDA.md:101:ccentered
-content/03. EDA.md:101:importqant
-content/03. EDA.md:103:dataframe
-content/03. EDA.md:105:amoung
-content/03. EDA.md:105:dataset
-content/03. EDA.md:105:dataset
-content/03. EDA.md:133:inversevely
-content/03. EDA.md:135:loccated
-content/03. EDA.md:138:dataframe
-content/03. EDA.md:161:Correltion
-content/03. EDA.md:166:Conclussion
-content/03. EDA.md:172:skewness
-content/03. EDA.md:172:skewness
-content/03. EDA.md:173:succesful
+content/03. EDA.md:47:accelerometers
+content/03. EDA.md:78:dataset
+content/03. EDA.md:91:dataset
+content/03. EDA.md:111:dataframe
+content/03. EDA.md:113:dataset
+content/03. EDA.md:113:dataset
+content/03. EDA.md:153:dataframe
+content/03. EDA.md:193:skewness
+content/03. EDA.md:193:skewness
+content/03. EDA.md:194:succesful
 content/04.ml_methods.md:6:Kaggle
 content/04.ml_methods.md:9:hyperparameters
 content/04.ml_methods.md:9:sigmoid
