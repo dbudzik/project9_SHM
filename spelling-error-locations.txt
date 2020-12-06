@@ -14,37 +14,41 @@ content/02. Introduction.md:68:exci
 content/02. Introduction.md:68:excitations
 content/02. Introduction.md:68:excitations
 content/02. Introduction.md:68:tation
-content/03. EDA.md:3:develope
 content/03. EDA.md:3:EDA
 content/03. EDA.md:3:undamage
-content/03. EDA.md:6:dataset
-content/03. EDA.md:10:accelerometers
-content/03. EDA.md:23:fsdasy
-content/03. EDA.md:26:dataset
-content/03. EDA.md:26:undamage
-content/03. EDA.md:31:dataset
-content/03. EDA.md:31:develope
-content/03. EDA.md:35:charnge
-content/03. EDA.md:41:dataset
-content/03. EDA.md:46:dataset
-content/03. EDA.md:50:significatly
-content/03. EDA.md:52:conditio
-content/03. EDA.md:56:ccentered
-content/03. EDA.md:56:importqant
-content/03. EDA.md:58:dataframe
-content/03. EDA.md:60:amoung
-content/03. EDA.md:60:dataset
-content/03. EDA.md:60:dataset
-content/03. EDA.md:72:inversevely
-content/03. EDA.md:74:loccated
-content/03. EDA.md:76:Boxplots
-content/03. EDA.md:78:dataset
-content/03. EDA.md:78:outliners
-content/03. EDA.md:80:dataframe
-content/03. EDA.md:90:Conclussion
-content/03. EDA.md:96:skewness
-content/03. EDA.md:96:skewness
-content/03. EDA.md:97:succesful
+content/03. EDA.md:10:damag
+content/03. EDA.md:10:undamage
+content/03. EDA.md:13:dataset
+content/03. EDA.md:24:dataset
+content/03. EDA.md:24:undamage
+content/03. EDA.md:33:dataset
+content/03. EDA.md:33:develope
+content/03. EDA.md:35:modifitication
+content/03. EDA.md:37:dataframe
+content/03. EDA.md:37:datasets
+content/03. EDA.md:37:flor
+content/03. EDA.md:37:trainign
+content/03. EDA.md:46:accelerometers
+content/03. EDA.md:59:fsdasy
+content/03. EDA.md:61:tyding
+content/03. EDA.md:65:charnge
+content/03. EDA.md:75:dataset
+content/03. EDA.md:86:dataset
+content/03. EDA.md:90:significatly
+content/03. EDA.md:101:ccentered
+content/03. EDA.md:101:importqant
+content/03. EDA.md:103:dataframe
+content/03. EDA.md:105:amoung
+content/03. EDA.md:105:dataset
+content/03. EDA.md:105:dataset
+content/03. EDA.md:133:inversevely
+content/03. EDA.md:135:loccated
+content/03. EDA.md:138:dataframe
+content/03. EDA.md:161:Correltion
+content/03. EDA.md:166:Conclussion
+content/03. EDA.md:172:skewness
+content/03. EDA.md:172:skewness
+content/03. EDA.md:173:succesful
 content/04.ml_methods.md:6:Kaggle
 content/04.ml_methods.md:9:hyperparameters
 content/04.ml_methods.md:9:sigmoid
@@ -52,14 +56,14 @@ content/04.ml_methods.md:9:softmax
 content/04.ml_methods.md:12:dataset
 content/04.ml_methods.md:12:dataset
 content/04.ml_methods.md:12:regularizations
-content/04.ml_methods.md:25:betwewn
-content/04.ml_methods.md:25:dataset
-content/04.ml_methods.md:25:dataset
-content/04.ml_methods.md:25:hyperparameters
-content/04.ml_methods.md:25:multicorrelation
-content/04.ml_methods.md:25:ouptut
-content/04.ml_methods.md:25:sigmoid
-content/04.ml_methods.md:36:paraboloid
+content/04.ml_methods.md:26:betwewn
+content/04.ml_methods.md:26:dataset
+content/04.ml_methods.md:26:dataset
+content/04.ml_methods.md:26:hyperparameters
+content/04.ml_methods.md:26:multicorrelation
+content/04.ml_methods.md:26:ouptut
+content/04.ml_methods.md:26:sigmoid
+content/04.ml_methods.md:37:paraboloid
 content/04.ml_methods.md:58:yeiled
 content/04.ml_methods.md:61:LSTM
 content/04.ml_methods.md:61:netwok
@@ -68,21 +72,21 @@ content/04.ml_methods.md:61:RNNs
 content/04.ml_methods.md:61:RNNs
 content/04.ml_methods.md:61:RNNs
 content/04.ml_methods.md:61:RNNs
-content/04.ml_methods.md:70:coomparison
-content/04.ml_methods.md:70:dataset
-content/04.ml_methods.md:70:dataset
-content/04.ml_methods.md:70:hyperparameters
-content/04.ml_methods.md:70:LSTM
-content/04.ml_methods.md:70:LSTM
-content/04.ml_methods.md:70:RNNs
-content/04.ml_methods.md:70:sigmoid
-content/04.ml_methods.md:78:hyperparameter
-content/04.ml_methods.md:84:addiiton
-content/04.ml_methods.md:84:artifical
-content/04.ml_methods.md:84:Artifical
-content/04.ml_methods.md:84:nueral
-content/04.ml_methods.md:84:slighly
-content/04.ml_methods.md:84:yeilded
+content/04.ml_methods.md:69:coomparison
+content/04.ml_methods.md:69:dataset
+content/04.ml_methods.md:69:dataset
+content/04.ml_methods.md:69:hyperparameters
+content/04.ml_methods.md:69:LSTM
+content/04.ml_methods.md:69:LSTM
+content/04.ml_methods.md:69:RNNs
+content/04.ml_methods.md:69:sigmoid
+content/04.ml_methods.md:77:hyperparameter
+content/04.ml_methods.md:88:addiiton
+content/04.ml_methods.md:88:artifical
+content/04.ml_methods.md:88:Artifical
+content/04.ml_methods.md:88:nueral
+content/04.ml_methods.md:88:slighly
+content/04.ml_methods.md:88:yeilded
 content/05.results.md:9:RMSE
 content/05.results.md:9:RMSE
 content/05.results.md:14:RMSE

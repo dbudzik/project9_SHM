@@ -61,11 +61,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://dbudzik.github.io/project9_SHM/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://dbudzik.github.io/project9_SHM/v/efae4bfc49786ee7e0428a2bd568b5bb593d1045/" />
+  <link rel="alternate" type="text/html" href="https://dbudzik.github.io/project9_SHM/v/0fbc1605e8a27767f719c109e46e7bcadfc0fafe/" />
 
-  <meta name="manubot_html_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/efae4bfc49786ee7e0428a2bd568b5bb593d1045/" />
+  <meta name="manubot_html_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/0fbc1605e8a27767f719c109e46e7bcadfc0fafe/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/efae4bfc49786ee7e0428a2bd568b5bb593d1045/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/0fbc1605e8a27767f719c109e46e7bcadfc0fafe/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -99,9 +99,9 @@ title: 'Project 9: Structural Health Monitoring'
 
 <small><em>
 This manuscript
-([permalink](https://dbudzik.github.io/project9_SHM/v/efae4bfc49786ee7e0428a2bd568b5bb593d1045/))
+([permalink](https://dbudzik.github.io/project9_SHM/v/0fbc1605e8a27767f719c109e46e7bcadfc0fafe/))
 was automatically generated
-from [dbudzik/project9_SHM@efae4bf](https://github.com/dbudzik/project9_SHM/tree/efae4bfc49786ee7e0428a2bd568b5bb593d1045)
+from [dbudzik/project9_SHM@0fbc160](https://github.com/dbudzik/project9_SHM/tree/0fbc1605e8a27767f719c109e46e7bcadfc0fafe)
 on December 6, 2020.
 </em></small>
 
@@ -135,7 +135,7 @@ on December 6, 2020.
 
 
 
-## Abstract {.page_break_before}
+## 1. Abstract {.page_break_before}
 Civil infrastructure all around is subjected to the challenges posed by aging, deterioration and extreme events. In recent years, structural health monitoring has grown in importance as failure and collapse of infrastructure result in harmful effects on a nation's economy and development. Recent advances as seen the use of sensors to obtain the dynamic characteristics of structures. This has led to the potential of collecting dynamic data at more frequent intervals thus leading to continous monitoring. In this report, we use exploratory data analysis techniques to see if such dynamic data collected from structures can be used to infer the condition of a structure. We have also tried different machine learning algorithms to predict the condition of a structure based on given acceleration signals. For this study, the ASCE benchmark problem experimental phase II structure was used.
 
 
@@ -215,14 +215,50 @@ The choice of these two methods is to simulate the structure's response during a
 Numerous structural health monitoring algorithms have been developed and been implemented on experimental and full-scale structure.Because the techniques are applied to different structures under various conditions, the relative merits of each algorithm are not obvious. Thus, the community would benefit from a comparison of several algorithms when applied to the same problems.
 
 
-# 2. Exploratory Data Analysis
+# 3. Exploratory Data Analysis
 
-The goal of this EDA is to identify characteristics between damage and undamage conditions in order to perform data preparation and develope a model in the future steps.
+The goal of this EDA is to identify characteristics between damage and undamage conditions in order to perform data preparation and develop a model in the future steps.
 
-## 2.1 Preparing the data
+## 3.1 Preparing the data
+
+<img src="images/condition.JPG" width="300"/>
+</p>
+<p>
+<em>Figure 3.1: Checking if the data is sorted logically as undamage becoming damag.</em>
+<p>
+
 As the dataset shows, we have damage within our data. Therefore, Case 1 is not represented in train data.
 
+<img src="images/trainingdata.JPG" width="300"/>
+</p>
+<p>
+<em>Figure 3.2: Analyzing the training data provided.</em>
+<p>
+
 The reason that there are accelerations values at the first row is because researchers started measuring the structure's response once it reached steady state. More details regarding the dynamic behavior of this structure will be discussed in the following sections.
+
+
+**Separating train data into damage and undamage dataset**
+<img src="images/missingvalues.JPG" width="300"/>
+</p>
+<p>
+<em>Figure 3.3: Missing data in the undamaged section.</em>
+<p>
+
+*As shown above, the given data set contained a large quantity of NA data values which are all located in the undamaged portion.*
+
+Between populating or removing the missing data, the missing results will be dropped. The reason for this decision is because populating the missing values with the mean of the training data will mostly develope a new dataset that does not have all the original parameters. 
+
+**Aesthetic modifitication for easier comprehension of the training data**
+
+The provided trainign dataframe had columns names such as DA04, which corresponds to the sensor located in the first flor west side. Instead of keeping these columns names, the datasets were named as shown below.
+<img src="images/columnsnames.JPG" width="300"/>
+</p>
+<p>
+<em>Figure 3.4: Column Names.</em>
+<p>
+
+**Units**
 
 Based on *Experimental Phase II of the Structural Health Monitoring Benchmark Problem* , accelerometers were placed throughout the structure to provide measurements of the structural response. For this Exploratory Data Analysis, three sensors from each floor of the 4-story structure were taken into consideration. Specifically,
 
@@ -239,19 +275,17 @@ $Time(seconds) = \frac{1 : Length_{DA04}}{fs_{days}}$
 
 where fsdasy = 200 (Hz).
 
+Therefore, the final step on the tyding portion of the exploratory data analysis was to transform the "Time" column into seconds by divided by 200.
 
-### Separating train data into damage and undamage dataset
-
-
-*As shown above, the given data set contained a large quantity of NA data values which are all located in the undamaged portion.*
-
-Between populating or removing the missing data, the missing results will be dropped. The reason for this decision is because populating the missing values with the mean of the training data will mostly develope a new dataset that does not have all the original parameters. 
-
-## 2.2 Statistical Properties
+## 3.2 Statistical Properties
 
 We can learn certain details of the response of the structure by observing the data points that have a very drastic charnge in amplitude. In other words, there are common points in time among all sensors where the acceleration measured does a 180 degrees change. This phenomenon occurs as the dynamics response of structure is harmonic and it develops nodes. A simplification of this idea is to understand how the sensors in the 4th story will move back and forward while nodes underneath are ahead or behind that displacement.
 
-
+<img src="images/overalldata.JPG" width="300"/>
+</p>
+<p>
+<em>Figure 3.5: Visualization of the overall data.</em>
+<p>
 
 The mean for all the sensors is very close to 0, which may indicate normalized normal distribution. Also, the standard deviation is not equal to 1 for any of the sensors, but a close value to 0 too. These characteristics are present for normal distributions of narrow dispersion.
 
@@ -260,51 +294,93 @@ In the case of undamaged dataset, the standard deviation values of the fourth fl
 
 **Checking head, tail of data**
 
+<img src="images/undamagedstats.JPG" width="300"/>
+</p>
+<p>
+<em>Figure 3.6: Histogram of undamaged acceleration values at each sensor..</em>
+<p>
+
 In the case of the undamaged dataset, all the graphs show normal distribution. However, they are not centered with an exact mean of value 0. Instead,
 
 - Sensors located at the west side of the structure are skewed to the right in the first and fourth floor while the second and third floor are skewed to the left.
 - Sensors located at the center of the structure behave symmetrically. The first and third floor have bell-shaped distribution with a mean of 0. The second and fourth floor are lightly skewed in opposite directions.
 - Sensors located at the east side of the structure are all skewed except the one located at the second floor. The sensor at the 4th floor captured the most out of plane behavior as the '4th_story_03' sensor is significatly skewed to the left.
 
-For the case of damage conditio, the normal distribution is not as smooth as shown for the undamaged condition. This behavior matches with the physical phenomenon that took place as the acceleration of the sensors will tend to be more extreme if the structure is damaged. 
+<img src="images/damagedstats.JPG" width="300"/>
+</p>
+<p>
+<em>Figure 3.7: Histogram of damaged acceleration values at each sensor.</em>
+<p>
+For the case of damage condition, the normal distribution is not as smooth as shown for the undamaged condition. This behavior matches with the physical phenomenon that took place as the acceleration of the sensors will tend to be more extreme if the structure is damaged. 
 
 - The first floor endured the most extreme values as the base is not static anymore during excitation. The three sensors are skewed to the right.
 - The second and third floor has similar behavior since the center sensor is still normally distributed with mean very close to 0 and sensors on the west and east side are skewed to the left.
 - The fourth floor now shows the most ccentered behavior. However, it is importqant to recall the statistical characteristics such as standard deviation. Now the 4th-floor values are significantly wider.
 
-## 2.3 Exploring the dataframe that contains the undamaged condition**
+## 3.3 Exploring the dataframe that contains the undamaged condition**
 
 Previously, we explored some characteristics of the undamaged dataset. Then, the dataset has been arranged and tidied to finally observe how there was a large amoung of non-available data points, which can be observed in the last row (index number > time_sec)
 
 **Is the change in acceleration always the same?**
 
 For the following inspection, recall that data acquisition was started several seconds after the excitation was turned on to ensure that the system had reached a steady state condition during the shaker testing.
+<img src="images/undacc13.JPG" width="300"/>
+</p>
+<p>
+<em>Figure 3.8: Changes in acceleration during the undamaged condition for the first and second floor.</em>
+<p>
+
+<img src="images/undacc34.JPG" width="300"/>
+</p>
+<p>
+<em>Figure 3.9: Changes in acceleration during the undamaged condition for the third and fourth.</em>
+<p>
 
 Interestingly, the analysis has shown how the location of the sensor affects directly to the change in acceleration of the sensors. The y-axis has been kept constant throughout all the plots to ease comparison. Therefore, we can observe how though the distribution among sensors in different floor is different, the difference in acceleration values is very correlated to location.
 
 Also note how the missing data produced zero values in the left portion of the data. Those values are not representing a constant acceleration.
 
 **Correlation values**
+<img src="images/uncorr.JPG" width="300"/>
+</p>
+<p>
+<em>Figure 3.10: Correlation values among all sensors in the undamaged condition.</em>
+<p>
 
 The table above is with the purpose of locating the directly correlated and inversevely correlated sensors. Just as the difference in acceleration graphs showed, there is significant correlation between those sensors that are located in the same side of the structure. 
 
 However, there is an inverse correlation in those sensors loccated at the fourth floor. The reason behind this behavior is that we are analyzing an elastic structure that is being excited by an harmonic input from the ground. Therefore, the top floor is swinging, which creates a driving behavior in one of the corners at a time.
 
-**Boxplots**
 
-Some final insight of the undamaged dataset shows how there are a large quantity of outliners in the sensors located at the center of the structure.
-
-## 2.4 Exploring the dataframe that contains the undamaged condition**
+## 3.4 Exploring the dataframe that contains the undamaged condition**
 
 **Is the change in acceleration always the same?**
+<img src="images/dacc12.JPG" width="300"/>
+</p>
+<p>
+<em>Figure 3.11: Change in acceleration between sensors in the damaged condition for the 1st and 2nd floor.</em>
+<p>
+
+<img src="images/dacc34.JPG" width="300"/>
+</p>
+<p>
+<em>Figure 3.12: Change in acceleration between sensors in the damaged condition for the 3rd and 4th floor.</em>
+<p>
+
 
 There are certain conditions that we can observe by comparing the undamaged and damaged conditions. First of all, there is still a correlation in the change in acceleration with the location of the sensors. Also, the delta value has been significantly decreased over the length of the response. The largest change in acceleration is located at the center sensors for this particular condition, which might mean that the structure is not displacing as much once it reaches a damaged condition.
 
 **Correlation values**
 
+<img src="images/dcorr.JPG" width="300"/>
+</p>
+<p>
+<em>Figure 3.13: Correltion value among all sensors for the damaged condition.</em>
+<p>
+
 In this scenario, the correlation has changed greatly. Now, the 4th-story sensors display similarities with other sensors placed in the same side of the structure. However, the 3rd-story sensors are those that are inversely correlated. 
 
-## 2.5 Conclussion
+## 3.5 Conclussion
 
 The training data obtained has been statistically explored, cleaned, and analyzed for the purpose of identifying parameters for modeling later on.
 
@@ -343,6 +419,7 @@ Logistic regression is a technique commonly typically used for predicting binary
 <em>Figure 4.1: logistic_regression (sigmoid_activation_function)</em>
 
 ### 4.4.1 Justification for Logistic Regression:
+ The (sometimes surprising) observation is that this is still a linear mo
 Logistic regression is one of the most simple machine learning algorithms that can be used for binary classification problems. It is easy to implement and can be used as a baseline for any binary classification problem. As such, we decided to use it as a baseline to which all the other models will be compared with. It can also be built upon for developing more complex machine learning algorithms for deep learning. It computes a probability ouptut and in order to map this output to a binary category we needed to define a classification threshold (also known as the decision threshold). However, a linear regression does not necessarily yield an output betwewn 0 and 1. Therefore,to ensure the output probability is always between 0 and 1 we used a sigmoid activation function in the output layer. Different combinations of hyperparameters were tested for this algorithm, however to save computation time an epoch value of 20 was used with a learning rate of 0.001. A classification threshold of 0.2 was also found to work best for the given dataset. Although logistic regression is sensitive to outliers and multicorrelation between the features, our exploratory data analysis showed we do not have this problem for our given dataset. Therefore, we expect to achieve reasonable results using this method.
 
 
@@ -357,8 +434,7 @@ Logistic regression is one of the most simple machine learning algorithms that c
 For example, a simple linear regression can be extended by constructing polynomial features from the coefficients. In the standard linear regression case, the model is based on the expression previously shown above. If we want to fit a paraboloid to the data instead of a plane, we can combine the features in second-order polynomials, so that the model looks like this:
 
 <img src="https://render.githubusercontent.com/render/math?math=y = w_{0}%2Bw_{1}x_{1}%2Bw_{2}x_{2}%2Bw_{3}x_{1}x_{2}%2Bw_{4}{x_{1}}^2%2Bw_{5}{x_{2}}^2">
-
- The (sometimes surprising) observation is that this is still a linear model: to see this, imagine creating a new variable
+del: to see this, imagine creating a new variable
  
  <img src="https://render.githubusercontent.com/render/math?math=z = [x_{1},x_{2},x_{1}x_{2},{x_{1}}^2,{x_{2}}^2]">
  
@@ -381,7 +457,6 @@ The second method utilized was Artificial Neural Networks. Artificial Neural Net
 ## 4.7 Method 4: Recurrent Neural Networks:
 Recurrent neural networks (RNNs) are a very powerful tool, however they suffer from the vanishing gradient problem. In order to avoid this issue, we have used a better variation of RNNs called Long Short Term Networks (LSTM) for this project. This basically consists of cells that are responsible for "remembering" values over a time interval. This differs from the traditional neural netwok in that not only does it learn from the features, but it also takes care of sequence values over time. That is, for traditional neural networks it is assumed that all inputs and outputs are independent of each other. However, for RNNs the output depends on the previous computation. As a result of this, RNNs are very popular for sequential data such as time series because they perform much deeper understanding of sequence when compared with other algorithms. They are also applicable to any data that can be rearranged to resemble sequential data. In terms of visualization, one can think of RNN models as shown below:
 
-
  <img src="images/rnn_visualization.png" alt="Test" width="600"/>
 </p>
 <p>
@@ -398,11 +473,27 @@ Since, the index for our dataset actually represents time, then perhaps we can c
 ## 4.8 Method 5: Random Forest Regression:
 The third method utilized was Random Forest Regression. Random Forest Regression performs both regression and classification tasks with the use of multiple decision trees and bagging. It is easy to use and often returns good results even without hyperparameter tuning. Our group used this method to check if it offered an improvement on the previous model. The Random Forest Regression provided the worst results with extremely inaccurate accuracy rate, while also not working well for the type of data we had.
 
+<img src="images/Screen Shot 2020-12-05 at 6.36.01 PM.png" alt="Test" width="600"/>
+</p>
+<p>
+<em>Figure 4.4: Visualization_of_Random_Forest_Regression_models</em>
+
 ## 4.9 Issue:
 We noticed that the problem was the precision and recall are very low even though accuracy is high. This was caused by the damaged data being too sparse, only 3.5% of our data represents the damaged condition. The solution was too add copies of the damaged data into the training set.
 
 ## 4.10 Take Two:
 In take two we ran logistic regression and artifical nueral networks again to see if it yeilded better results with addiiton of new copies of damaged data. Logistic Regression returned good accuracy ~83%, much better precision ~60%, and Fantastic recall ~99%. Artifical Neural Network returned slighly better data with a fantastic accuracy ~98%, fantastic precision ~91%, and fantastic recall ~99%.
+
+<img src="images/Screen Shot 2020-12-05 at 6.36.01 PM.png" alt="Test" width="600"/>
+</p>
+<p>
+<em>Figure 4.4: Visualization_of_Random_Forest_Regression_models</em>
+ 
+ <img src="images/Screen Shot 2020-12-05 at 6.36.01 PM.png" alt="Test" width="600"/>
+</p>
+<p>
+<em>Figure 4.4: Visualization_of_Random_Forest_Regression_models</em>
+
 
 
 ## 5. Results
