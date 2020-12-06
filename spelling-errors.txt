@@ -4,7 +4,7 @@ accelerometers
 addiiton
 amoung
 ANNs
-Artifical
+artifical
 ASCE
 Assaf
 betwewn
@@ -22,7 +22,7 @@ Correltion
 damag
 dataframe
 datapoints
-dataset
+Dataset
 datasets
 dbudzik
 develope
