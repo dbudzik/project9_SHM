@@ -61,11 +61,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://dbudzik.github.io/project9_SHM/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://dbudzik.github.io/project9_SHM/v/b63dbef271d2072a8c826714c34e49a7abc65cee/" />
+  <link rel="alternate" type="text/html" href="https://dbudzik.github.io/project9_SHM/v/15f68854172e515b2d302774a7fef433f4486f98/" />
 
-  <meta name="manubot_html_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/b63dbef271d2072a8c826714c34e49a7abc65cee/" />
+  <meta name="manubot_html_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/15f68854172e515b2d302774a7fef433f4486f98/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/b63dbef271d2072a8c826714c34e49a7abc65cee/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/15f68854172e515b2d302774a7fef433f4486f98/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -99,9 +99,9 @@ title: 'Project 9: Structural Health Monitoring'
 
 <small><em>
 This manuscript
-([permalink](https://dbudzik.github.io/project9_SHM/v/b63dbef271d2072a8c826714c34e49a7abc65cee/))
+([permalink](https://dbudzik.github.io/project9_SHM/v/15f68854172e515b2d302774a7fef433f4486f98/))
 was automatically generated
-from [dbudzik/project9_SHM@b63dbef](https://github.com/dbudzik/project9_SHM/tree/b63dbef271d2072a8c826714c34e49a7abc65cee)
+from [dbudzik/project9_SHM@15f6885](https://github.com/dbudzik/project9_SHM/tree/15f68854172e515b2d302774a7fef433f4486f98)
 on December 6, 2020.
 </em></small>
 
@@ -687,6 +687,11 @@ The results of this project show that machine learning has a place in structural
 ### 6.3 Concluding Statement
 
 This project has shown that with relatively simple data important structural behaviors can be recognized. With this project as a proof of concept, future models can be made to simplify and vastly improve the efficiency of structural health monitoring. 
+
+
+## Conclusion
+
+Conclusion goes here
 
 
 ## References {.page_break_before}
