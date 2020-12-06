@@ -49,9 +49,9 @@
   <meta name="citation_fulltext_html_url" content="https://dbudzik.github.io/project9_SHM/" />
   <meta name="citation_pdf_url" content="https://dbudzik.github.io/project9_SHM/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://dbudzik.github.io/project9_SHM/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://dbudzik.github.io/project9_SHM/v/5a96e4ef49bcfaca702c4e5c55e024aa216c251d/" />
-  <meta name="manubot_html_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/5a96e4ef49bcfaca702c4e5c55e024aa216c251d/" />
-  <meta name="manubot_pdf_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/5a96e4ef49bcfaca702c4e5c55e024aa216c251d/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://dbudzik.github.io/project9_SHM/v/6519527c3e2519832faa2ac8ae4d6c52f5bbaf7f/" />
+  <meta name="manubot_html_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/6519527c3e2519832faa2ac8ae4d6c52f5bbaf7f/" />
+  <meta name="manubot_pdf_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/6519527c3e2519832faa2ac8ae4d6c52f5bbaf7f/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -65,9 +65,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://dbudzik.github.io/project9_SHM/v/5a96e4ef49bcfaca702c4e5c55e024aa216c251d/">permalink</a>)
+(<a href="https://dbudzik.github.io/project9_SHM/v/6519527c3e2519832faa2ac8ae4d6c52f5bbaf7f/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/dbudzik/project9_SHM/tree/5a96e4ef49bcfaca702c4e5c55e024aa216c251d">dbudzik/project9_SHM@5a96e4e</a>
+from <a href="https://github.com/dbudzik/project9_SHM/tree/6519527c3e2519832faa2ac8ae4d6c52f5bbaf7f">dbudzik/project9_SHM@6519527</a>
 on December 6, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -329,23 +329,23 @@ Sometimes the relationship between the dependent and independent variables maybe
 <p>
 <p><em>Figure 4.5: overview_of_recurrent_neural_network_model</em></p>
 <h2 id="method-5-random-forest-regression">4.8 Method 5: Random Forest Regression:</h2>
-<p>The third method utilized was Random Forest Regression. Random Forest Regression performs both regression and classification tasks with the use of multiple decision trees and bagging. It is easy to use and often returns good results even without hyperparameter tuning. Our group used this method to check if it offered an improvement on the previous model. The Random Forest Regression provided the worst results with extremely inaccurate accuracy rate, while also not working well for the type of data we had.</p>
+<p>The third method utilized was Random Forest Regression. Random Forest Regression performs both regression and classification tasks with the use of multiple decision trees and bagging. It is easy to use and often returns good results even without hyperparameter tuning. Our group used this method to check if it offered an improvement on the previous model. The Random Forest Regression provided the worst results with extremely inaccurate accuracy rate, while also not working well for the type of data we had. The model is shown below in figure 4.5.</p>
 <img src="images/Screen Shot 2020-12-05 at 6.36.01 PM.png" alt="Test" width="600"/>
 </p>
 <p>
-<p><em>Figure 4.4: Visualization_of_Random_Forest_Regression_models</em></p>
+<p><em>Figure 4.5: Visualization_of_Random_Forest_Regression_models</em></p>
 <h2 id="issue">4.9 Issue:</h2>
 <p>We noticed that the problem was the precision and recall are very low even though accuracy is high. This was caused by the damaged data being too sparse, only 3.5% of our data represents the damaged condition. The solution was too add copies of the damaged data into the training set.</p>
 <h2 id="take-two">4.10 Take Two:</h2>
-<p>In take two we ran logistic regression and artifical nueral networks again to see if it yeilded better results with addiiton of new copies of damaged data. Logistic Regression returned good accuracy ~83%, much better precision ~60%, and Fantastic recall ~99%. Artifical Neural Network returned slighly better data with a fantastic accuracy ~98%, fantastic precision ~91%, and fantastic recall ~99%.</p>
-<img src="content/images/Screen Shot 2020-12-05 at 6.58.35 PM.png" alt="Test" width="600"/>
+<p>In take two we ran logistic regression and artifical nueral networks again to see if it yeilded better results with addiiton of new copies of damaged data. Logistic Regression returned good accuracy ~83%, much better precision ~60%, and Fantastic recall ~99%. Artifical Neural Network returned slighly better data with a fantastic accuracy ~98%, fantastic precision ~91%, and fantastic recall ~99%. the results are shown in figure 4.6 and 4.7.</p>
+<img src="images/Screen Shot 2020-12-05 at 6.58.35 PM.png" alt="Test" width="600"/>
 </p>
 <p>
-<p><em>Figure 4.4: Test_2_Logistic_Regression_models</em></p>
-<img src="content/images/Screen Shot 2020-12-05 at 6.58.41 PM.png" alt="Test" width="600"/>
+<p><em>Figure 4.6: Test_2_Logistic_Regression_models</em></p>
+<img src="images/Screen Shot 2020-12-05 at 6.58.41 PM.png" alt="Test" width="600"/>
 </p>
 <p>
-<p><em>Figure 4.4: Take_2_Artificial_Neural_Networks</em></p>
+<p><em>Figure 4.7: Test_2_Artificial_Neural_Networks</em></p>
 <h2 id="results">5. Results</h2>
 <h3 id="metrics">5.1 Metrics</h3>
 <p>Metrics are an important aspect of machine learning because they provide an insight to the performance of the model. Therefore, it is important to think about the metrics that need to be used in order to properly judge a model’s behavior and also allow the model to better improve its predictions. The metrics that were used in this project include root mean squared error, R^2 value, accuracy, precision, and recall.</p>
