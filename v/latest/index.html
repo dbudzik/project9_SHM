@@ -49,9 +49,9 @@
   <meta name="citation_fulltext_html_url" content="https://dbudzik.github.io/project9_SHM/" />
   <meta name="citation_pdf_url" content="https://dbudzik.github.io/project9_SHM/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://dbudzik.github.io/project9_SHM/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://dbudzik.github.io/project9_SHM/v/e1c2213e2a78649ad74ac03abc76adee8e2fbe4e/" />
-  <meta name="manubot_html_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/e1c2213e2a78649ad74ac03abc76adee8e2fbe4e/" />
-  <meta name="manubot_pdf_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/e1c2213e2a78649ad74ac03abc76adee8e2fbe4e/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://dbudzik.github.io/project9_SHM/v/c4c5381360a89b458d47ab558b13c542fb818c89/" />
+  <meta name="manubot_html_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/c4c5381360a89b458d47ab558b13c542fb818c89/" />
+  <meta name="manubot_pdf_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/c4c5381360a89b458d47ab558b13c542fb818c89/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -65,9 +65,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://dbudzik.github.io/project9_SHM/v/e1c2213e2a78649ad74ac03abc76adee8e2fbe4e/">permalink</a>)
+(<a href="https://dbudzik.github.io/project9_SHM/v/c4c5381360a89b458d47ab558b13c542fb818c89/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/dbudzik/project9_SHM/tree/e1c2213e2a78649ad74ac03abc76adee8e2fbe4e">dbudzik/project9_SHM@e1c2213</a>
+from <a href="https://github.com/dbudzik/project9_SHM/tree/c4c5381360a89b458d47ab558b13c542fb818c89">dbudzik/project9_SHM@c4c5381</a>
 on December 6, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -97,9 +97,9 @@ on December 6, 2020.
 <p>Civil infrastructure all around is subjected to the challenges posed by aging, deterioration, and extreme events. In recent years, structural health monitoring has grown in importance as failure and collapse of infrastructure result in harmful effects on a nation’s economy and development. Recent advances as seen the use of sensors to obtain the dynamic characteristics of structures. This has led to the potential of collecting dynamic data at more frequent intervals thus leading to continuous monitoring. In this report, we use exploratory data analysis techniques to see if such dynamic data collected from structures can be used to infer the condition of a structure. We have also tried different machine learning algorithms to predict the condition of a structure based on given acceleration signals. For this study, the ASCE benchmark problem experimental phase II structure was used.</p>
 <h2 id="introduction">2. Introduction</h2>
 <h3 id="motivation-behind-the-research-experiment">2.1 Motivation behind the research experiment</h3>
-<p>Identification of damage from the analysis of vibration signals has received significant attention in the civil, mechanical and aerospace fields.
+<p>Identification of damage from the analysis of vibration signals has received significant attention in the civil, mechanical, and aerospace fields.
 Structural health monitoring allows the engineer to use sensing of the structural responses in conjunction with appropriate analysis and modeling techniques, to monitor the condition of a structure. The problem most commonly considered is that where data is recorded at two different times and it is of interest to determine if the structure suffered damage in the time interval between the two observations. The behavior of the system during the observation periods is typically assumed linear and the damage is identified as changes in system parameters. A solution can be obtained in principle by using the measured data to optimize a model of the structure in the two states and inspecting the differences.
-The goal of the experiment was to develope an automated structural health monitoring system capable of providing early warnings against structural damage. In order to achieve this, damage was simulated by removing bracing within the structure in nine different ways as shown in the following sections.</p>
+The goal of the experiment was to develop an automated structural health monitoring system capable of providing early warnings against structural damage. In order to achieve this, damage was simulated by removing bracing within the structure in nine different ways as shown in the following sections.</p>
 <h3 id="literature-review">2.2 Literature Review</h3>
 <p>Due to the importance of this research, there have been multiple papers regarding how to optimize the recollection of the data and quantity needed for training the machine learning algorithm. Examination of the literature reveals, however, that the assumptions used to establish the various approaches vary widely and it is unclear what is the true capability of the current state of the art in damage detection of civil engineering structures.</p>
 <h4 id="d-cnns-for-structural-damage-detection-verification-on-a-structural-health-monitoring-benchmark-data">1-D CNNs for structural damage detection: Verification on a structural health monitoring benchmark data</h4>
@@ -141,10 +141,9 @@ The damage was estimated successfully by applying a CNN-based approach only requ
 <em>Figure 2.3: Cases 6-8</em>
 <p>
 <p><strong>Force Input</strong></p>
-<p>Ambient vibration was inputted into the structure by two types of forced excitations. The forced exci- tation cases consider both impact hammer tests, and broadband excitations provided by an electrodynamic shaker.
-The choice of these two methods is to simulate the structure’s response during an earthquake.</p>
+<p>Ambient vibration was inputted into the structure by two types of forced excitations. The forced excitation cases consider both impact hammer tests, and broadband excitations provided by an electrodynamic shaker. The choice of these two methods is to simulate the structure’s response during an earthquake.</p>
 <h3 id="motivation-behind-the-project-on-structural-damage-detection">2.4 Motivation behind the project on structural damage detection</h3>
-<p>Numerous structural health monitoring algorithms have been developed and been implemented on experimental and full-scale structure.Because the techniques are applied to different structures under various conditions, the relative merits of each algorithm are not obvious. Thus, the community would benefit from a comparison of several algorithms when applied to the same problems.</p>
+<p>Numerous structural health monitoring algorithms have been developed and been implemented on experimental and full-scale structure. Because the techniques are applied to different structures under various conditions, the relative merits of each algorithm are not obvious. Thus, the community would benefit from a comparison of several algorithms when applied to the same problems.</p>
 <h1 id="exploratory-data-analysis">3. Exploratory Data Analysis</h1>
 <p>The goal of this EDA is to identify characteristics between damage and undamage conditions in order to perform data preparation and develop a model in the future steps.</p>
 <h2 id="preparing-the-data">3.1 Preparing the data</h2>
