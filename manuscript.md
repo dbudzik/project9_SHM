@@ -61,11 +61,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://dbudzik.github.io/project9_SHM/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://dbudzik.github.io/project9_SHM/v/e1c2213e2a78649ad74ac03abc76adee8e2fbe4e/" />
+  <link rel="alternate" type="text/html" href="https://dbudzik.github.io/project9_SHM/v/c4c5381360a89b458d47ab558b13c542fb818c89/" />
 
-  <meta name="manubot_html_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/e1c2213e2a78649ad74ac03abc76adee8e2fbe4e/" />
+  <meta name="manubot_html_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/c4c5381360a89b458d47ab558b13c542fb818c89/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/e1c2213e2a78649ad74ac03abc76adee8e2fbe4e/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/c4c5381360a89b458d47ab558b13c542fb818c89/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -99,9 +99,9 @@ title: 'Project 9: Structural Health Monitoring'
 
 <small><em>
 This manuscript
-([permalink](https://dbudzik.github.io/project9_SHM/v/e1c2213e2a78649ad74ac03abc76adee8e2fbe4e/))
+([permalink](https://dbudzik.github.io/project9_SHM/v/c4c5381360a89b458d47ab558b13c542fb818c89/))
 was automatically generated
-from [dbudzik/project9_SHM@e1c2213](https://github.com/dbudzik/project9_SHM/tree/e1c2213e2a78649ad74ac03abc76adee8e2fbe4e)
+from [dbudzik/project9_SHM@c4c5381](https://github.com/dbudzik/project9_SHM/tree/c4c5381360a89b458d47ab558b13c542fb818c89)
 on December 6, 2020.
 </em></small>
 
@@ -143,9 +143,9 @@ Civil infrastructure all around is subjected to the challenges posed by aging, d
 	
 
 ### 2.1 Motivation behind the research experiment
-Identification of damage from the analysis of vibration signals has received significant attention in the civil, mechanical and aerospace fields.
+Identification of damage from the analysis of vibration signals has received significant attention in the civil, mechanical, and aerospace fields.
 Structural health monitoring allows the engineer to use sensing of the structural responses in conjunction with appropriate analysis and modeling techniques, to monitor the condition of a structure. The problem most commonly considered is that where data is recorded at two different times and it is of interest to determine if the structure suffered damage in the time interval between the two observations. The behavior of the system during the observation periods is typically assumed linear and the damage is identified as changes in system parameters. A solution can be obtained in principle by using the measured data to optimize a model of the structure in the two states and inspecting the differences. 
-The goal of the experiment was to develope an automated structural health monitoring system capable of providing early warnings against structural damage. In order to achieve this, damage was simulated by removing bracing within the structure in nine different ways as shown in the following sections.
+The goal of the experiment was to develop an automated structural health monitoring system capable of providing early warnings against structural damage. In order to achieve this, damage was simulated by removing bracing within the structure in nine different ways as shown in the following sections.
 	
 
 ### 2.2 Literature Review
@@ -206,12 +206,11 @@ Cases with known and unknown input and damage scenarios including symmetrical an
 	
 **Force Input**
 
-Ambient vibration was inputted into the structure by two types of forced excitations. The forced exci- tation cases consider both impact hammer tests, and broadband excitations provided by an electrodynamic shaker. 
-The choice of these two methods is to simulate the structure's response during an earthquake.
+Ambient vibration was inputted into the structure by two types of forced excitations. The forced excitation cases consider both impact hammer tests, and broadband excitations provided by an electrodynamic shaker. The choice of these two methods is to simulate the structure's response during an earthquake.
 	
 
 ### 2.4 Motivation behind the project on structural damage detection
-Numerous structural health monitoring algorithms have been developed and been implemented on experimental and full-scale structure.Because the techniques are applied to different structures under various conditions, the relative merits of each algorithm are not obvious. Thus, the community would benefit from a comparison of several algorithms when applied to the same problems.
+Numerous structural health monitoring algorithms have been developed and been implemented on experimental and full-scale structure. Because the techniques are applied to different structures under various conditions, the relative merits of each algorithm are not obvious. Thus, the community would benefit from a comparison of several algorithms when applied to the same problems.
 
 
 # 3. Exploratory Data Analysis

@@ -1,5 +1,4 @@
 content/01.abstract.md:2:ASCE
-content/02. Introduction.md:7:develope
 content/02. Introduction.md:14:CNNs
 content/02. Introduction.md:15:CNNs
 content/02. Introduction.md:16:accelerometers
@@ -9,10 +8,8 @@ content/02. Introduction.md:23:Convolutional
 content/02. Introduction.md:39:accelerometers
 content/02. Introduction.md:39:MATLAB
 content/02. Introduction.md:68:electrodynamic
-content/02. Introduction.md:68:exci
 content/02. Introduction.md:68:excitations
 content/02. Introduction.md:68:excitations
-content/02. Introduction.md:68:tation
 content/03. EDA.md:3:EDA
 content/03. EDA.md:3:undamage
 content/03. EDA.md:10:damag

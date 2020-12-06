@@ -27,7 +27,6 @@ dbudzik
 develope
 EDA
 electrodynamic
-exci
 excitations
 flor
 fsdasy
@@ -58,7 +57,6 @@ skewness
 slighly
 softmax
 succesful
-tation
 trainign
 tyding
 undamage
