@@ -61,11 +61,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://dbudzik.github.io/project9_SHM/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://dbudzik.github.io/project9_SHM/v/579540dd388f89533de4fc3338e7459a56a81160/" />
+  <link rel="alternate" type="text/html" href="https://dbudzik.github.io/project9_SHM/v/a9da172cf0470ef18c3e33497e34914cb297dce4/" />
 
-  <meta name="manubot_html_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/579540dd388f89533de4fc3338e7459a56a81160/" />
+  <meta name="manubot_html_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/a9da172cf0470ef18c3e33497e34914cb297dce4/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/579540dd388f89533de4fc3338e7459a56a81160/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/a9da172cf0470ef18c3e33497e34914cb297dce4/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -99,9 +99,9 @@ title: 'Project 9: Structural Health Monitoring'
 
 <small><em>
 This manuscript
-([permalink](https://dbudzik.github.io/project9_SHM/v/579540dd388f89533de4fc3338e7459a56a81160/))
+([permalink](https://dbudzik.github.io/project9_SHM/v/a9da172cf0470ef18c3e33497e34914cb297dce4/))
 was automatically generated
-from [dbudzik/project9_SHM@579540d](https://github.com/dbudzik/project9_SHM/tree/579540dd388f89533de4fc3338e7459a56a81160)
+from [dbudzik/project9_SHM@a9da172](https://github.com/dbudzik/project9_SHM/tree/a9da172cf0470ef18c3e33497e34914cb297dce4)
 on December 6, 2020.
 </em></small>
 
@@ -416,7 +416,7 @@ The training data obtained has been statistically explored, cleaned, and analyze
 
 ## 4. Machine Learning Methods
 
-## Overview
+### Overview
 Following a comprehensive exploratory data analysis as outlined in the previous section, which was valuable in looking at different patterns and features of the data obtained from various sensors. The next task then, was to classify this data as either damaged or undamaged. Classification problems are very common in the data mining and machine learning applications. As such, several machine learning algorithms have been proposed and developed over the years for solving such problems. For our project, we have evaluated and tested five of those algorithms namely, Logistic regression, polynomial regression, artificial neural networks, recurrent neural networks and random forests.
 
 ### 4.1 Explanation of the Problem:

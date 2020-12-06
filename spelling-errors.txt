@@ -12,7 +12,7 @@ CNNs
 Convolutional
 dataframe
 datapoints
-Dataset
+dataset
 datasets
 dbudzik
 EDA
