@@ -49,9 +49,9 @@
   <meta name="citation_fulltext_html_url" content="https://dbudzik.github.io/project9_SHM/" />
   <meta name="citation_pdf_url" content="https://dbudzik.github.io/project9_SHM/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://dbudzik.github.io/project9_SHM/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://dbudzik.github.io/project9_SHM/v/a48457dfbb03abefb1c0881c33ab9a155340e1e1/" />
-  <meta name="manubot_html_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/a48457dfbb03abefb1c0881c33ab9a155340e1e1/" />
-  <meta name="manubot_pdf_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/a48457dfbb03abefb1c0881c33ab9a155340e1e1/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://dbudzik.github.io/project9_SHM/v/3d4470e36735a5c02d35c8a710a19487b16e8cd3/" />
+  <meta name="manubot_html_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/3d4470e36735a5c02d35c8a710a19487b16e8cd3/" />
+  <meta name="manubot_pdf_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/3d4470e36735a5c02d35c8a710a19487b16e8cd3/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -65,9 +65,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://dbudzik.github.io/project9_SHM/v/a48457dfbb03abefb1c0881c33ab9a155340e1e1/">permalink</a>)
+(<a href="https://dbudzik.github.io/project9_SHM/v/3d4470e36735a5c02d35c8a710a19487b16e8cd3/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/dbudzik/project9_SHM/tree/a48457dfbb03abefb1c0881c33ab9a155340e1e1">dbudzik/project9_SHM@a48457d</a>
+from <a href="https://github.com/dbudzik/project9_SHM/tree/3d4470e36735a5c02d35c8a710a19487b16e8cd3">dbudzik/project9_SHM@3d4470e</a>
 on December 6, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -146,7 +146,7 @@ The damage was estimated successfully by applying a CNN-based approach only requ
 <p>Numerous structural health monitoring algorithms have been developed and been implemented on experimental and full-scale structure. Because the techniques are applied to different structures under various conditions, the relative merits of each algorithm are not obvious. Thus, the community would benefit from a comparison of several algorithms when applied to the same problems.</p>
 <h2 id="exploratory-data-analysis">3. Exploratory Data Analysis</h2>
 <p>The goal of this EDA is to identify characteristics between damage and undamaged conditions in order to perform data preparation and develop a model in the future steps.</p>
-<h2 id="preparing-the-data">3.1 Preparing the data</h2>
+<h3 id="preparing-the-data">3.1 Preparing the data</h3>
 <img src="images/condition.JPG" width="300"/>
 </p>
 <p>
@@ -186,7 +186,7 @@ The provided training dataframe had columns names such as DA04, which correspond
 </ul>
 <p>where fs_days = 200 (Hz).</p>
 <p>Therefore, the final step on the tidying portion of the exploratory data analysis was to transform the “Time” column into seconds by divided by 200.</p>
-<h2 id="statistical-properties">3.2 Statistical Properties</h2>
+<h3 id="statistical-properties">3.2 Statistical Properties</h3>
 <p>We can learn certain details of the response of the structure by observing the data points that have a very drastic change in amplitude. In other words, there are common points in time among all sensors where the acceleration measured does a 180 degree change. This phenomenon occurs as the dynamics response of structure is harmonic and it develops nodes. A simplification of this idea is to understand how the sensors in the 4th story will move back and forward while the nodes underneath are ahead or behind that displacement.</p>
 <img src="images/overalldata.JPG" width="300"/>
 </p>
@@ -218,7 +218,7 @@ The provided training dataframe had columns names such as DA04, which correspond
 <li>The second and third floor has similar behavior since the center sensor is still normally distributed with mean very close to 0 and sensors on the west and east side are skewed to the left.</li>
 <li>The fourth floor now shows the most centered behavior. However, it is important to recall the statistical characteristics such as standard deviation. Now the 4th-floor values are significantly wider.</li>
 </ul>
-<h2 id="exploring-the-dataframe-that-contains-the-undamaged-condition">3.3 Exploring the dataframe that contains the undamaged condition</h2>
+<h3 id="exploring-the-dataframe-that-contains-the-undamaged-condition">3.3 Exploring the dataframe that contains the undamaged condition</h3>
 <p>Previously, we explored some characteristics of the undamaged dataset. Then, the dataset has been arranged and tidied to finally observe how there was a large among of non-available data points, which can be observed in the last row (index number &gt; time_sec)</p>
 <p><strong>Is the change in acceleration always the same?</strong>
 For the following inspection, recall that data acquisition was started several seconds after the excitation was turned on to ensure that the system had reached a steady state condition during the shaker testing.</p>
@@ -242,7 +242,7 @@ For the following inspection, recall that data acquisition was started several s
 <p>
 <p>The table above is with the purpose of locating the directly correlated and inversely correlated sensors. Just as the difference in acceleration graphs showed, there is significant correlation between those sensors that are located in the same side of the structure.</p>
 <p>However, there is an inverse correlation in those sensors located at the fourth floor. The reason behind this behavior is that we are analyzing an elastic structure that is being excited by an harmonic input from the ground. Therefore, the top floor is swinging, which creates a driving behavior in one of the corners at a time.</p>
-<h2 id="exploring-the-dataframe-that-contains-the-undamaged-condition-1">3.4 Exploring the dataframe that contains the undamaged condition</h2>
+<h3 id="exploring-the-dataframe-that-contains-the-undamaged-condition-1">3.4 Exploring the dataframe that contains the undamaged condition</h3>
 <p><strong>Is the change in acceleration always the same?</strong></p>
 <img src="images/dacc12.JPG" width="300"/>
 </p>
@@ -262,7 +262,7 @@ For the following inspection, recall that data acquisition was started several s
 <em>Figure 3.13: Correlation value among all sensors for the damaged condition.</em>
 <p>
 <p>In this scenario, the correlation has changed greatly. Now, the 4th-story sensors display similarities with other sensors placed in the same side of the structure. However, the 3rd-story sensors are those that are inversely correlated.</p>
-<h2 id="conclusion">3.5 Conclusion</h2>
+<h3 id="conclusion">3.5 Conclusion</h3>
 <p>The training data obtained has been statistically explored, cleaned, and analyzed for the purpose of identifying parameters for modeling later on.</p>
 <ul>
 <li>Missing data has been removed.</li>

@@ -61,11 +61,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://dbudzik.github.io/project9_SHM/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://dbudzik.github.io/project9_SHM/v/a48457dfbb03abefb1c0881c33ab9a155340e1e1/" />
+  <link rel="alternate" type="text/html" href="https://dbudzik.github.io/project9_SHM/v/3d4470e36735a5c02d35c8a710a19487b16e8cd3/" />
 
-  <meta name="manubot_html_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/a48457dfbb03abefb1c0881c33ab9a155340e1e1/" />
+  <meta name="manubot_html_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/3d4470e36735a5c02d35c8a710a19487b16e8cd3/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/a48457dfbb03abefb1c0881c33ab9a155340e1e1/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/3d4470e36735a5c02d35c8a710a19487b16e8cd3/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -99,9 +99,9 @@ title: 'Project 9: Structural Health Monitoring'
 
 <small><em>
 This manuscript
-([permalink](https://dbudzik.github.io/project9_SHM/v/a48457dfbb03abefb1c0881c33ab9a155340e1e1/))
+([permalink](https://dbudzik.github.io/project9_SHM/v/3d4470e36735a5c02d35c8a710a19487b16e8cd3/))
 was automatically generated
-from [dbudzik/project9_SHM@a48457d](https://github.com/dbudzik/project9_SHM/tree/a48457dfbb03abefb1c0881c33ab9a155340e1e1)
+from [dbudzik/project9_SHM@3d4470e](https://github.com/dbudzik/project9_SHM/tree/3d4470e36735a5c02d35c8a710a19487b16e8cd3)
 on December 6, 2020.
 </em></small>
 
@@ -217,7 +217,7 @@ Numerous structural health monitoring algorithms have been developed and been im
 
 The goal of this EDA is to identify characteristics between damage and undamaged conditions in order to perform data preparation and develop a model in the future steps.
 
-## 3.1 Preparing the data
+### 3.1 Preparing the data
 
 <img src="images/condition.JPG" width="300"/>
 </p>
@@ -276,7 +276,7 @@ where fs_days = 200 (Hz).
 
 Therefore, the final step on the tidying portion of the exploratory data analysis was to transform the "Time" column into seconds by divided by 200.
 
-## 3.2 Statistical Properties
+### 3.2 Statistical Properties
 
 We can learn certain details of the response of the structure by observing the data points that have a very drastic change in amplitude. In other words, there are common points in time among all sensors where the acceleration measured does a 180 degree change. This phenomenon occurs as the dynamics response of structure is harmonic and it develops nodes. A simplification of this idea is to understand how the sensors in the 4th story will move back and forward while the nodes underneath are ahead or behind that displacement.
 
@@ -323,7 +323,7 @@ For the case of damage condition, the normal distribution is not as smooth as sh
 - The second and third floor has similar behavior since the center sensor is still normally distributed with mean very close to 0 and sensors on the west and east side are skewed to the left.
 - The fourth floor now shows the most centered behavior. However, it is important to recall the statistical characteristics such as standard deviation. Now the 4th-floor values are significantly wider.
 
-## 3.3 Exploring the dataframe that contains the undamaged condition
+### 3.3 Exploring the dataframe that contains the undamaged condition
 
 Previously, we explored some characteristics of the undamaged dataset. Then, the dataset has been arranged and tidied to finally observe how there was a large among of non-available data points, which can be observed in the last row (index number > time_sec)
 
@@ -365,7 +365,7 @@ The table above is with the purpose of locating the directly correlated and inve
 However, there is an inverse correlation in those sensors located at the fourth floor. The reason behind this behavior is that we are analyzing an elastic structure that is being excited by an harmonic input from the ground. Therefore, the top floor is swinging, which creates a driving behavior in one of the corners at a time.
 
 
-## 3.4 Exploring the dataframe that contains the undamaged condition
+### 3.4 Exploring the dataframe that contains the undamaged condition
 
 **Is the change in acceleration always the same?**
 
@@ -399,7 +399,7 @@ There are certain conditions that we can observe by comparing the undamaged and 
 
 In this scenario, the correlation has changed greatly. Now, the 4th-story sensors display similarities with other sensors placed in the same side of the structure. However, the 3rd-story sensors are those that are inversely correlated. 
 
-## 3.5 Conclusion
+### 3.5 Conclusion
 
 The training data obtained has been statistically explored, cleaned, and analyzed for the purpose of identifying parameters for modeling later on.
 
