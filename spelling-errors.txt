@@ -6,13 +6,11 @@ ANNs
 Artifical
 ASCE
 Assaf
-betwewn
 Bolaji
 bolajilawal
 Budzik
 CNNs
 Convolutional
-coomparison
 dataframe
 datapoints
 dataset
@@ -30,9 +28,7 @@ LSTM
 MATLAB
 Mederos
 multicorrelation
-netwok
 nueral
-ouptut
 overfitting
 paraboloid
 regularizations
@@ -46,4 +42,3 @@ softmax
 succesful
 undamage
 yeilded
-yeiled
