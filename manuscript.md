@@ -61,11 +61,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://dbudzik.github.io/project9_SHM/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://dbudzik.github.io/project9_SHM/v/6519527c3e2519832faa2ac8ae4d6c52f5bbaf7f/" />
+  <link rel="alternate" type="text/html" href="https://dbudzik.github.io/project9_SHM/v/85d914626df898c55c0373b40f85536e045f119f/" />
 
-  <meta name="manubot_html_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/6519527c3e2519832faa2ac8ae4d6c52f5bbaf7f/" />
+  <meta name="manubot_html_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/85d914626df898c55c0373b40f85536e045f119f/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/6519527c3e2519832faa2ac8ae4d6c52f5bbaf7f/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/85d914626df898c55c0373b40f85536e045f119f/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -99,9 +99,9 @@ title: 'Project 9: Structural Health Monitoring'
 
 <small><em>
 This manuscript
-([permalink](https://dbudzik.github.io/project9_SHM/v/6519527c3e2519832faa2ac8ae4d6c52f5bbaf7f/))
+([permalink](https://dbudzik.github.io/project9_SHM/v/85d914626df898c55c0373b40f85536e045f119f/))
 was automatically generated
-from [dbudzik/project9_SHM@6519527](https://github.com/dbudzik/project9_SHM/tree/6519527c3e2519832faa2ac8ae4d6c52f5bbaf7f)
+from [dbudzik/project9_SHM@85d9146](https://github.com/dbudzik/project9_SHM/tree/85d914626df898c55c0373b40f85536e045f119f)
 on December 6, 2020.
 </em></small>
 
@@ -453,6 +453,11 @@ del: to see this, imagine creating a new variable
  
 ## 4.6 Method 3: Artificial Neural Networks:
 The second method utilized was Artificial Neural Networks. Artificial Neural Networks are more complex than logistic regression. This method adds a bunch of hidden non-linear layers to the logistic regression model. Our group used this method to check if it offered an improvement on the previous model. The artificial neural networks yeiled average results with great accuracy ~96%, Improved precision ~45%, Improved recall ~60%, although the metrics were not good overall.
+
+ <img src="images/Screen Shot 2020-12-05 at 6.58.41 PM.png" alt="Test" width="600"/>
+</p>
+<p>
+<em>Figure 4.4: visualization_of_recurrent_neural_network_models</em>
 
 ## 4.7 Method 4: Recurrent Neural Networks:
 Recurrent neural networks (RNNs) are a very powerful tool, however they suffer from the vanishing gradient problem. In order to avoid this issue, we have used a better variation of RNNs called Long Short Term Networks (LSTM) for this project. This basically consists of cells that are responsible for "remembering" values over a time interval. This differs from the traditional neural netwok in that not only does it learn from the features, but it also takes care of sequence values over time. That is, for traditional neural networks it is assumed that all inputs and outputs are independent of each other. However, for RNNs the output depends on the previous computation. As a result of this, RNNs are very popular for sequential data such as time series because they perform much deeper understanding of sequence when compared with other algorithms. They are also applicable to any data that can be rearranged to resemble sequential data. In terms of visualization, one can think of RNN models as shown below:
