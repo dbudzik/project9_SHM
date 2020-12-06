@@ -35,7 +35,7 @@ regularizations
 RMSE
 RNN
 RNNs
-sigmoid
+Sigmoid
 skewness
 softmax
 succesful

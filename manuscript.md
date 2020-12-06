@@ -61,11 +61,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://dbudzik.github.io/project9_SHM/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://dbudzik.github.io/project9_SHM/v/a9da172cf0470ef18c3e33497e34914cb297dce4/" />
+  <link rel="alternate" type="text/html" href="https://dbudzik.github.io/project9_SHM/v/fdcc8a596c19e52768cc43a033e6bbcc25908afb/" />
 
-  <meta name="manubot_html_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/a9da172cf0470ef18c3e33497e34914cb297dce4/" />
+  <meta name="manubot_html_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/fdcc8a596c19e52768cc43a033e6bbcc25908afb/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/a9da172cf0470ef18c3e33497e34914cb297dce4/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/fdcc8a596c19e52768cc43a033e6bbcc25908afb/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -99,9 +99,9 @@ title: 'Project 9: Structural Health Monitoring'
 
 <small><em>
 This manuscript
-([permalink](https://dbudzik.github.io/project9_SHM/v/a9da172cf0470ef18c3e33497e34914cb297dce4/))
+([permalink](https://dbudzik.github.io/project9_SHM/v/fdcc8a596c19e52768cc43a033e6bbcc25908afb/))
 was automatically generated
-from [dbudzik/project9_SHM@a9da172](https://github.com/dbudzik/project9_SHM/tree/a9da172cf0470ef18c3e33497e34914cb297dce4)
+from [dbudzik/project9_SHM@fdcc8a5](https://github.com/dbudzik/project9_SHM/tree/fdcc8a596c19e52768cc43a033e6bbcc25908afb)
 on December 6, 2020.
 </em></small>
 
@@ -281,7 +281,7 @@ Therefore, the final step on the tidying portion of the exploratory data analysi
 We can learn certain details of the response of the structure by observing the data points that have a very drastic change in amplitude. In other words, there are common points in time among all sensors where the acceleration measured does a 180 degree change. This phenomenon occurs as the dynamics response of structure is harmonic and it develops nodes. A simplification of this idea is to understand how the sensors in the 4th story will move back and forward while the nodes underneath are ahead or behind that displacement.
 
 
-<img src="images/overalldata.JPG" width="300"/>
+<img src="images/overalldata.JPG" width="400"/>
 </p>
 <p>
 <em>Figure 3.5: Visualization of the overall data.</em>
@@ -296,7 +296,7 @@ In the case of undamaged dataset, the standard deviation values of the fourth fl
 **Checking head, tail of data**
 
 
-<img src="images/undamagedstats.JPG" width="300"/>
+<img src="images/undamagedstats.JPG" width="400"/>
 </p>
 <p>
 <em>Figure 3.6: Histogram of undamaged acceleration values at each sensor</em>
@@ -310,7 +310,7 @@ In the case of the undamaged dataset, all the graphs show normal distribution. H
 - Sensors located at the east side of the structure are all skewed except the one located at the second floor. The sensor at the 4th floor captured the most out of plane behavior as the '4th_story_03' sensor is significantly skewed to the left.
 
 
-<img src="images/damagedstats.JPG" width="300"/>
+<img src="images/damagedstats.JPG" width="400"/>
 </p>
 <p>
 <em>Figure 3.7: Histogram of damaged acceleration values at each sensor.</em>
@@ -331,7 +331,7 @@ Previously, we explored some characteristics of the undamaged dataset. Then, the
 For the following inspection, recall that data acquisition was started several seconds after the excitation was turned on to ensure that the system had reached a steady state condition during the shaker testing.
 
 
-<img src="images/undacc13.JPG" width="300"/>
+<img src="images/undacc13.JPG" width="400"/>
 </p>
 <p>
 <em>Figure 3.8: Changes in acceleration during the undamaged condition for the first and second floor.</em>
@@ -339,7 +339,7 @@ For the following inspection, recall that data acquisition was started several s
 
 
 
-<img src="images/undacc34.JPG" width="300"/>
+<img src="images/undacc34.JPG" width="400"/>
 </p>
 <p>
 <em>Figure 3.9: Changes in acceleration during the undamaged condition for the third and fourth.</em>
@@ -353,7 +353,7 @@ Also note how the missing data produced zero values in the left portion of the d
 **Correlation values**
 
 
-<img src="images/undcorr.JPG" width="300"/>
+<img src="images/undcorr.JPG" width="400"/>
 </p>
 <p>
 <em>Figure 3.10: Correlation values among all sensors in the undamaged condition.</em>
@@ -365,19 +365,19 @@ The table above is with the purpose of locating the directly correlated and inve
 However, there is an inverse correlation in those sensors located at the fourth floor. The reason behind this behavior is that we are analyzing an elastic structure that is being excited by an harmonic input from the ground. Therefore, the top floor is swinging, which creates a driving behavior in one of the corners at a time.
 
 
-### 3.4 Exploring the dataframe that contains the undamaged condition
+### 3.4 Exploring the dataframe that contains the damaged condition
 
 **Is the change in acceleration always the same?**
 
 
-<img src="images/dacc12.JPG" width="300"/>
+<img src="images/dacc12.JPG" width="400"/>
 </p>
 <p>
 <em>Figure 3.11: Change in acceleration between sensors in the damaged condition for the 1st and 2nd floor.</em>
 <p>
 
 
-<img src="images/dacc34.JPG" width="300"/>
+<img src="images/dacc34.JPG" width="400"/>
 </p>
 <p>
 <em>Figure 3.12: Change in acceleration between sensors in the damaged condition for the 3rd and 4th floor.</em>
@@ -390,7 +390,7 @@ There are certain conditions that we can observe by comparing the undamaged and 
 **Correlation values**
 
 
-<img src="images/dcorr.JPG" width="300"/>
+<img src="images/dcorr.JPG" width="400"/>
 </p>
 <p>
 <em>Figure 3.13: Correlation value among all sensors for the damaged condition.</em>
