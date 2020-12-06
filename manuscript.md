@@ -61,11 +61,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://dbudzik.github.io/project9_SHM/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://dbudzik.github.io/project9_SHM/v/7ef15ba0010c4a83cca0ee780e4c88f2e432c262/" />
+  <link rel="alternate" type="text/html" href="https://dbudzik.github.io/project9_SHM/v/a48457dfbb03abefb1c0881c33ab9a155340e1e1/" />
 
-  <meta name="manubot_html_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/7ef15ba0010c4a83cca0ee780e4c88f2e432c262/" />
+  <meta name="manubot_html_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/a48457dfbb03abefb1c0881c33ab9a155340e1e1/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/7ef15ba0010c4a83cca0ee780e4c88f2e432c262/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/a48457dfbb03abefb1c0881c33ab9a155340e1e1/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -99,9 +99,9 @@ title: 'Project 9: Structural Health Monitoring'
 
 <small><em>
 This manuscript
-([permalink](https://dbudzik.github.io/project9_SHM/v/7ef15ba0010c4a83cca0ee780e4c88f2e432c262/))
+([permalink](https://dbudzik.github.io/project9_SHM/v/a48457dfbb03abefb1c0881c33ab9a155340e1e1/))
 was automatically generated
-from [dbudzik/project9_SHM@7ef15ba](https://github.com/dbudzik/project9_SHM/tree/7ef15ba0010c4a83cca0ee780e4c88f2e432c262)
+from [dbudzik/project9_SHM@a48457d](https://github.com/dbudzik/project9_SHM/tree/a48457dfbb03abefb1c0881c33ab9a155340e1e1)
 on December 6, 2020.
 </em></small>
 
@@ -353,7 +353,7 @@ Also note how the missing data produced zero values in the left portion of the d
 **Correlation values**
 
 
-<img src="images/uncorr.JPG" width="300"/>
+<img src="images/undcorr.JPG" width="300"/>
 </p>
 <p>
 <em>Figure 3.10: Correlation values among all sensors in the undamaged condition.</em>
