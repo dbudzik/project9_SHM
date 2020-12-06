@@ -4,7 +4,7 @@ accelerometers
 addiiton
 amoung
 ANNs
-Artifical
+artifical
 ASCE
 Assaf
 betwewn
@@ -14,13 +14,15 @@ Boxplots
 Budzik
 ccentered
 charnge
+CNNs
 Conclussion
 conditio
 continous
+Convolutional
 coomparison
 dataframe
 datapoints
-Dataset
+dataset
 datasets
 dbudzik
 develope
@@ -37,6 +39,7 @@ Kaggle
 Lawal
 loccated
 LSTM
+MATLAB
 Mederos
 multicorrelation
 netwok
