@@ -61,11 +61,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://dbudzik.github.io/project9_SHM/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://dbudzik.github.io/project9_SHM/v/85834b775e503c6ef6e6ba84e4f5f96c8704320f/" />
+  <link rel="alternate" type="text/html" href="https://dbudzik.github.io/project9_SHM/v/dceaa825bc2ebb678b0fad536925512ff0175a81/" />
 
-  <meta name="manubot_html_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/85834b775e503c6ef6e6ba84e4f5f96c8704320f/" />
+  <meta name="manubot_html_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/dceaa825bc2ebb678b0fad536925512ff0175a81/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/85834b775e503c6ef6e6ba84e4f5f96c8704320f/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/dceaa825bc2ebb678b0fad536925512ff0175a81/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -99,9 +99,9 @@ title: 'Project 9: Structural Health Monitoring'
 
 <small><em>
 This manuscript
-([permalink](https://dbudzik.github.io/project9_SHM/v/85834b775e503c6ef6e6ba84e4f5f96c8704320f/))
+([permalink](https://dbudzik.github.io/project9_SHM/v/dceaa825bc2ebb678b0fad536925512ff0175a81/))
 was automatically generated
-from [dbudzik/project9_SHM@85834b7](https://github.com/dbudzik/project9_SHM/tree/85834b775e503c6ef6e6ba84e4f5f96c8704320f)
+from [dbudzik/project9_SHM@dceaa82](https://github.com/dbudzik/project9_SHM/tree/dceaa825bc2ebb678b0fad536925512ff0175a81)
 on December 6, 2020.
 </em></small>
 
@@ -215,14 +215,50 @@ The choice of these two methods is to simulate the structure's response during a
 Numerous structural health monitoring algorithms have been developed and been implemented on experimental and full-scale structure.Because the techniques are applied to different structures under various conditions, the relative merits of each algorithm are not obvious. Thus, the community would benefit from a comparison of several algorithms when applied to the same problems.
 
 
-# 2. Exploratory Data Analysis
+# 3. Exploratory Data Analysis
 
-The goal of this EDA is to identify characteristics between damage and undamage conditions in order to perform data preparation and develope a model in the future steps.
+The goal of this EDA is to identify characteristics between damage and undamage conditions in order to perform data preparation and develop a model in the future steps.
 
-## 2.1 Preparing the data
+## 3.1 Preparing the data
+
+<img src="images/condition.JPG" width="300"/>
+</p>
+<p>
+<em>Figure 3.1: Checking if the data is sorted logically as undamage becoming damag.</em>
+<p>
+
 As the dataset shows, we have damage within our data. Therefore, Case 1 is not represented in train data.
 
+<img src="images/trainingdata.JPG" width="300"/>
+</p>
+<p>
+<em>Figure 3.2: Analyzing the training data provided.</em>
+<p>
+
 The reason that there are accelerations values at the first row is because researchers started measuring the structure's response once it reached steady state. More details regarding the dynamic behavior of this structure will be discussed in the following sections.
+
+
+**Separating train data into damage and undamage dataset**
+<img src="images/missingvalues.JPG" width="300"/>
+</p>
+<p>
+<em>Figure 3.3: Missing data in the undamaged section.</em>
+<p>
+
+*As shown above, the given data set contained a large quantity of NA data values which are all located in the undamaged portion.*
+
+Between populating or removing the missing data, the missing results will be dropped. The reason for this decision is because populating the missing values with the mean of the training data will mostly develope a new dataset that does not have all the original parameters. 
+
+**Aesthetic modifitication for easier comprehension of the training data**
+
+The provided trainign dataframe had columns names such as DA04, which corresponds to the sensor located in the first flor west side. Instead of keeping these columns names, the datasets were named as shown below.
+<img src="images/columnsnames.JPG" width="300"/>
+</p>
+<p>
+<em>Figure 3.4: Column Names.</em>
+<p>
+
+**Units**
 
 Based on *Experimental Phase II of the Structural Health Monitoring Benchmark Problem* , accelerometers were placed throughout the structure to provide measurements of the structural response. For this Exploratory Data Analysis, three sensors from each floor of the 4-story structure were taken into consideration. Specifically,
 
@@ -239,19 +275,17 @@ $Time(seconds) = \frac{1 : Length_{DA04}}{fs_{days}}$
 
 where fsdasy = 200 (Hz).
 
+Therefore, the final step on the tyding portion of the exploratory data analysis was to transform the "Time" column into seconds by divided by 200.
 
-### Separating train data into damage and undamage dataset
-
-
-*As shown above, the given data set contained a large quantity of NA data values which are all located in the undamaged portion.*
-
-Between populating or removing the missing data, the missing results will be dropped. The reason for this decision is because populating the missing values with the mean of the training data will mostly develope a new dataset that does not have all the original parameters. 
-
-## 2.2 Statistical Properties
+## 3.2 Statistical Properties
 
 We can learn certain details of the response of the structure by observing the data points that have a very drastic charnge in amplitude. In other words, there are common points in time among all sensors where the acceleration measured does a 180 degrees change. This phenomenon occurs as the dynamics response of structure is harmonic and it develops nodes. A simplification of this idea is to understand how the sensors in the 4th story will move back and forward while nodes underneath are ahead or behind that displacement.
 
-
+<img src="images/overalldata.JPG" width="300"/>
+</p>
+<p>
+<em>Figure 3.5: Visualization of the overall data.</em>
+<p>
 
 The mean for all the sensors is very close to 0, which may indicate normalized normal distribution. Also, the standard deviation is not equal to 1 for any of the sensors, but a close value to 0 too. These characteristics are present for normal distributions of narrow dispersion.
 
@@ -260,51 +294,93 @@ In the case of undamaged dataset, the standard deviation values of the fourth fl
 
 **Checking head, tail of data**
 
+<img src="images/undamagedstats.JPG" width="300"/>
+</p>
+<p>
+<em>Figure 3.6: Histogram of undamaged acceleration values at each sensor..</em>
+<p>
+
 In the case of the undamaged dataset, all the graphs show normal distribution. However, they are not centered with an exact mean of value 0. Instead,
 
 - Sensors located at the west side of the structure are skewed to the right in the first and fourth floor while the second and third floor are skewed to the left.
 - Sensors located at the center of the structure behave symmetrically. The first and third floor have bell-shaped distribution with a mean of 0. The second and fourth floor are lightly skewed in opposite directions.
 - Sensors located at the east side of the structure are all skewed except the one located at the second floor. The sensor at the 4th floor captured the most out of plane behavior as the '4th_story_03' sensor is significatly skewed to the left.
 
-For the case of damage conditio, the normal distribution is not as smooth as shown for the undamaged condition. This behavior matches with the physical phenomenon that took place as the acceleration of the sensors will tend to be more extreme if the structure is damaged. 
+<img src="images/damagedstats.JPG" width="300"/>
+</p>
+<p>
+<em>Figure 3.7: Histogram of damaged acceleration values at each sensor.</em>
+<p>
+For the case of damage condition, the normal distribution is not as smooth as shown for the undamaged condition. This behavior matches with the physical phenomenon that took place as the acceleration of the sensors will tend to be more extreme if the structure is damaged. 
 
 - The first floor endured the most extreme values as the base is not static anymore during excitation. The three sensors are skewed to the right.
 - The second and third floor has similar behavior since the center sensor is still normally distributed with mean very close to 0 and sensors on the west and east side are skewed to the left.
 - The fourth floor now shows the most ccentered behavior. However, it is importqant to recall the statistical characteristics such as standard deviation. Now the 4th-floor values are significantly wider.
 
-## 2.3 Exploring the dataframe that contains the undamaged condition**
+## 3.3 Exploring the dataframe that contains the undamaged condition**
 
 Previously, we explored some characteristics of the undamaged dataset. Then, the dataset has been arranged and tidied to finally observe how there was a large amoung of non-available data points, which can be observed in the last row (index number > time_sec)
 
 **Is the change in acceleration always the same?**
 
 For the following inspection, recall that data acquisition was started several seconds after the excitation was turned on to ensure that the system had reached a steady state condition during the shaker testing.
+<img src="images/undacc13.JPG" width="300"/>
+</p>
+<p>
+<em>Figure 3.8: Changes in acceleration during the undamaged condition for the first and second floor.</em>
+<p>
+
+<img src="images/undacc34.JPG" width="300"/>
+</p>
+<p>
+<em>Figure 3.9: Changes in acceleration during the undamaged condition for the third and fourth.</em>
+<p>
 
 Interestingly, the analysis has shown how the location of the sensor affects directly to the change in acceleration of the sensors. The y-axis has been kept constant throughout all the plots to ease comparison. Therefore, we can observe how though the distribution among sensors in different floor is different, the difference in acceleration values is very correlated to location.
 
 Also note how the missing data produced zero values in the left portion of the data. Those values are not representing a constant acceleration.
 
 **Correlation values**
+<img src="images/uncorr.JPG" width="300"/>
+</p>
+<p>
+<em>Figure 3.10: Correlation values among all sensors in the undamaged condition.</em>
+<p>
 
 The table above is with the purpose of locating the directly correlated and inversevely correlated sensors. Just as the difference in acceleration graphs showed, there is significant correlation between those sensors that are located in the same side of the structure. 
 
 However, there is an inverse correlation in those sensors loccated at the fourth floor. The reason behind this behavior is that we are analyzing an elastic structure that is being excited by an harmonic input from the ground. Therefore, the top floor is swinging, which creates a driving behavior in one of the corners at a time.
 
-**Boxplots**
 
-Some final insight of the undamaged dataset shows how there are a large quantity of outliners in the sensors located at the center of the structure.
-
-## 2.4 Exploring the dataframe that contains the undamaged condition**
+## 3.4 Exploring the dataframe that contains the undamaged condition**
 
 **Is the change in acceleration always the same?**
+<img src="images/dacc12.JPG" width="300"/>
+</p>
+<p>
+<em>Figure 3.11: Change in acceleration between sensors in the damaged condition for the 1st and 2nd floor.</em>
+<p>
+
+<img src="images/dacc34.JPG" width="300"/>
+</p>
+<p>
+<em>Figure 3.12: Change in acceleration between sensors in the damaged condition for the 3rd and 4th floor.</em>
+<p>
+
 
 There are certain conditions that we can observe by comparing the undamaged and damaged conditions. First of all, there is still a correlation in the change in acceleration with the location of the sensors. Also, the delta value has been significantly decreased over the length of the response. The largest change in acceleration is located at the center sensors for this particular condition, which might mean that the structure is not displacing as much once it reaches a damaged condition.
 
 **Correlation values**
 
+<img src="images/dcorr.JPG" width="300"/>
+</p>
+<p>
+<em>Figure 3.13: Correltion value among all sensors for the damaged condition.</em>
+<p>
+
 In this scenario, the correlation has changed greatly. Now, the 4th-story sensors display similarities with other sensors placed in the same side of the structure. However, the 3rd-story sensors are those that are inversely correlated. 
 
-## 2.5 Conclussion
+## 3.5 Conclussion
 
 The training data obtained has been statistically explored, cleaned, and analyzed for the purpose of identifying parameters for modeling later on.
 
