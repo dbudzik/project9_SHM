@@ -49,9 +49,9 @@
   <meta name="citation_fulltext_html_url" content="https://dbudzik.github.io/project9_SHM/" />
   <meta name="citation_pdf_url" content="https://dbudzik.github.io/project9_SHM/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://dbudzik.github.io/project9_SHM/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://dbudzik.github.io/project9_SHM/v/94f6dfa61940e8990d7c608e792f2574a2e77507/" />
-  <meta name="manubot_html_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/94f6dfa61940e8990d7c608e792f2574a2e77507/" />
-  <meta name="manubot_pdf_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/94f6dfa61940e8990d7c608e792f2574a2e77507/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://dbudzik.github.io/project9_SHM/v/e1c2213e2a78649ad74ac03abc76adee8e2fbe4e/" />
+  <meta name="manubot_html_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/e1c2213e2a78649ad74ac03abc76adee8e2fbe4e/" />
+  <meta name="manubot_pdf_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/e1c2213e2a78649ad74ac03abc76adee8e2fbe4e/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -65,9 +65,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://dbudzik.github.io/project9_SHM/v/94f6dfa61940e8990d7c608e792f2574a2e77507/">permalink</a>)
+(<a href="https://dbudzik.github.io/project9_SHM/v/e1c2213e2a78649ad74ac03abc76adee8e2fbe4e/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/dbudzik/project9_SHM/tree/94f6dfa61940e8990d7c608e792f2574a2e77507">dbudzik/project9_SHM@94f6dfa</a>
+from <a href="https://github.com/dbudzik/project9_SHM/tree/e1c2213e2a78649ad74ac03abc76adee8e2fbe4e">dbudzik/project9_SHM@e1c2213</a>
 on December 6, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -94,7 +94,7 @@ on December 6, 2020.
 </small></p></li>
 </ul>
 <h2 class="page_break_before" id="abstract">1. Abstract</h2>
-<p>Civil infrastructure all around is subjected to the challenges posed by aging, deterioration and extreme events. In recent years, structural health monitoring has grown in importance as failure and collapse of infrastructure result in harmful effects on a nation’s economy and development. Recent advances as seen the use of sensors to obtain the dynamic characteristics of structures. This has led to the potential of collecting dynamic data at more frequent intervals thus leading to continous monitoring. In this report, we use exploratory data analysis techniques to see if such dynamic data collected from structures can be used to infer the condition of a structure. We have also tried different machine learning algorithms to predict the condition of a structure based on given acceleration signals. For this study, the ASCE benchmark problem experimental phase II structure was used.</p>
+<p>Civil infrastructure all around is subjected to the challenges posed by aging, deterioration, and extreme events. In recent years, structural health monitoring has grown in importance as failure and collapse of infrastructure result in harmful effects on a nation’s economy and development. Recent advances as seen the use of sensors to obtain the dynamic characteristics of structures. This has led to the potential of collecting dynamic data at more frequent intervals thus leading to continuous monitoring. In this report, we use exploratory data analysis techniques to see if such dynamic data collected from structures can be used to infer the condition of a structure. We have also tried different machine learning algorithms to predict the condition of a structure based on given acceleration signals. For this study, the ASCE benchmark problem experimental phase II structure was used.</p>
 <h2 id="introduction">2. Introduction</h2>
 <h3 id="motivation-behind-the-research-experiment">2.1 Motivation behind the research experiment</h3>
 <p>Identification of damage from the analysis of vibration signals has received significant attention in the civil, mechanical and aerospace fields.
@@ -315,8 +315,8 @@ Sometimes the relationship between the dependent and independent variables maybe
 <p>
 <p><em>Figure 4.3: overview_of_polynomial_regression_model</em></p>
 <h2 id="method-3-artificial-neural-networks">4.6 Method 3: Artificial Neural Networks:</h2>
-<p>The second method utilized was Artificial Neural Networks. Artificial Neural Networks are more complex than logistic regression. This method adds a bunch of hidden non-linear layers to the logistic regression model. Our group used this method to check if it offered an improvement on the previous model. The artificial neural networks yeiled average results with great accuracy ~96%, Improved precision ~45%, Improved recall ~60%, although the metrics were not good overall.</p>
-<img src="content/images/Screen Shot 2020-12-05 at 7.11.54 PM.png" alt="Test" width="600"/>
+<p>The second method utilized was Artificial Neural Networks. Artificial Neural Networks are more complex than logistic regression. This method adds a bunch of hidden non-linear layers to the logistic regression model. Our group used this method to check if it offered an improvement on the previous model. The artificial neural networks yeiled average results with great accuracy ~96%, Improved precision ~45%, Improved recall ~60%, although the metrics were not good overall. The model is shown in figure 4.4.</p>
+<img src="images/Screen Shot 2020-12-05 at 7.11.54 PM.png" alt="Test" width="600"/>
 </p>
 <p>
 <p><em>Figure 4.4: visualization_artificial_neural_networks</em></p>
@@ -325,19 +325,19 @@ Sometimes the relationship between the dependent and independent variables maybe
 <img src="images/rnn_visualization.png" alt="Test" width="600"/>
 </p>
 <p>
-<p><em>Figure 4.4: visualization_of_recurrent_neural_network_models</em></p>
+<p><em>Figure 4.5: visualization_of_recurrent_neural_network_models</em></p>
 <h3 id="justification-for-recurrent-neural-network">4.7.1 Justification for recurrent neural network:</h3>
 <p>Since, the index for our dataset actually represents time, then perhaps we can consider it as a time series data. As such, we decided to see how RNNs will perform in comparison with the other models. As was mentioned earlier, we used LSTM for this project. This type of model requires a 3-dimensional input, therefore we had to transform the shape of the dataset we had to make use of this model. In order to save computation time, a LSTM of 40 units was found to give the best performance and therefore used for testing the model. Additionally, a sigmoid activation function was applied in the outer layer. The hyperparameters were the same as with other models to ensure a fair coomparison between the different algorithms used.</p>
 <img src="images/rnn_model.png" alt="Test" width="600"/>
 </p>
 <p>
-<p><em>Figure 4.5: overview_of_recurrent_neural_network_model</em></p>
+<p><em>Figure 4.6: overview_of_recurrent_neural_network_model</em></p>
 <h2 id="method-5-random-forest-regression">4.8 Method 5: Random Forest Regression:</h2>
 <p>The third method utilized was Random Forest Regression. Random Forest Regression performs both regression and classification tasks with the use of multiple decision trees and bagging. It is easy to use and often returns good results even without hyperparameter tuning. Our group used this method to check if it offered an improvement on the previous model. The Random Forest Regression provided the worst results with extremely inaccurate accuracy rate, while also not working well for the type of data we had. The model is shown below in figure 4.5.</p>
 <img src="images/Screen Shot 2020-12-05 at 6.36.01 PM.png" alt="Test" width="600"/>
 </p>
 <p>
-<p><em>Figure 4.5: Visualization_of_Random_Forest_Regression_models</em></p>
+<p><em>Figure 4.7: Visualization_of_Random_Forest_Regression_models</em></p>
 <h2 id="issue">4.9 Issue:</h2>
 <p>We noticed that the problem was the precision and recall are very low even though accuracy is high. This was caused by the damaged data being too sparse, only 3.5% of our data represents the damaged condition. The solution was too add copies of the damaged data into the training set.</p>
 <h2 id="take-two">4.10 Take Two:</h2>
@@ -345,11 +345,11 @@ Sometimes the relationship between the dependent and independent variables maybe
 <img src="images/Screen Shot 2020-12-05 at 6.58.35 PM.png" alt="Test" width="600"/>
 </p>
 <p>
-<p><em>Figure 4.6: Test_2_Logistic_Regression_models</em></p>
+<p><em>Figure 4.8: Test_2_Logistic_Regression_models</em></p>
 <img src="images/Screen Shot 2020-12-05 at 6.58.41 PM.png" alt="Test" width="600"/>
 </p>
 <p>
-<p><em>Figure 4.7: Test_2_Artificial_Neural_Networks</em></p>
+<p><em>Figure 4.9: Test_2_Artificial_Neural_Networks</em></p>
 <h2 id="results">5. Results</h2>
 <h3 id="metrics">5.1 Metrics</h3>
 <p>Metrics are an important aspect of machine learning because they provide an insight to the performance of the model. Therefore, it is important to think about the metrics that need to be used in order to properly judge a model’s behavior and also allow the model to better improve its predictions. The metrics that were used in this project include root mean squared error, R^2 value, accuracy, precision, and recall.</p>
@@ -421,17 +421,29 @@ Sometimes the relationship between the dependent and independent variables maybe
 <p>
 <em>Figure 5.10: Results of Artificial Neural Network Model After Dataset Augmentation</em>
 <p>
-<h3 id="random-forest-regression">5.5 Random Forest Regression</h3>
-<p>The random forest regression model can be most closely compared to the polynomial regression model. Before the dataset was augmented, this modal fared worse than the polynomial regression with an R^2 value of 0.092. The results are shown in Figure 5.11. It is seen that this model is a very poor fit for the type of dataset used in this project, since it did the worst out of the 4 models tried. After dataset augmentation, this model also vastly improved, up to an R^2 of 0.408, but was still not satisfactory. These results can be found in Figure 5.12. This model also shared the peculiar result of a higher RMSE after the augmented dataset was run and can be similarly explained.</p>
+<h3 id="recurrent-neural-network">5.5 Recurrent Neural Network</h3>
+<p>The recurrent neural network model performed in a similar manner to the logistic regression and artificial neural network models. Before data augmentation, the model resulted in high accuracy but lower precision and recall, 20% and 34%, respectively. This is in line with the results of the other two mentioned models. The results are seen in Figure 5.11. After data augmentation, the accuracy suffered, going down to ~86%, but the precision increased to 62% and the recall to 98%. These results are on par with the logistic regression model, but now are far below what the artificial neural network was able to accomplish. Figure 5.12 shows these results.</p>
+<img src="images/rnn_before.png" width="400"/>
+</p>
+<p>
+<em>Figure 5.11: Results of Recurrent Neural Network Model Before Dataset Augmentation</em>
+<p>
+<img src="images/rnn_after.png" width="400"/>
+</p>
+<p>
+<em>Figure 5.12: Results of Recurrent Neural Network Model After Dataset Augmentation</em>
+<p>
+<h3 id="random-forest-regression">5.6 Random Forest Regression</h3>
+<p>The random forest regression model can be most closely compared to the polynomial regression model. Before the dataset was augmented, this modal fared worse than the polynomial regression with an R^2 value of 0.092. The results are shown in Figure 5.13. It is seen that this model is a very poor fit for the type of dataset used in this project, since it did the worst out of the 4 models tried. After dataset augmentation, this model also vastly improved, up to an R^2 of 0.408, but was still not satisfactory. These results can be found in Figure 5.14. This model also shared the peculiar result of a higher RMSE after the augmented dataset was run and can be similarly explained.</p>
 <img src="images/rfr_before.PNG" width="300"/>
 </p>
 <p>
-<em>Figure 5.11: Results of Random Forest Regression Model Before Dataset Augmentation</em>
+<em>Figure 5.13: Results of Random Forest Regression Model Before Dataset Augmentation</em>
 <p>
 <img src="images/rfr_after.PNG" width="300"/>
 </p>
 <p>
-<em>Figure 5.12: Results of Random Forest Regression Model After Dataset Augmentation</em>
+<em>Figure 5.14: Results of Random Forest Regression Model After Dataset Augmentation</em>
 <p>
 <h2 id="discussion">6. Discussion</h2>
 <h3 id="key-takeaways">6.1 Key Takeaways</h3>

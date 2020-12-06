@@ -15,14 +15,13 @@ ccentered
 charnge
 CNNs
 Conclussion
-continous
 Convolutional
 coomparison
 Correltion
 damag
 dataframe
 datapoints
-Dataset
+dataset
 datasets
 dbudzik
 develope

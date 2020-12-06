@@ -61,11 +61,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://dbudzik.github.io/project9_SHM/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://dbudzik.github.io/project9_SHM/v/94f6dfa61940e8990d7c608e792f2574a2e77507/" />
+  <link rel="alternate" type="text/html" href="https://dbudzik.github.io/project9_SHM/v/e1c2213e2a78649ad74ac03abc76adee8e2fbe4e/" />
 
-  <meta name="manubot_html_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/94f6dfa61940e8990d7c608e792f2574a2e77507/" />
+  <meta name="manubot_html_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/e1c2213e2a78649ad74ac03abc76adee8e2fbe4e/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/94f6dfa61940e8990d7c608e792f2574a2e77507/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/e1c2213e2a78649ad74ac03abc76adee8e2fbe4e/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -99,9 +99,9 @@ title: 'Project 9: Structural Health Monitoring'
 
 <small><em>
 This manuscript
-([permalink](https://dbudzik.github.io/project9_SHM/v/94f6dfa61940e8990d7c608e792f2574a2e77507/))
+([permalink](https://dbudzik.github.io/project9_SHM/v/e1c2213e2a78649ad74ac03abc76adee8e2fbe4e/))
 was automatically generated
-from [dbudzik/project9_SHM@94f6dfa](https://github.com/dbudzik/project9_SHM/tree/94f6dfa61940e8990d7c608e792f2574a2e77507)
+from [dbudzik/project9_SHM@e1c2213](https://github.com/dbudzik/project9_SHM/tree/e1c2213e2a78649ad74ac03abc76adee8e2fbe4e)
 on December 6, 2020.
 </em></small>
 
@@ -136,8 +136,7 @@ on December 6, 2020.
 
 
 ## 1. Abstract {.page_break_before}
-Civil infrastructure all around is subjected to the challenges posed by aging, deterioration and extreme events. In recent years, structural health monitoring has grown in importance as failure and collapse of infrastructure result in harmful effects on a nation's economy and development. Recent advances as seen the use of sensors to obtain the dynamic characteristics of structures. This has led to the potential of collecting dynamic data at more frequent intervals thus leading to continous monitoring. In this report, we use exploratory data analysis techniques to see if such dynamic data collected from structures can be used to infer the condition of a structure. We have also tried different machine learning algorithms to predict the condition of a structure based on given acceleration signals. For this study, the ASCE benchmark problem experimental phase II structure was used.
-
+Civil infrastructure all around is subjected to the challenges posed by aging, deterioration, and extreme events. In recent years, structural health monitoring has grown in importance as failure and collapse of infrastructure result in harmful effects on a nation's economy and development. Recent advances as seen the use of sensors to obtain the dynamic characteristics of structures. This has led to the potential of collecting dynamic data at more frequent intervals thus leading to continuous monitoring. In this report, we use exploratory data analysis techniques to see if such dynamic data collected from structures can be used to infer the condition of a structure. We have also tried different machine learning algorithms to predict the condition of a structure based on given acceleration signals. For this study, the ASCE benchmark problem experimental phase II structure was used.
 
 
 ## 2. Introduction
@@ -452,9 +451,9 @@ del: to see this, imagine creating a new variable
 <em>Figure 4.3: overview_of_polynomial_regression_model</em>
  
 ## 4.6 Method 3: Artificial Neural Networks:
-The second method utilized was Artificial Neural Networks. Artificial Neural Networks are more complex than logistic regression. This method adds a bunch of hidden non-linear layers to the logistic regression model. Our group used this method to check if it offered an improvement on the previous model. The artificial neural networks yeiled average results with great accuracy ~96%, Improved precision ~45%, Improved recall ~60%, although the metrics were not good overall.
+The second method utilized was Artificial Neural Networks. Artificial Neural Networks are more complex than logistic regression. This method adds a bunch of hidden non-linear layers to the logistic regression model. Our group used this method to check if it offered an improvement on the previous model. The artificial neural networks yeiled average results with great accuracy ~96%, Improved precision ~45%, Improved recall ~60%, although the metrics were not good overall. The model is shown in figure 4.4. 
 
- <img src="content/images/Screen Shot 2020-12-05 at 7.11.54 PM.png" alt="Test" width="600"/>
+ <img src="images/Screen Shot 2020-12-05 at 7.11.54 PM.png" alt="Test" width="600"/>
 </p>
 <p>
 <em>Figure 4.4: visualization_artificial_neural_networks</em>
@@ -465,7 +464,7 @@ Recurrent neural networks (RNNs) are a very powerful tool, however they suffer f
  <img src="images/rnn_visualization.png" alt="Test" width="600"/>
 </p>
 <p>
-<em>Figure 4.4: visualization_of_recurrent_neural_network_models</em>
+<em>Figure 4.5: visualization_of_recurrent_neural_network_models</em>
 
 ### 4.7.1 Justification for recurrent neural network:
 Since, the index for our dataset actually represents time, then perhaps we can consider it as a time series data. As such, we decided to see how RNNs will perform in comparison with the other models. As was mentioned earlier, we used LSTM for this project. This type of model requires a 3-dimensional input, therefore we had to transform the shape of the dataset we had to make use of this model. In order to save computation time, a LSTM of 40 units was found to give the best performance and therefore used for testing the model. Additionally, a sigmoid activation function was applied in the outer layer. The hyperparameters were the same as with other models to ensure a fair coomparison between the different algorithms used.
@@ -473,7 +472,7 @@ Since, the index for our dataset actually represents time, then perhaps we can c
 <img src="images/rnn_model.png" alt="Test" width="600"/>
 </p>
 <p>
-<em>Figure 4.5: overview_of_recurrent_neural_network_model</em>
+<em>Figure 4.6: overview_of_recurrent_neural_network_model</em>
 
 ## 4.8 Method 5: Random Forest Regression:
 The third method utilized was Random Forest Regression. Random Forest Regression performs both regression and classification tasks with the use of multiple decision trees and bagging. It is easy to use and often returns good results even without hyperparameter tuning. Our group used this method to check if it offered an improvement on the previous model. The Random Forest Regression provided the worst results with extremely inaccurate accuracy rate, while also not working well for the type of data we had. The model is shown below in figure 4.5. 
@@ -481,7 +480,7 @@ The third method utilized was Random Forest Regression. Random Forest Regression
 <img src="images/Screen Shot 2020-12-05 at 6.36.01 PM.png" alt="Test" width="600"/>
 </p>
 <p>
-<em>Figure 4.5: Visualization_of_Random_Forest_Regression_models</em>
+<em>Figure 4.7: Visualization_of_Random_Forest_Regression_models</em>
 
 ## 4.9 Issue:
 We noticed that the problem was the precision and recall are very low even though accuracy is high. This was caused by the damaged data being too sparse, only 3.5% of our data represents the damaged condition. The solution was too add copies of the damaged data into the training set.
@@ -492,12 +491,12 @@ In take two we ran logistic regression and artifical nueral networks again to se
 <img src="images/Screen Shot 2020-12-05 at 6.58.35 PM.png" alt="Test" width="600"/>
 </p>
 <p>
-<em>Figure 4.6: Test_2_Logistic_Regression_models</em>
+<em>Figure 4.8: Test_2_Logistic_Regression_models</em>
  
  <img src="images/Screen Shot 2020-12-05 at 6.58.41 PM.png" alt="Test" width="600"/>
 </p>
 <p>
-<em>Figure 4.7: Test_2_Artificial_Neural_Networks</em>
+<em>Figure 4.9: Test_2_Artificial_Neural_Networks</em>
 
 
 
@@ -610,21 +609,37 @@ After the dataset was augmented and the model re-ran it produced a fantastic res
 <p>
 <em>Figure 5.10: Results of Artificial Neural Network Model After Dataset Augmentation</em>
 <p>
+  
+### 5.5 Recurrent Neural Network  
 
-### 5.5 Random Forest Regression
+The recurrent neural network model performed in a similar manner to the logistic regression and artificial neural network models. Before data augmentation, the model resulted in high accuracy but lower precision and recall, 20% and 34%, respectively. This is in line with the results of the other two mentioned models. The results are seen in Figure 5.11. After data augmentation, the accuracy suffered, going down to ~86%, but the precision increased to 62% and the recall to 98%. These results are on par with the logistic regression model, but now are far below what the artificial neural network was able to accomplish. Figure 5.12 shows these results.
 
-The random forest regression model can be most closely compared to the polynomial regression model. Before the dataset was augmented, this modal fared worse than the polynomial regression with an R^2 value of 0.092. The results are shown in Figure 5.11. It is seen that this model is a very poor fit for the type of dataset used in this project, since it did the worst out of the 4 models tried. After dataset augmentation, this model also vastly improved, up to an R^2 of 0.408, but was still not satisfactory. These results can be found in Figure 5.12. This model also shared the peculiar result of a higher RMSE after the augmented dataset was run and can be similarly explained.
+<img src="images/rnn_before.png" width="400"/>
+</p>
+<p>
+<em>Figure 5.11: Results of Recurrent Neural Network Model Before Dataset Augmentation</em>
+<p> 
+
+<img src="images/rnn_after.png" width="400"/>
+</p>
+<p>
+<em>Figure 5.12: Results of Recurrent Neural Network Model After Dataset Augmentation</em>
+<p> 
+
+### 5.6 Random Forest Regression
+
+The random forest regression model can be most closely compared to the polynomial regression model. Before the dataset was augmented, this modal fared worse than the polynomial regression with an R^2 value of 0.092. The results are shown in Figure 5.13. It is seen that this model is a very poor fit for the type of dataset used in this project, since it did the worst out of the 4 models tried. After dataset augmentation, this model also vastly improved, up to an R^2 of 0.408, but was still not satisfactory. These results can be found in Figure 5.14. This model also shared the peculiar result of a higher RMSE after the augmented dataset was run and can be similarly explained.
 
 <img src="images/rfr_before.PNG" width="300"/>
 </p>
 <p>
-<em>Figure 5.11: Results of Random Forest Regression Model Before Dataset Augmentation</em>
+<em>Figure 5.13: Results of Random Forest Regression Model Before Dataset Augmentation</em>
 <p>
 
 <img src="images/rfr_after.PNG" width="300"/>
 </p>
 <p>
-<em>Figure 5.12: Results of Random Forest Regression Model After Dataset Augmentation</em>
+<em>Figure 5.14: Results of Random Forest Regression Model After Dataset Augmentation</em>
 <p>
 
 
