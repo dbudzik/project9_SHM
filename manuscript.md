@@ -61,11 +61,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://dbudzik.github.io/project9_SHM/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://dbudzik.github.io/project9_SHM/v/0fbc1605e8a27767f719c109e46e7bcadfc0fafe/" />
+  <link rel="alternate" type="text/html" href="https://dbudzik.github.io/project9_SHM/v/5a96e4ef49bcfaca702c4e5c55e024aa216c251d/" />
 
-  <meta name="manubot_html_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/0fbc1605e8a27767f719c109e46e7bcadfc0fafe/" />
+  <meta name="manubot_html_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/5a96e4ef49bcfaca702c4e5c55e024aa216c251d/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/0fbc1605e8a27767f719c109e46e7bcadfc0fafe/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/5a96e4ef49bcfaca702c4e5c55e024aa216c251d/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -99,9 +99,9 @@ title: 'Project 9: Structural Health Monitoring'
 
 <small><em>
 This manuscript
-([permalink](https://dbudzik.github.io/project9_SHM/v/0fbc1605e8a27767f719c109e46e7bcadfc0fafe/))
+([permalink](https://dbudzik.github.io/project9_SHM/v/5a96e4ef49bcfaca702c4e5c55e024aa216c251d/))
 was automatically generated
-from [dbudzik/project9_SHM@0fbc160](https://github.com/dbudzik/project9_SHM/tree/0fbc1605e8a27767f719c109e46e7bcadfc0fafe)
+from [dbudzik/project9_SHM@5a96e4e](https://github.com/dbudzik/project9_SHM/tree/5a96e4ef49bcfaca702c4e5c55e024aa216c251d)
 on December 6, 2020.
 </em></small>
 
@@ -484,15 +484,15 @@ We noticed that the problem was the precision and recall are very low even thoug
 ## 4.10 Take Two:
 In take two we ran logistic regression and artifical nueral networks again to see if it yeilded better results with addiiton of new copies of damaged data. Logistic Regression returned good accuracy ~83%, much better precision ~60%, and Fantastic recall ~99%. Artifical Neural Network returned slighly better data with a fantastic accuracy ~98%, fantastic precision ~91%, and fantastic recall ~99%.
 
-<img src="images/Screen Shot 2020-12-05 at 6.36.01 PM.png" alt="Test" width="600"/>
+<img src="content/images/Screen Shot 2020-12-05 at 6.58.35 PM.png" alt="Test" width="600"/>
 </p>
 <p>
-<em>Figure 4.4: Visualization_of_Random_Forest_Regression_models</em>
+<em>Figure 4.4: Test_2_Logistic_Regression_models</em>
  
- <img src="images/Screen Shot 2020-12-05 at 6.36.01 PM.png" alt="Test" width="600"/>
+ <img src="content/images/Screen Shot 2020-12-05 at 6.58.41 PM.png" alt="Test" width="600"/>
 </p>
 <p>
-<em>Figure 4.4: Visualization_of_Random_Forest_Regression_models</em>
+<em>Figure 4.4: Take_2_Artificial_Neural_Networks</em>
 
 
 
