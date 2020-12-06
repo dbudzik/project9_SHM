@@ -61,11 +61,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://dbudzik.github.io/project9_SHM/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://dbudzik.github.io/project9_SHM/v/da954ec5f07d68eff2780693a08e608d6ba5c5a1/" />
+  <link rel="alternate" type="text/html" href="https://dbudzik.github.io/project9_SHM/v/7ef15ba0010c4a83cca0ee780e4c88f2e432c262/" />
 
-  <meta name="manubot_html_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/da954ec5f07d68eff2780693a08e608d6ba5c5a1/" />
+  <meta name="manubot_html_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/7ef15ba0010c4a83cca0ee780e4c88f2e432c262/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/da954ec5f07d68eff2780693a08e608d6ba5c5a1/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://dbudzik.github.io/project9_SHM/v/7ef15ba0010c4a83cca0ee780e4c88f2e432c262/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -99,9 +99,9 @@ title: 'Project 9: Structural Health Monitoring'
 
 <small><em>
 This manuscript
-([permalink](https://dbudzik.github.io/project9_SHM/v/da954ec5f07d68eff2780693a08e608d6ba5c5a1/))
+([permalink](https://dbudzik.github.io/project9_SHM/v/7ef15ba0010c4a83cca0ee780e4c88f2e432c262/))
 was automatically generated
-from [dbudzik/project9_SHM@da954ec](https://github.com/dbudzik/project9_SHM/tree/da954ec5f07d68eff2780693a08e608d6ba5c5a1)
+from [dbudzik/project9_SHM@7ef15ba](https://github.com/dbudzik/project9_SHM/tree/7ef15ba0010c4a83cca0ee780e4c88f2e432c262)
 on December 6, 2020.
 </em></small>
 
@@ -160,7 +160,7 @@ The damage was estimated successfully by applying a CNN-based approach only requ
 #### Sequential Multiple Structural Damage Detection and Localization: A Distributed Approach
 The article focuses on a distributed approach to structural damage detection and localization that looks to address three main drawbacks in the structural damage detection process. The three drawbacks are damage being reported with short delay, damage locations have to identified simultaneously, and computational complexity is untraceable in large-scale wiles sensor networks. To address these problems the article attempts to introduce a new damage identification approach that focuses on time-series of damage sensitive features extracted from multiple sensors’ measurements and the optimal change point detection theory.
 
-#### : Structural Health Monitoring of Cantilever Beam, A Case Study – Using Bayesian Neural Network and Deep Learning
+#### Structural Health Monitoring of Cantilever Beam, A Case Study – Using Bayesian Neural Network and Deep Learning
 This case study took a look at the use of machine learning models to predict damage to a cantilever beam. The beam in this study was modeled in a finite element analysis software and was subjected to dynamic loading in the software. The raw frequency response data from this analysis was the input for the machine learning algorithms. The study compared the accuracy of three algorithms: Bayesian Neural Network, Convolutional Neural Network, and Long Short Term Memory, to see which provides the best approximation for structural damage. The approach they took created the models based on the raw data, which is an advantage over traditional methods where data must be cleaned and prepped. This makes it more suitable for real-time monitoring, which is an important possible implementation. 
 
 ### 2.3 Structure & experiment descriptions:
@@ -414,10 +414,11 @@ The training data obtained has been statistically explored, cleaned, and analyze
 
 
 
-## Machine Learning Methods
+## 4. Machine Learning Methods
 
-## 4. Overview
+## Overview
 Following a comprehensive exploratory data analysis as outlined in the previous section, which was valuable in looking at different patterns and features of the data obtained from various sensors. The next task then, was to classify this data as either damaged or undamaged. Classification problems are very common in the data mining and machine learning applications. As such, several machine learning algorithms have been proposed and developed over the years for solving such problems. For our project, we have evaluated and tested five of those algorithms namely, Logistic regression, polynomial regression, artificial neural networks, recurrent neural networks and random forests.
+
 ## 4.1 Explanation of the Problem:
 Our Kaggle Project was focused on Binary classification. Binary Classification is the task of classifying the elements of a set into two groups on the basis of a classification rule. Our problem revolved around classifying the structural damage detected in a structure. We had to choose different machine learning algorithms to help classify the data.
 
@@ -432,67 +433,68 @@ Logistic regression is a technique commonly typically used for predicting binary
 
 <img src="https://render.githubusercontent.com/render/math?math=y = \beta%2Bw_{1}x_{1}%2Bw_{2}x_{2}%2Bw_{3}x_{3}...">
 
-<img src="images/logistic_sigmoid.png" alt="Test" width="600"/>
+<img src="images/logistic_sigmoid.png" width="400"/>
 </p>
 <p>
-<em>Figure 4.1: logistic_regression (sigmoid_activation_function)</em>
+<em>Figure 4.1: Logistic Regression (Sigmoid Activation Function)</em>
 
 ### 4.4.1 Justification for Logistic Regression:
- The (sometimes surprising) observation is that this is still a linear mo
-Logistic regression is one of the most simple machine learning algorithms that can be used for binary classification problems. It is easy to implement and can be used as a baseline for any binary classification problem. As such, we decided to use it as a baseline to which all the other models will be compared with. It can also be built upon for developing more complex machine learning algorithms for deep learning. It computes a probability ouptut and in order to map this output to a binary category we needed to define a classification threshold (also known as the decision threshold). However, a linear regression does not necessarily yield an output betwewn 0 and 1. Therefore,to ensure the output probability is always between 0 and 1 we used a sigmoid activation function in the output layer. Different combinations of hyperparameters were tested for this algorithm, however to save computation time an epoch value of 20 was used with a learning rate of 0.001. A classification threshold of 0.2 was also found to work best for the given dataset. Although logistic regression is sensitive to outliers and multicorrelation between the features, our exploratory data analysis showed we do not have this problem for our given dataset. Therefore, we expect to achieve reasonable results using this method.
 
+The (sometimes surprising) observation is that this is still a linear model. Logistic regression is one of the most simple machine learning algorithms that can be used for binary classification problems. It is easy to implement and can be used as a baseline for any binary classification problem. As such, we decided to use it as a baseline to which all the other models will be compared with. It can also be built upon for developing more complex machine learning algorithms for deep learning. It computes a probability output and in order to map this output to a binary category we needed to define a classification threshold (also known as the decision threshold). However, a linear regression does not necessarily yield an output between 0 and 1. Therefore, to ensure the output probability is always between 0 and 1 we used a sigmoid activation function in the output layer. Different combinations of hyperparameters were tested for this algorithm, however to save computation time an epoch value of 20 was used with a learning rate of 0.001. A classification threshold of 0.2 was also found to work best for the given dataset. Although logistic regression is sensitive to outliers and multicorrelation between the features, our exploratory data analysis showed we do not have this problem for our given dataset. Therefore, we expect to achieve reasonable results using this method.
 
 <img src="images/logistic_regression.png" alt="Test" width="600"/>
 </p>
 <p>
-<em>Figure 4.2: overview_of_logistic_regression_model</em>
+<em>Figure 4.2: Overview of Logistic Regression Model</em>
   
 ## 4.5 Method 2: Polynomial Regression:
-  One common pattern within machine learning is to use linear models trained on nonlinear functions of the data. This approach maintains the generally fast performance of linear methods, while allowing them to fit a much wider range of data.
+
+One common pattern within machine learning is to use linear models trained on nonlinear functions of the data. This approach maintains the generally fast performance of linear methods, while allowing them to fit a much wider range of data.
 
 For example, a simple linear regression can be extended by constructing polynomial features from the coefficients. In the standard linear regression case, the model is based on the expression previously shown above. If we want to fit a paraboloid to the data instead of a plane, we can combine the features in second-order polynomials, so that the model looks like this:
 
 <img src="https://render.githubusercontent.com/render/math?math=y = w_{0}%2Bw_{1}x_{1}%2Bw_{2}x_{2}%2Bw_{3}x_{1}x_{2}%2Bw_{4}{x_{1}}^2%2Bw_{5}{x_{2}}^2">
 del: to see this, imagine creating a new variable
  
- <img src="https://render.githubusercontent.com/render/math?math=z = [x_{1},x_{2},x_{1}x_{2},{x_{1}}^2,{x_{2}}^2]">
+<img src="https://render.githubusercontent.com/render/math?math=z = [x_{1},x_{2},x_{1}x_{2},{x_{1}}^2,{x_{2}}^2]">
  
- With this re-labeling of the data, our problem can be written as:
+With this re-labeling of the data, our problem can be written as:
  
- <img src="https://render.githubusercontent.com/render/math?math=y = w_{0}%2Bw_{1}z_{1}%2Bw_{2}z_{2}%2Bw_{3}z_{3}%2Bw_{4}z_{4}%2Bw_{5}z_{5}">
+<img src="https://render.githubusercontent.com/render/math?math=y = w_{0}%2Bw_{1}z_{1}%2Bw_{2}z_{2}%2Bw_{3}z_{3}%2Bw_{4}z_{4}%2Bw_{5}z_{5}">
  
- ### 4.5.1 Justification for Polynomial Regression:
- Sometimes the relationship between the dependent and independent variables maybe non-linear. As in this case, we do not expect a linear relationship between the features and the target variable, it made sense to try a non-linear algorithm. The simplest and most common non-linear method to use is the polynomial regression as described earlier. Intuitively, we would expect a regression model with higher orders to perform better than a simple one. However, we didn't find significant improvements between 2nd degree and higher order polynomials. Therefore, for this project we chose to use 2nd degree polynomial regression models to help save computation time.
+### 4.5.1 Justification for Polynomial Regression:
+ 
+Sometimes the relationship between the dependent and independent variables maybe non-linear. As in this case, we do not expect a linear relationship between the features and the target variable, it made sense to try a non-linear algorithm. The simplest and most common non-linear method to use is the polynomial regression as described earlier. Intuitively, we would expect a regression model with higher orders to perform better than a simple one. However, we didn't find significant improvements between 2nd degree and higher order polynomials. Therefore, for this project we chose to use 2nd degree polynomial regression models to help save computation time.
  
  
  <img src="images/polynomial_regession.png" alt="Test" width="600"/>
 </p>
 <p>
-<em>Figure 4.3: overview_of_polynomial_regression_model</em>
+<em>Figure 4.3: Overview of Polynomial Regression Model</em>
  
 ## 4.6 Method 3: Artificial Neural Networks:
-The second method utilized was Artificial Neural Networks. Artificial Neural Networks are more complex than logistic regression. This method adds a bunch of hidden non-linear layers to the logistic regression model. Our group used this method to check if it offered an improvement on the previous model. The artificial neural networks yeiled average results with great accuracy ~96%, Improved precision ~45%, Improved recall ~60%, although the metrics were not good overall. The model is shown in figure 4.4. 
+The second method utilized was Artificial Neural Networks. Artificial Neural Networks are more complex than logistic regression. This method adds a bunch of hidden non-linear layers to the logistic regression model. Our group used this method to check if it offered an improvement on the previous model. The artificial neural networks yielded average results with great accuracy ~96%, Improved precision ~45%, Improved recall ~60%, although the metrics were not good overall. The model is shown in figure 4.4. 
 
- <img src="images/Screen Shot 2020-12-05 at 7.11.54 PM.png" alt="Test" width="600"/>
+<img src="images/Screen Shot 2020-12-05 at 7.11.54 PM.png" alt="Test" width="600"/>
 </p>
 <p>
-<em>Figure 4.4: visualization_artificial_neural_networks</em>
+<em>Figure 4.4: Visualization Artificial Neural Networks</em>
 
 ## 4.7 Method 4: Recurrent Neural Networks:
-Recurrent neural networks (RNNs) are a very powerful tool, however they suffer from the vanishing gradient problem. In order to avoid this issue, we have used a better variation of RNNs called Long Short Term Networks (LSTM) for this project. This basically consists of cells that are responsible for "remembering" values over a time interval. This differs from the traditional neural netwok in that not only does it learn from the features, but it also takes care of sequence values over time. That is, for traditional neural networks it is assumed that all inputs and outputs are independent of each other. However, for RNNs the output depends on the previous computation. As a result of this, RNNs are very popular for sequential data such as time series because they perform much deeper understanding of sequence when compared with other algorithms. They are also applicable to any data that can be rearranged to resemble sequential data. In terms of visualization, one can think of RNN models as shown below:
+Recurrent neural networks (RNNs) are a very powerful tool, however they suffer from the vanishing gradient problem. In order to avoid this issue, we have used a better variation of RNNs called Long Short Term Networks (LSTM) for this project. This basically consists of cells that are responsible for "remembering" values over a time interval. This differs from the traditional neural network in that not only does it learn from the features, but it also takes care of sequence values over time. That is, for traditional neural networks it is assumed that all inputs and outputs are independent of each other. However, for RNNs the output depends on the previous computation. As a result of this, RNNs are very popular for sequential data such as time series because they perform much deeper understanding of sequence when compared with other algorithms. They are also applicable to any data that can be rearranged to resemble sequential data. In terms of visualization, one can think of RNN models as shown below:
 
- <img src="images/rnn_visualization.png" alt="Test" width="600"/>
+<img src="images/rnn_visualization.png" alt="Test" width="600"/>
 </p>
 <p>
-<em>Figure 4.5: visualization_of_recurrent_neural_network_models</em>
+<em>Figure 4.5: Visualization of Recurrent Neural Network Models</em>
 
 ### 4.7.1 Justification for recurrent neural network:
-Since, the index for our dataset actually represents time, then perhaps we can consider it as a time series data. As such, we decided to see how RNNs will perform in comparison with the other models. As was mentioned earlier, we used LSTM for this project. This type of model requires a 3-dimensional input, therefore we had to transform the shape of the dataset we had to make use of this model. In order to save computation time, a LSTM of 40 units was found to give the best performance and therefore used for testing the model. Additionally, a sigmoid activation function was applied in the outer layer. The hyperparameters were the same as with other models to ensure a fair coomparison between the different algorithms used.
+Since, the index for our dataset actually represents time, then perhaps we can consider it as a time series data. As such, we decided to see how RNNs will perform in comparison with the other models. As was mentioned earlier, we used LSTM for this project. This type of model requires a 3-dimensional input, therefore we had to transform the shape of the dataset we had to make use of this model. In order to save computation time, a LSTM of 40 units was found to give the best performance and therefore used for testing the model. Additionally, a sigmoid activation function was applied in the outer layer. The hyperparameters were the same as with other models to ensure a fair comparison between the different algorithms used.
 
 <img src="images/rnn_model.png" alt="Test" width="600"/>
 </p>
 <p>
-<em>Figure 4.6: overview_of_recurrent_neural_network_model</em>
+<em>Figure 4.6: Overview of Recurrent Neural Network Model</em>
 
 ## 4.8 Method 5: Random Forest Regression:
 The third method utilized was Random Forest Regression. Random Forest Regression performs both regression and classification tasks with the use of multiple decision trees and bagging. It is easy to use and often returns good results even without hyperparameter tuning. Our group used this method to check if it offered an improvement on the previous model. The Random Forest Regression provided the worst results with extremely inaccurate accuracy rate, while also not working well for the type of data we had. The model is shown below in figure 4.5. 
@@ -500,23 +502,22 @@ The third method utilized was Random Forest Regression. Random Forest Regression
 <img src="images/Screen Shot 2020-12-05 at 6.36.01 PM.png" alt="Test" width="600"/>
 </p>
 <p>
-<em>Figure 4.7: Visualization_of_Random_Forest_Regression_models</em>
+<em>Figure 4.7: Visualization of Random Forest Regression Models</em>
 
-## 4.9 Issue:
-We noticed that the problem was the precision and recall are very low even though accuracy is high. This was caused by the damaged data being too sparse, only 3.5% of our data represents the damaged condition. The solution was too add copies of the damaged data into the training set.
+## 4.9 Problem with Model:
+We noticed that the problem was the precision and recall were very low even though accuracy is high. This can be shown in figure 4.8 below. Low Recall occurs because most positive values are not predicted. This was the case for our dataset as the damaged data was too sparse. The data was too sparse because only 3.5% of the data represented the damaged condition. Because of this the model was not able to catch the postive class resulting in mostly negative data, thus the low recall rate occurs even though there is a high accuracy rate. The accuracy rate is high because the model is still accuratly predicting according to the data provided. 
 
-## 4.10 Take Two:
-In take two we ran logistic regression and artifical nueral networks again to see if it yeilded better results with addiiton of new copies of damaged data. Logistic Regression returned good accuracy ~83%, much better precision ~60%, and Fantastic recall ~99%. Artifical Neural Network returned slighly better data with a fantastic accuracy ~98%, fantastic precision ~91%, and fantastic recall ~99%. the results are shown in figure 4.6 and 4.7. 
-
-<img src="images/Screen Shot 2020-12-05 at 6.58.35 PM.png" alt="Test" width="600"/>
+<img src="images/Screen Shot 2020-12-05 at 8.14.39 PM.png" alt="Test" width="600"/>
 </p>
 <p>
-<em>Figure 4.8: Test_2_Logistic_Regression_models</em>
- 
- <img src="images/Screen Shot 2020-12-05 at 6.58.41 PM.png" alt="Test" width="600"/>
+<em>Figure 4.8: Problem with Model</em>
+
+The solution was too add copies of the damaged data into the training set. We did this because we found that sparse data leads to models not learning properly. This allowed the data in the model to be more balanced leading to a higher recall and more efficent results. This can be shown in figure 4.9 below. 
+
+<img src="images/Screen Shot 2020-12-05 at 8.14.47 PM.png" alt="Test" width="600"/>
 </p>
 <p>
-<em>Figure 4.9: Test_2_Artificial_Neural_Networks</em>
+<em>Figure 4.9: Solution to Issue</em>
 
 
 
@@ -672,7 +673,7 @@ The random forest regression model can be most closely compared to the polynomia
 
 
 
-## 6. Discussion
+## 6. Conclusion
 
 ### 6.1 Key Takeaways
 
@@ -682,13 +683,11 @@ The second takeaway is that datasets such as ours that have very sparse data may
 
 ### 6.2 Applications
 
-The results of this project show that machine learning has a place in structural health monitoring. A team with more machine learning experience and more data can create a model that can determine structural damage in real time and thus may be able to prevent or predict a structural collapse and save lives. The idea can be taken even further and can be adapted and expanded to allow for detection of damage in specific regions or even specific structural members in the structure, as well as predicting useful structural life. This can save large amounts of money that are spent on structural inspections, repairs, and rebuilding after catastrophic failures.
+The results of this project show that machine learning has a place in structural health monitoring. A team with more machine learning experience and more data can create a model that can determine structural damage in real time and thus may be able to prevent or predict a structural collapse and save lives. The idea can be taken even further and can be adapted and expanded to allow for detection of damage in specific regions or even specific structural members in the structure, as well as predicting useful structural life. This can save large amounts of money that are spent on structural inspections, repairs, and rebuilding after catastrophic failures. 
 
+### 6.3 Concluding Statement
 
-
-## Conclusion
-
-Conclusion goes here
+This project has shown that with relatively simple data important structural behaviors can be recognized. With this project as a proof of concept, future models can be made to simplify and vastly improve the efficiency of structural health monitoring. 
 
 
 ## References {.page_break_before}
